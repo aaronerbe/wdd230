@@ -1,0 +1,26 @@
+body{
+    font-family: Roboto;
+
+}
+
+main, header, footer{
+    max-width: 640px;
+    /* THIS centers the content.  1rem gives 1rem on top/bottom.  Auto centers it in it's container */
+    margin: 1rem auto;
+    border: 1px;
+    border-style: solid;
+    /* this pushes the border away from the content.  pads the content */
+    padding: 2rem;
+    background-color: #E6F3FE;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section{
+    background-color: white;
+    padding: 1rem;
+}

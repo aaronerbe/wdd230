@@ -1,3 +1,9 @@
+Centering content in it's container:
+/* THIS centers the content.  1rem gives 1rem on top/bottom.  Auto centers it in it's container */
+margin: 1rem auto;
+
+
+
 Web Design:
 https://dev.to/imiahazel/8-fundamental-principles-of-effective-web-design-196l
 
@@ -5,6 +11,9 @@ https://xd.adobe.com/ideas/process/information-architecture/visual-hierarchy-pri
 
 https://www.youtube.com/watch?v=mOA0WH00reA
 
+
+Reactive Website:
+https://web.dev/responsive-web-design-basics/#how_to_choose_breakpoints
 
 
 
