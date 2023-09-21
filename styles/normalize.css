@@ -1,4 +1,6 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* adding this here cause it has to be first and normalize is called before any other css */
+@import url('https://fonts.googleapis.com/css2?family=Titillium&family=Bree+Serif&family=Poppins&family=Comfortaa&family=Waiting+for+the+Sunrise&display=swap');
 
 /* Document
    ========================================================================== */

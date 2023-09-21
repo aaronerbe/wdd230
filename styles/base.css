@@ -1,5 +1,3 @@
-/* Fonts are Architects Daughter, Bree Serif, Poppins, Rock Salt, Waiting for the Sunrise*/
-@import url('https://fonts.googleapis.com/css2?family=Titillium&family=Bree+Serif&family=Poppins&family=Comfortaa&family=Waiting+for+the+Sunrise&display=swap');
 
 body {
     display: grid;
@@ -19,14 +17,16 @@ header {
 }
 
 header div{
-    display: flex;
+    /*display: flex;*/
+    display: block;
     justify-content: center;
     align-items: center;
 }
 
 header div img{
+    /**/
+    height: auto;
     max-width: 100%;
-    padding: 1rem;
 }
 header div h1{
     padding: 1rem;
@@ -37,6 +37,9 @@ nav {
     background: black;
     grid-column: 1/4;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 nav a {
@@ -45,14 +48,11 @@ nav a {
     display: block;
     margin: 20px 0;
     font-size: 1.75em;
-    /*font-family: "Bree Serif", Helvetica, sans-serif;*/
     font-family:  "Comfortaa", Helvetica, sans-serif;
-
 }
 
 main {
     grid-column: 2/3;
-    /*max-width: 90%;*/
     padding: 1rem;
     /*justify-self: center;
     align-self: center;
@@ -63,9 +63,7 @@ main h2{
     text-align: center;
     padding-top: 2rem;
     font-size: 2em;
-
     font-family:  "Comfortaa", Helvetica, sans-serif;
-
 }
 
 main h3{
