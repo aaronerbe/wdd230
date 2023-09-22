@@ -7,7 +7,7 @@ body{
     max-width: 100vw;                               /* ocuppy the full viewport width */
     min-height: 100vh;                              /* occupy the full viewport height */
     margin: 0;                                      /* set margin to 0 so content will go to full edge (no white border) */
-    font-family: "Poppins", Helvetica, Sans-Serif;  /*pull in the fonts*/
+    font-family: "Roboto", "Poppins", Sans-Serif;   /*pull in the fonts*/
 
 }
 
@@ -54,13 +54,23 @@ main{
     padding: 0.5em 1em;
     margin: 0;
 }
-.card h4, a, p{
-    padding: 0.5em 1em;
+
+.card h4{
     margin: 0;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+}
+.card a, p{
+    font-family: "Poppins";
+    font-weight: 200;
+}
+.card a{
+    margin: 0;
+    padding: 0em 1em;
     font-size: 1.5em;
 }
 .card p{
-    padding-bottom: 1em;
+    padding: 0em 1em 1em 1em;
     font-size: 1.25em;
 }
 .card img{
