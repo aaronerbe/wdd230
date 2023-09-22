@@ -2,7 +2,6 @@
 /* also reference the media-query-large.css */
 @media screen and (min-width: 650px) and (max-width: 1199px)  {     /* if the viewport is between 650 and 1199px wide, override these css */
     main {
-        display: grid;                                              /* change to grid (not flex) */
         grid-template-columns: 1fr 1fr;                             /* make it 2 columns wide */
         
     }

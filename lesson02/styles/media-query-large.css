@@ -3,7 +3,6 @@
 
 @media screen and (min-width: 1200px) {             /* If viewport is > 1200px wide */
     main {
-        display: grid;                              /* Make it a grid (instead of flex) */
         grid-template-columns: 1fr 1fr 1fr;         /* make it 3 columns wide */
     }
 }

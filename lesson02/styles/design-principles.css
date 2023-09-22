@@ -18,7 +18,7 @@ header{
     color: white;
     text-align: center;                             /* centers text horizontally */
     place-items: center;                            /* shortcut to center elements horizontally and vertically */
-    margin: 0;                                      /* lets elements take up whole space */
+    margin: 0 0 2em 0;                              /* lets elements take up whole space. 2em for bottom margin to push cards away a bit*/
     padding: 0;                                     /* no padding between this container to others */
 }
 header div{
@@ -34,6 +34,8 @@ header h2{
 
 main{
     grid-column: 2/3;                               /* occupy the middle (90%) column only */
+    display: grid;                                  /* Not necessary for this view but for medium and large media query, easy to just change #of cols */
+    grid-template-columns: 1fr;
 }
 
 .card{
@@ -44,7 +46,7 @@ main{
     border-radius: 20px 20px 0px 0px;               /* rounds only the top left and top right */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);      /* shadows the border */
     overflow: hidden;                               /* clips the nested elements to match the edge of the radius of the container */
-    margin: 4em 1em;                                /* gives some breathing room to the content */
+    margin: 2em 1em;                                /* gives some breathing room between cards */
     background-color: #EEEEEE;
 }
 .card h3{
