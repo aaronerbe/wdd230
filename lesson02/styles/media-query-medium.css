@@ -1,0 +1,15 @@
+@media screen and (min-width: 650px) and (max-width: 1199px)  {
+    body{
+        /*grid-template-columns: 5% 45%*/
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .card:nth-child(3){
+        grid-column: 1/-1;
+        /*margin: 0;*/
+        margin-top: 0;
+    }
+}
