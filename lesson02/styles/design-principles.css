@@ -1,22 +1,25 @@
+/*A great working example of Reactive Website Design (changing content with different size viewports) with content talking about Design Principles*/
+/* also reference the media-query-medium.css and media-query-large.css */
+
 body{
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    max-width: 100vw;
-    min-height: 100vh;
-    margin: 0;
-    font-family: "Poppins", Helvetica, Sans-Serif;  /*general paragraph text*/
+    display: grid;                                  /* put into a grid */
+    grid-template-columns: 5% 90% 5%;               /* 5% on left/right w/ main content at 90% so it is narrower than the rest */
+    max-width: 100vw;                               /* ocuppy the full viewport width */
+    min-height: 100vh;                              /* occupy the full viewport height */
+    margin: 0;                                      /* set margin to 0 so content will go to full edge (no white border) */
+    font-family: "Poppins", Helvetica, Sans-Serif;  /*pull in the fonts*/
 
 }
 
 header{
-    grid-column: 1/-1;
-    display: grid;
+    grid-column: 1/-1;                              /* makes header stretch across the whole row. */
+    display: grid;                                  /* make headers contents a grid as well so the two lines will stack vertically & enables using text-align and place-items */
     background-color: #1D1E22;
     color: white;
-    text-align: center;
-    place-items: center;
-    margin: 0;
-    padding: 0;
+    text-align: center;                             /* centers text horizontally */
+    place-items: center;                            /* shortcut to center elements horizontally and vertically */
+    margin: 0;                                      /* lets elements take up whole space */
+    padding: 0;                                     /* no padding between this container to others */
 }
 header div{
     margin: 0;
@@ -30,19 +33,18 @@ header h2{
 }
 
 main{
-    grid-column: 2/3;
+    grid-column: 2/3;                               /* occupy the middle (90%) column only */
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
+    display: flex;                                  /* not a grid, but flex */
+    flex-direction: column;                         /* nice to simply say, stack them in a column */
     border-style: solid;
     border-color: lightgray;
-    border-radius: 20px 20px 0px 0px;  /* rounds only the top left and top right */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-    overflow: hidden;  /* clips the nested elements to match the edge of the radius of the container */
-    margin: 4em 1em;
+    border-radius: 20px 20px 0px 0px;               /* rounds only the top left and top right */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);      /* shadows the border */
+    overflow: hidden;                               /* clips the nested elements to match the edge of the radius of the container */
+    margin: 4em 1em;                                /* gives some breathing room to the content */
     background-color: #EEEEEE;
 }
 .card h3{
@@ -59,6 +61,7 @@ main{
 }
 .card p{
     padding-bottom: 1em;
+    font-size: 1.25em;
 }
 .card img{
     height: auto;

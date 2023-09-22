@@ -1,13 +1,12 @@
-@media screen and (min-width: 650px) and (max-width: 1199px)  {
-    body{
-        /*grid-template-columns: 5% 45%*/
-    }
+/*A great working example of Reactive Website Design (changing content with different size viewports) with content talking about Design Principles*/
+/* also reference the media-query-large.css */
+@media screen and (min-width: 650px) and (max-width: 1199px)  {     /* if the viewport is between 650 and 1199px wide, override these css */
     main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: grid;                                              /* change to grid (not flex) */
+        grid-template-columns: 1fr 1fr;                             /* make it 2 columns wide */
         
     }
-    .card:nth-child(3){
+    .card:nth-child(3){                                             /* For the 3rd .card element, have it spread across the whole row */
         grid-column: 1/-1;
         /*margin: 0;*/
         margin-top: 0;
