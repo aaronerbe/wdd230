@@ -1,3 +1,8 @@
+Come back and work through all of these:
+https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators1
+
+
+
 Centering content in it's container:
 /* THIS centers the content.  1rem gives 1rem on top/bottom.  Auto centers it in it's container */
 margin: 1rem auto;
