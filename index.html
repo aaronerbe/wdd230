@@ -27,8 +27,10 @@
             <h1>Aaron Erbe</h1>
         </div>
     </header>
+        <!-- empty menu link that is controlled w/ js and some css to make a reactive hamburger menu -->
         <a id="menu" href="#"></a>
         <nav>
+            <!-- put in a class to make it easier to grab in js and toggle visibility with the menu link.  Put in a list too.   -->
             <ul class="navigation">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="chamber/siteplan.html">Site Plan</a></li>
@@ -64,6 +66,7 @@
 
         </section>
         <div class="map">
+            <!-- iframe showing google map of home town -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46044.97081233077!2d-115.83297197871092!3d43.83902337518688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695882942550!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Idaho City Map"></iframe>
         </div>
     </main>
@@ -74,6 +77,7 @@
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <!-- had to put at the bottom for it to work.  if it was in the head, it didn't quite work. -->
     <script src="scripts/menu.js"></script>
 
 </body>
