@@ -1,0 +1,189 @@
+
+body {
+    display: grid;
+    /*height: 100vh;*/
+    grid-template: auto auto 1fr auto auto / 10% 80% 10%;
+    margin: 0;
+    /*font-family: sans-serif;*/
+    font-family: "Poppins", Helvetica, Sans-Serif;  /*general paragraph text*/
+}
+
+header {
+    background: #1D1E22;
+    color: white;
+    padding: 1rem;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+header div{
+    /*display: flex;*/
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img{
+    /**/
+    height: auto;
+    max-width: 100%;
+}
+header div h1{
+    padding: 1rem;
+    font-size: 3.5em;
+}
+
+main {
+    grid-column: 2/3;
+    padding: 1rem;
+    /*justify-self: center;
+    align-self: center;
+    margin: 0;*/
+}
+
+main h2{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2em;
+    font-family:  "Comfortaa", Helvetica, sans-serif;
+}
+
+main h3{
+    /*background: #1D1E22;*/
+    background-color: yellowgreen;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5em;
+    font-family:  "Titillium", Helvetica, sans-serif;
+}
+
+main ul li{
+    padding: .25rem;
+    list-style-type: none;
+}
+
+.card{
+    outline: 1px solid grey;
+    border-radius: 5px;
+    /*padding: 3rem;*/
+    font-size: 1.5em;
+}
+
+.card div{
+    text-align: center;
+    padding: 1rem;
+}
+
+.map{
+    grid-column: 1/-1;
+    text-align: center;
+    margin: 2rem 0;
+}
+.map iframe{
+    width: 100%;
+    height: 400px;
+}
+
+footer{
+    grid-column: 1/4;
+    background: #1D1E22;
+}
+footer p{
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+}
+#lastModified{
+    color: yellow;
+}
+
+/* RESPONSIVE MENU */
+#menu {
+    grid-column: 1/-1;          /* make it extend the width of the screen instead of just filling the 1st column */
+	display: block;             /* makes the items (the hamburger) display in a block */
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;      /* Get rid of the 'underline' for the hyperlink */
+	padding: .5rem .75rem;      
+	background-color: #eee;     /* give it a bit of grey background so it's clear the whole bar across teh screen could be clicked */
+	color: black;               /* black so the 'hyperlink' isn't blue */
+}
+
+#menu::before {                     /* used to insert the hamburger menu icon.  #menu text is empty until this */
+	content: "≡";
+}
+#menu.show::before {                /* when toggled w/ js, it changes the content to an X icon. */
+	content: "✕";
+}
+nav {
+    grid-column: 1/-1;              /* make sure the nav element stretches the width instead of just 1 column */
+                                    /* I don't know why it's needed to apply to nav but wont work for .navigation */
+}
+
+.navigation {
+    background: black;          /* black background for when menu is shown */
+	list-style: none;
+	margin: 0 auto;
+    padding: 0;
+}
+
+.navigation li {
+	display: none;      /* hides the nav elements when js toggles it */
+}
+
+.navigation a {
+    color: white;               /* make sure the link text is white instead of blue default */
+    text-decoration: none;          /* gets rid of underlines and such for hyperlinks */
+    font-family:  "Comfortaa", Helvetica, sans-serif;
+	display: block;                 /* Displays the elements in a block */
+	padding: 0.75rem;               
+	text-align: left;               /* forces text to left edge of screen */
+	transition: 0.5s;               /* Set the transition time for the hover */
+	font-size: clamp(1rem, 2vmin, 1.5rem);  /* set the font sizes */
+}
+
+.navigation a:hover, .navigation a.active{  /*  */
+	color: black;
+    font-weight: 750;
+	background-color: tomato;       /* Hover over tomato color */
+}
+
+.show li {
+	display: block;     /* displays the list when js toggles it */
+}
+
+.active::first-letter{              /* Using pseudo-element to apply an underline to the 1st letter of the active link */
+    text-decoration: underline;
+}
+.active{
+
+}
+
+
+/* END RESPONSIVE MENU */
+
+
+
+
+
+/* @Media Query - Don't add css after this section */
+/*@media screen and (max-width: 900px) {
+    header div{
+        display: block;*/
+        /*justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;*/
+    /*}*/
+
+    /*header div img {
+        width: 570;
+        height: 338;
+    }*/
+
+
+
+/*}*/
+
+

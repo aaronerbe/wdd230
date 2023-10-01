@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aaron Erbe">
+    <meta name="description" 
+    content="Chrome DevTool Presentation
+    Aaron Erbe">
+    <title>Aaron Erbe - Chrome Dev Tools</title>
+    <!-- MISING REFERENCE normalize.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div>
+            <!-- MISSING IMAGE actual path is images/my-cool-pic.jpg-->
+            <img src="images/cool-pic.jpg" alt="Alaska waters" width="400" height="225">
+            <h1>Aaron Erbe</h1>
+        </div>
+    </header>
+        <!-- FOR REACTIVE MENU - JS -->
+        <a id="menu" href="#"></a>
+        <nav>
+            <!-- put in a class to make it easier to grab in js and toggle visibility with the menu link.  Put in a list too.   -->
+            <ul class="navigation">
+                <li><a href="presentation.html" class="active">Home</a></li>
+                <li><a href="presentation.html">A Link</a></li>
+                <li><a href="presentation.html">Another Link</a></li>
+                <li><a href="presentation.html">One More Link</a></li>
+                <li><a href="presentation.html">Last Link</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2>Chrome DevTools Demo</h2>
+        <section class="card">
+            <h3>DevTool Walk Through</h3>
+            <ol>
+                <li>Device Toolbar
+                    <ul>
+                        <li>-Responsive</li>
+                    </ul>
+                </li>
+                <li> Elements Tab & Tools
+                    <ul>
+                        <li>-Select Elements</li>
+                        <li>-Search Elements</li>
+                    </ul>
+                </li>
+                <li>Styles Tab
+                    <ul>
+                        <li>-Applied Styles to Element, Inherited and Priority</li>
+                        <li>-Real Time Prototyping</li>
+                        <li>-Boundary Box + Tooltip Hover</li>
+                    </ul>
+                </li>
+                <li>Console & Issues
+                    <ul>
+                        <li>-Debug Information (Errors & Warnings)</li>
+                        <li>-Issues Summary & Guidance</li>
+                        <li>-Can Execute Javascript</li>
+                    </ul>
+                </li>
+                <li>Sources Tab
+                    <ul>
+                        <li>Assets</li>
+                        <li>Breakpoints</li>
+                        <li>Debugger</li>
+                        <li>Scope Panel</li>
+                    </ul>
+                </li>
+
+            </ol>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentdate"></span></p> 
+        <p>Aaron Erbe</p>
+        <p>Idaho</p>
+    </footer>
+    <!-- REACTIVE MENU JS -->
+    <script src="scripts/menu.js"></script>
+
+</body>
+</html>
