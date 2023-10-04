@@ -2,6 +2,9 @@ Come back and work through all of these:
 https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators1
 
 
+Psuedo_classes: (e.g. hover)
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
 
 Centering content in it's container:
 /* THIS centers the content.  1rem gives 1rem on top/bottom.  Auto centers it in it's container */
