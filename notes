@@ -1,3 +1,22 @@
+INTERVIEW PREP:
+Learn the Cascade, Specificity, and Inheritance - Review 📄Cascade, specificity, and inheritance - MDN
+Understand the CSS Rule-set - Can you identify all the parts of a CSS rule?
+- selector, declaration block, declaration, property, value 🎦CSS Rule Set
+Learn the difference between block, inline, and inline-block -
+Learn the Box Model - Review: 🎦CSS Box Model in 60 Seconds!
+Learn Flex - Review: CSS Flex Box in 100 Seconds
+Learn Grid - Review: 🎦CSS Grid in 100 Seconds
+Here is an example using auto-fill with Grid: ⚙️CSS Grid: repeat with auto-fill columns that have a min and max.
+Responsive design using CSS Grid 🎦CSS Responsive Design using Grid - 1 segment.
+Learn Positioning - This topic is reviewed and applied in next week's content.
+Learn Clamp - Responsive design using clamp: 🎦Clamp - 1 segment
+Learn aspect-ratio - aspect-ratio CSS property - MDN
+
+https://byui-cse.github.io/wdd230-course/lesson04/css-common.html
+
+
+
+
 Come back and work through all of these:
 https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators1
 

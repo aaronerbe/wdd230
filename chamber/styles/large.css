@@ -1,0 +1,73 @@
+@media screen and (min-width: 910px) {
+    
+    /* REACTIVE MENU */
+    #hamburger{
+        display: none;
+    }
+
+    header{
+        
+        /*justify-content: flex-start;*/
+        /*justify-content: space-evenly;*/
+    }
+    .logo{
+        justify-self: flex-start;
+        margin-right: 15rem;
+        /*margin-right: auto;*/
+    }
+    nav{
+        width: 100%;
+        /*justify-self: space-evenly;*/
+        /*justify-self: flex-start;*/
+    }
+    .menu-list{
+        display: flex;
+        justify-content: space-evenly;
+        
+        /*width: 100%;*/
+        /*flex: 8;*/
+    }
+
+    .menu-list a{
+        background-color: var(--primary-color);
+        color: white;
+    }
+    
+    /* END REACTIVE MENU */
+
+    
+    .hero h1{
+        font-size: clamp(2.75rem, 4vmin, 4rem);  /* set the font sizes */
+    }
+    
+    .call-to-action{
+        display: grid;
+        grid-template: auto auto auto/auto 100px auto;
+    }
+    .join {
+        grid-row: 1/-1;
+    }
+    .jobs{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .call-to-action hr{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: block;
+    }
+    .directory{
+        grid-column: 3/4;
+        grid-row:3/4;
+    }
+    .jobs, .directory{
+        margin-top: auto 0;
+    }
+    
+    .spotlights{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+
+}

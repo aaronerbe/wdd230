@@ -1,0 +1,232 @@
+*{
+    /*--primary-color:  #1470AF;*/
+    --primary-color: #18488D;
+    --highlight-color:  #FF9B42;
+    --secondary-color:  #B3C6CB;
+    --dark-accent-color:  #28262C;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", Helvetica, Sans-Serif;
+    max-width: 100vw;
+    /*overflow: hidden;*/
+    margin: 0;
+}
+
+header{
+    background: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    /* make it dissapear on really small screens ;) */
+    @media screen and (max-width: 300px) {
+        display: none;
+        }
+}
+#hamburger{
+    text-decoration: none;
+    color: white;
+}
+.menu-list li{
+    background-color: white;
+}
+.navigation a {
+    color: black;               /* make sure the link text is white instead of blue default */
+    text-decoration: none;          /* gets rid of underlines and such for hyperlinks */
+    font-family:  "Comfortaa", Helvetica, sans-serif;
+	display: block;                 /* Displays the elements in a block */
+    padding: 1rem;
+	transition: 0.5s;               /* Set the transition time for the hover */
+	font-size: clamp(1rem, 2vmin, 1.5rem);  /* set the font sizes */
+}
+.navigation a:hover, .navigation a.active{
+    background-color: var(--highlight-color);
+    color: black;
+    font-weight: 750;
+    transition: 0.5s;
+}
+
+/* REACTIVE MENU */
+#hamburger::before{
+    content: "≡" ;
+    font-size: 2em;
+    position: static;
+}
+#hamburger.show::before{
+    content: "✕";
+    color: black;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 9999;
+    background-color: white;
+    padding-bottom: .25rem;
+    padding-right: 1rem;    
+    padding: .5rem;
+}
+.menu-list{
+    display: none;
+    position: static;
+    list-style: none;
+}
+.menu-list.show{
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 0%;
+    width: 100vw;
+    text-align: center;
+    height: 100vw;
+    /*padding: 0;
+    margin: 0;*/
+}
+main.show{
+    opacity: 0%;
+    z-index: -1;
+}
+/* END REACTIVE MENU */
+
+.hero{
+    position: relative;
+}
+.hero h1{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    /*left: 0;*/
+    color: white;
+    font-size: clamp(2rem, 2rem, 3rem);  /* set the font sizes */
+    /* make it dissapear on really small screens ;) */
+    @media screen and (max-width: 325px) {
+        display: none;
+        }
+}
+
+.button{
+    width: 250px;
+    height: 50px;
+    margin: auto;
+}
+.button a{
+    background:var(--primary-color);
+    text-decoration-color: white;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem 2.5rem;
+    font-size: 1.25rem;
+}
+.button a:hover{
+    background-color: var(--highlight-color);
+    color: black;
+    transition: 0.25s;
+}
+
+.hero img{
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    /*outline: 1px solid grey;*/
+    border-radius: 5px;
+    /*padding: 3rem;*/
+    font-size: 1.5em;
+    width: 80%;
+    margin: 3rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+.call-to-action{
+    text-align: left;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 700px){gap: 100px;}
+    
+}
+
+.jobs, .directory, .call-to-action hr{
+    text-align: center;
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
+}
+.join{
+    /*margin: 50px;*/
+}
+.call-to-action hr{
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: auto 0;
+    display: none;
+    margin: 50px
+}
+.join a{
+    color: var(--primary-color);
+}
+.join a:hover{
+    color: var(--highlight-color);
+    transition: 0.2s;
+}
+.join p{
+    margin-top: 3rem;
+}
+
+
+.calendar-box{
+    outline: 1px solid grey;
+    padding: 50px;
+}
+.card-highlight{
+    background-color: var(--primary-color);
+    width: 100%;
+    margin: 3rem;
+    /*padding: 1rem;*/
+    display: flex;
+    justify-content: center;
+}
+.spotlights{
+    display: flex;
+    flex-direction: column;
+    /*gap: 5rem;*/
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.company-box{
+    /*outline: 1px solid #28262C;*/
+    border-radius: 5px;
+    background-color: white;
+}
+
+footer{
+    background-color: var(--dark-accent-color);
+    color: white;
+    width: 100%;
+    height: auto;
+    margin-top: -3rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 5rem;
+}
