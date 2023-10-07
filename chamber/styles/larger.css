@@ -23,7 +23,7 @@
     /* END REACTIVE MENU */
 
     .hero h1{
-        font-size: clamp(2rem, 2rem, 3.5rem);  /* set the font sizes */
+        font-size: clamp(2rem, 3rem, 5rem);  /* set the font sizes */
     }
     .call-to-action{
         display: grid;
