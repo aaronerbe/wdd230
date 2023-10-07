@@ -20,7 +20,7 @@
     /*.hero */
     h1{
         font-size: clamp(2rem, 3rem, 5rem);
-        top: -10rem;
+        top: -15rem;
     }
     .call-to-action{
         display: grid;
