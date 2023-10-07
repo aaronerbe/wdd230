@@ -23,12 +23,11 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.logo img{
-    /* make it dissapear on really small screens ;) */
+/*.logo img{
     @media screen and (max-width: 300px) {
         display: none;
         }
-}
+}*/
 #hamburger{
     text-decoration: none;
     color: var(--secondary-color);
