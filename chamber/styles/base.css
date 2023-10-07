@@ -15,7 +15,6 @@ body{
     background-color: var(--secondary-color)
 
 }
-
 header{
     background: var(--primary-color);
     padding: 1rem;
@@ -23,11 +22,6 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-/*.logo img{
-    @media screen and (max-width: 300px) {
-        display: none;
-        }
-}*/
 #hamburger{
     text-decoration: none;
     color: var(--secondary-color);

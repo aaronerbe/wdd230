@@ -1,6 +1,4 @@
 @media screen and (min-width: 700px) and (max-width: 910px) {
-    
-    /* REACTIVE MENU */
     #hamburger{
         display: none;
     }
@@ -9,7 +7,6 @@
     }
     .logo{
         justify-self: flex-start;
-        /*margin-right: 15rem;*/
         margin-right: auto;
     }
     nav{
@@ -24,10 +21,9 @@
         background-color: var(--primary-color);
         color: white;
     }
-    /* END REACTIVE MENU */
 
     .hero h1{
-        font-size: clamp(2rem, 2rem, 3.5rem);  /* set the font sizes */
+        font-size: clamp(2rem, 2rem, 3.5rem);
     }
     .call-to-action{
         display: grid;
@@ -47,11 +43,8 @@
         margin: auto 0;
         width: 80%;
         margin-left: 25px;
-        /*margin-top: 0;*/
         padding: 0;
     }
-    /*.join h3, .directory h3{
-    }*/
     .call-to-action hr{        
         display: block;
         padding: 0;
@@ -64,35 +57,5 @@
         flex-direction: row;
         justify-content: space-between;
     }
-
-    /*.call-to-action{
-        display: grid;
-        grid-template: auto 50px auto/auto 100px auto;
-    }
-    .intro {
-        grid-row: 1/-1;
-    }
-    .join{
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-    .call-to-action hr{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        display: block;
-    }
-    .directory{
-        grid-column: 3/4;
-        grid-row:3/4;
-    }
-    .join, .directory, .call-to-action hr{
-        margin: auto 0;
-    }
-    
-    .spotlights{
-        flex-direction: row;
-        justify-content: space-between;
-    }*/
-    
 
 }
