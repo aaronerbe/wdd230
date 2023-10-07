@@ -160,31 +160,4 @@ nav {
 .active{
 
 }
-
-
 /* END RESPONSIVE MENU */
-
-
-
-
-
-/* @Media Query - Don't add css after this section */
-/*@media screen and (max-width: 900px) {
-    header div{
-        display: block;*/
-        /*justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;*/
-    /*}*/
-
-    /*header div img {
-        width: 570;
-        height: 338;
-    }*/
-
-
-
-/*}*/
-
-

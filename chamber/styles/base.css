@@ -163,12 +163,8 @@ main.show{
 
 .jobs, .directory, .call-to-action hr{
     text-align: center;
-    /*margin-top: 50px;
-    margin-bottom: 50px;*/
 }
-.join{
-    /*margin: 50px;*/
-}
+
 .call-to-action hr{
     border: none;
     height: 2px;

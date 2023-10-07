@@ -4,12 +4,6 @@
     #hamburger{
         display: none;
     }
-
-    header{
-        
-        /*justify-content: flex-start;*/
-        /*justify-content: space-evenly;*/
-    }
     .logo{
         justify-self: flex-start;
         margin-right: 15rem;
