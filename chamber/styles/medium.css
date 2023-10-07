@@ -54,9 +54,8 @@
         /*margin-top: 0;*/
         padding: 0;
     }
-    .join h3, .directory h3{
-        /*padding: 50px;*/
-    }
+    /*.join h3, .directory h3{
+    }*/
     .call-to-action hr{        
         display: block;
         padding: 0;
