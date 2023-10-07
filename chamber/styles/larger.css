@@ -26,32 +26,40 @@
     /* END REACTIVE MENU */
 
     
+
     .hero h1{
-        font-size: clamp(2.75rem, 4vmin, 4rem);  /* set the font sizes */
+        font-size: clamp(2rem, 2rem, 3.5rem);  /* set the font sizes */
     }
-    
     .call-to-action{
         display: grid;
-        grid-template: auto auto auto/auto 100px auto;
+        grid-template: auto /auto auto;
     }
-    .join {
-        grid-row: 1/-1;
+    .left-col {
+        grid-column: 1/2;
+        padding-right: 25px;
     }
-    .jobs{
-        grid-column: 3/4;
-        grid-row: 1/2;
+    .right-col{
+        grid-column: 2/3;
+        /*margin: auto 0;*/
+        text-align: center;
     }
-    .call-to-action hr{
-        grid-column: 3/4;
-        grid-row: 2/3;
+    .join, .directory{
+        display: inline-block;
+        margin: auto 0;
+        width: 80%;
+        margin-left: 25px;
+        /*margin-top: 0;*/
+        padding: 0;
+    }
+    .join h3, .directory h3{
+        /*padding: 50px;*/
+    }
+    .call-to-action hr{        
         display: block;
-    }
-    .directory{
-        grid-column: 3/4;
-        grid-row:3/4;
-    }
-    .jobs, .directory{
-        margin-top: auto 0;
+        padding: 0;
+        margin-left: 25px;
+        margin-right: 0;
+        width: 100%;
     }
     
     .spotlights{
