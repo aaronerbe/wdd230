@@ -32,7 +32,7 @@ header{
     text-decoration: none;
     color: var(--secondary-color);
 }
-.menu-list li{
+.navigation li, .navigation{
     background-color: var(--secondary-color);
 }
 .navigation a {
@@ -71,17 +71,18 @@ header{
     padding-right: 1rem;    
     padding: .5rem;
 }
-.menu-list{
+.navigation{
     display: none;
     position: static;
     list-style: none;
 }
-.menu-list.show{
+.navigation.show{
     display: block;
     position: absolute;
-    top: 45px;
+    top: 35px;
     left: 0%;
     width: 100vw;
+    padding: 0;
     text-align: center;
     height: 100vw;
     /*padding: 0;
@@ -104,9 +105,9 @@ main.show{
     color: var(--secondary-color);
     font-size: clamp(2rem, 2rem, 3rem);  /* set the font sizes */
     /* make it dissapear on really small screens ;) */
-    @media screen and (max-width: 325px) {
+    /*@media screen and (max-width: 325px) {
         display: none;
-        }
+        }*/
 }
 
 .button{

@@ -11,21 +11,16 @@
     }
     nav{
         width: 100%;
-        /*justify-self: space-evenly;*/
-        /*justify-self: flex-start;*/
     }
-    .menu-list{
+    .navigation{
         display: flex;
         justify-content: space-evenly;
     }
-
-    .menu-list a{
+    .navigation a, .navigation{
         background-color: var(--primary-color);
         color: white;
     }
     /* END REACTIVE MENU */
-
-    
 
     .hero h1{
         font-size: clamp(2rem, 2rem, 3.5rem);  /* set the font sizes */

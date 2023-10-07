@@ -4,7 +4,6 @@
     #hamburger{
         display: none;
     }
-
     header{
         justify-content: flex-start;
     }
@@ -16,19 +15,16 @@
     nav{
         width: 100%;
     }
-    .menu-list{
+    .navigation{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-
-    .menu-list a{
+    .navigation a, .navigation{
         background-color: var(--primary-color);
         color: white;
     }
-    
     /* END REACTIVE MENU */
-
 
     .hero h1{
         font-size: clamp(2rem, 2rem, 3.5rem);  /* set the font sizes */
