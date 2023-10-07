@@ -226,3 +226,8 @@ footer{
     margin-right: 25%;
     padding-top: 5rem;
 }
+.footer-container a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: auto 0;
+}
