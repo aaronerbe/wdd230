@@ -17,16 +17,12 @@
     .menu-list{
         display: flex;
         justify-content: space-evenly;
-        
-        /*width: 100%;*/
-        /*flex: 8;*/
     }
 
     .menu-list a{
         background-color: var(--primary-color);
         color: white;
     }
-    
     /* END REACTIVE MENU */
 
     
