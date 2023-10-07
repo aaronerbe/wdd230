@@ -79,36 +79,44 @@ header{
     padding: 0;
     text-align: center;
     height: 100vw;
-    /*padding: 0;
-    margin: 0;*/
 }
 main.show{
     opacity: 0%;
     z-index: -1;
+    margin-top: -20px;
 }
 /* END REACTIVE MENU */
 
 .hero{
     position: relative;
 }
-.hero h1{
+
+h1{
+    position: relative;
+    top: -7.5rem;
+    left: 10%;
+    color: var(--secondary-color);
+    font-size: clamp(1rem, 1.5rem, 3rem);
+    width: 80%;
+    /*font-size: 4rem;*/
+}
+
+/*.hero h1{*/
     /*font-family: "Hanken Grotesk";*/
-    position: absolute;
+    /*position: absolute;
     bottom: 15%;
     left: 10%;
-    /*left: 0;*/
     color: var(--secondary-color);
-    font-size: clamp(2rem, 2rem, 3rem);  /* set the font sizes */
+    font-size: clamp(2rem, 2rem, 3rem); */
+     /* set the font sizes */
     /* make it dissapear on really small screens ;) */
     /*@media screen and (max-width: 325px) {
         display: none;
         }*/
-}
+/*}*/
 
 .button{
     min-width: 250px;
-    /*height: 50px;*/
-    /*margin: auto;*/
 }
 .button a{
     text-decoration: none;
@@ -155,6 +163,7 @@ main.show{
     flex-direction: column;
     justify-content: space-between;
     /*@media screen and (max-width: 700px){gap: 150px;}*/
+    margin-top: -100px;
 }
 
 .join, .directory, .call-to-action hr{

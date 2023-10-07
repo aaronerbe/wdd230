@@ -17,8 +17,10 @@
         background-color: var(--primary-color);
         color: white;
     }
-    .hero h1{
+    /*.hero */
+    h1{
         font-size: clamp(2rem, 3rem, 5rem);
+        top: -10rem;
     }
     .call-to-action{
         display: grid;
