@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700;800&family=Poppins:wght@200;400&family=Roboto&display=swap');
 *{
     /*--primary-color:  #1470AF;*/
     --primary-color: #18488D;
@@ -98,6 +99,7 @@ main.show{
     position: relative;
 }
 .hero h1{
+    /*font-family: "Hanken Grotesk";*/
     position: absolute;
     bottom: 15%;
     left: 10%;
