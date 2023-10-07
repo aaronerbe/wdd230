@@ -22,10 +22,9 @@
         color: white;
     }
 
-    /*.hero */
-    h1{
+    .hero h1{
         font-size: clamp(2rem, 2rem, 3.5rem);
-        top: -8rem;
+        /*top: -8rem;*/
     }
     .call-to-action{
         display: grid;
