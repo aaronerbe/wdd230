@@ -136,6 +136,10 @@ main.show{
     padding: 1.3rem 2.5rem;
     font-size: 1.25rem;
 }
+.button:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
 .button a:hover{
     background-color: var(--highlight-color);
     color: black;
@@ -212,10 +216,10 @@ main.show{
     display: flex;
     justify-content: center;
 }
-.card-highlight:hover{
+/*.card-highlight:hover{*/
     /*background-color: var(--primary-color);*/
-    transition: .5s;
-}
+    /*transition: .5s;*/
+/*}*/
 .spotlights{
     display: flex;
     flex-direction: column;
