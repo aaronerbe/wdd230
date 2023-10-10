@@ -1,0 +1,70 @@
+@media screen and (min-width: 910px) {
+    *{
+        --transparent-dark-accent-color: rgba(40,38,44,0.5);
+    }
+    
+    #hamburger{
+        display: none;
+    }
+
+    .logo{
+        justify-self: flex-start;
+        margin-right: 15rem;
+    }
+    nav{
+        width: 100%;
+    }
+    .navigation{
+        /*width: 100%;*/
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .navigation a, .navigation{
+        color: white;
+    }
+    .navigation a.active{
+        background-color: transparent;
+    }
+    .navigation a:hover{
+        background-color: var(--highlight-color);
+        color: var(--dark-accent-color);
+        font-weight: 750;
+        transition: 0.5s;
+    }
+
+    .hero h1{
+        bottom: 10%;
+    }
+    .call-to-action{
+        display: grid;
+        grid-template: auto /auto auto;
+    }
+    .left-col {
+        grid-column: 1/2;
+        padding-right: 25px;
+    }
+    .right-col{
+        grid-column: 2/3;
+        text-align: center;
+    }
+    .join, .directory{
+        display: inline-block;
+        margin: auto 0;
+        width: 80%;
+        margin-left: 25px;
+        padding: 0;
+    }
+    .call-to-action hr{        
+        display: block;
+        padding: 0;
+        margin-left: 25px;
+        margin-right: 0;
+        width: 100%;
+    }
+    .spotlights{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
