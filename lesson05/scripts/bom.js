@@ -9,7 +9,7 @@ addChapterButton.addEventListener("click", () =>{
         const li = document.createElement("li");
         const deleteButton = document.createElement("button");
         li.textContent = input.value;
-        li.value = "";
+        input.value = "";
         deleteButton.textContent = "❌";
 
         li.append(deleteButton);
