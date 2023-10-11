@@ -117,6 +117,7 @@ header:hover{
     position: absolute;
     top: 10%;
     right: 50%;
+    transition: 0.1s;
 }
 #hamburger.show::before{
     content: "✕";
@@ -132,6 +133,7 @@ header:hover{
     padding-right: 10%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    transition: .5s;
 }
 .navigation{
     display: none;
