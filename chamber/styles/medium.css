@@ -12,14 +12,9 @@
         display: none;
     }
     .theme-container{
-        /*top: 10px;
-        right: 0%;*/
         transform: scale(0.4);
         z-index: 3;
     }
-    /*header{
-        justify-content: flex-start;
-    }*/
     .logo{
         justify-self: flex-start;
         margin-right: auto;
@@ -34,7 +29,6 @@
         display: flex;
         justify-content: space-evenly;
         margin-right: 50px;
-        /*flex-wrap: wrap;*/
     }
     .navigation a, .navigation{
         color: white;
@@ -83,20 +77,4 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    /*.calendar-box{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .event{
-        width: 45%;
-        flex: 0 0 calc(50% -10px);
-        margin-bottom: 20px;
-    }
-    .event h3, .event p{
-        font-size: clamp(1rem, 3.5vw, 2rem);
-    }
-    .event-details{
-        left: 5%;
-    }*/
 }

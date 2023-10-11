@@ -1,15 +1,10 @@
 :root{
-    /*--bs-dark: #212529;*/
-    /*--bs-dark: var(--dark-accent-color);*/
     --primary-color: #18488D;
     --highlight-color:  #FF9B42;
     --secondary-color:  #EBF0F0;
     --dark-accent-color:  #28262C;
     --transparent-dark-accent-color: rgba(40,38,44,0.4);
     --transparent-dark-accent-color2: rgba(40,38,44,0.75);
-    /*--themed-background: var(--dark-accent-color);
-    --themed-text:  var(--secondary-color);
-    --themed-highlight-background: var(--dark-accent-color);*/
     --themed-background: var(--secondary-color);
     --themed-text:  var(--dark-accent-color);
     --themed-highlight-background: var(--primary-color);
@@ -21,7 +16,6 @@ body{
     flex-direction: column;
     font-family: "Poppins", Helvetica, Sans-Serif;
     margin: 0;
-    /*background-color: var(--secondary-color)*/
     background-color: var(--themed-background);
 
 }
@@ -47,13 +41,10 @@ body{
     background: linear-gradient(145deg, #23282c, #1e2125);
     box-shadow: 17px 17px 20px var(--dark-accent-color),
     -17px -17px 24px var(--dark-accent-color), 
-    /*inset 5px 5px 10px #1e2226,
-    inset -5px -5px 4px #24282c;*/
     inset 5px 5px 8px rgba(209, 217, 230, 0.35),
     inset -5px -5px 8px rgba(255, 255, 255, 0.3)
     }
 .shadow-light {
-    /*background: linear-gradient(145deg, #1e2125, var(--secondary-color));*/
     box-shadow: 10px 10px 15px -5px var(--secondary-color), 
     -10px -10px 25px var(--secondary-color),
         inset 5px 5px 8px rgba(209, 217, 230, 0.35),
@@ -319,7 +310,6 @@ main.show{
 .spotlights{
     display: flex;
     flex-direction: column;
-    /*gap: 5rem;*/
     background-color: var(--secondary-color);
     flex-wrap: wrap;
     gap: 2rem;
