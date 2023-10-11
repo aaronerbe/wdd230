@@ -1,4 +1,3 @@
-//document.body.style="background-color: var(--bs-dark);transition: 0.5s;"
 const sun = "images/white-sun.png";
 const moon = "images/moon.png"
 
