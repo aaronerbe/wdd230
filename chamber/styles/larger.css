@@ -6,7 +6,12 @@
     #hamburger{
         display: none;
     }
-
+    .theme-container{
+        /*top: 5%;
+        right: 0%;*/
+        transform: scale(0.6);
+        z-index: 3;
+    }
     .logo{
         justify-self: flex-start;
         margin-right: 15rem;
@@ -20,6 +25,7 @@
         margin: 0;
         display: flex;
         justify-content: space-evenly;
+        margin-right: 50px;
     }
     .navigation a, .navigation{
         color: white;

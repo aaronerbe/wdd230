@@ -1,21 +1,65 @@
-*{
-    /*--primary-color:  #1470AF;*/
+:root{
+    /*--bs-dark: #212529;*/
+    /*--bs-dark: var(--dark-accent-color);*/
     --primary-color: #18488D;
     --highlight-color:  #FF9B42;
     --secondary-color:  #EBF0F0;
     --dark-accent-color:  #28262C;
-    --transparent-dark-accent-color: rgba(40,38,44,0.2);
+    --transparent-dark-accent-color: rgba(40,38,44,0.4);
     --transparent-dark-accent-color2: rgba(40,38,44,0.75);
-}
+    /*--themed-background: var(--dark-accent-color);
+    --themed-text:  var(--secondary-color);
+    --themed-highlight-background: var(--dark-accent-color);*/
+    --themed-background: var(--secondary-color);
+    --themed-text:  var(--dark-accent-color);
+    --themed-highlight-background: var(--primary-color);
+  }
+
 body{
     
     display: flex;
     flex-direction: column;
     font-family: "Poppins", Helvetica, Sans-Serif;
     margin: 0;
-    background-color: var(--secondary-color)
+    /*background-color: var(--secondary-color)*/
+    background-color: var(--themed-background);
 
 }
+
+.theme-container{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0s;
+    transform: scale(0.3);
+    z-index: -1;
+}
+.theme-container:hover {
+    opacity: 0.8;
+  }
+.shadow-dark {
+    background: linear-gradient(145deg, #23282c, #1e2125);
+    box-shadow: 17px 17px 20px var(--dark-accent-color),
+    -17px -17px 24px var(--dark-accent-color), 
+    /*inset 5px 5px 10px #1e2226,
+    inset -5px -5px 4px #24282c;*/
+    inset 5px 5px 8px rgba(209, 217, 230, 0.35),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.3)
+    }
+.shadow-light {
+    /*background: linear-gradient(145deg, #1e2125, var(--secondary-color));*/
+    box-shadow: 10px 10px 15px -5px var(--secondary-color), 
+    -10px -10px 25px var(--secondary-color),
+        inset 5px 5px 8px rgba(209, 217, 230, 0.35),
+        inset -5px -5px 8px rgba(255, 255, 255, 0.3)
+    }
+    
 header{
     position: absolute;
     top: 0;
@@ -23,7 +67,7 @@ header{
     z-index: 1;
     max-width: 100%;
     width: 100%;
-    background: var(--transparent-dark-accent-color);
+    background: var(--transparent-dark-accent-color2);
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -40,6 +84,9 @@ header:hover{
     color: var(--secondary-color);
 }
 
+.navigation ul{
+    margin-right: 50px;
+}
 .navigation a {
     color: black;               /* make sure the link text is white instead of blue default */
     text-decoration: none;          /* gets rid of underlines and such for hyperlinks */
@@ -63,17 +110,17 @@ header:hover{
     transition: 0.5s;
 }
 
-
 /* REACTIVE MENU */
 #hamburger::before{
     content: "≡" ;
-    font-size: 2em;
+    font-size: 3em;
     position: absolute;
-    top: 25%;
-    right: 10%;
+    top: 10%;
+    right: 50%;
 }
 #hamburger.show::before{
     content: "✕";
+    font-size: 2em;
     color: black;
     position: absolute;
     text-align: right;
@@ -102,7 +149,7 @@ header:hover{
     height: 100vw;
 }
 .logo{
-    z-index: 99999999;
+    z-index: 3;
 }
 .logo img:hover{
     transform: scale(1.1);
@@ -163,17 +210,20 @@ main.show{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
 }
 .card{
-    /*outline: 1px solid grey;*/
     border-radius: 5px;
     font-size: 1.5em;
-    /*width: 80%;*/
     width: 85%;
     margin: 3rem;
     text-align: center;
     padding: 1rem;
-    background-color: var(--secondary-color);
+    /*background-color: var(--secondary-color);*/
+    background-color: var(--themed-background);
+}
+.card h2, .card h3, .card p{
+    color: var(--themed-text);
 }
 
 .call-to-action{
@@ -190,20 +240,21 @@ main.show{
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
+    color: var(--themed-text);
 }
 
 .call-to-action hr{
     border: none;
     height: 1px;
-    background-color: black;
+    background-color: var(--themed-text);
     margin: auto 0;
     /*display: none;*/
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
-.intro p{
+.intro p, .intro h2{
     margin-top: 3rem;
+    color: var(--themed-text);
 }
 
 
@@ -222,13 +273,14 @@ main.show{
     font-size: clamp(1rem, 3.5vw, 3rem);
     padding: 0;
     margin: 0;
+    color: var(--secondary-color);
 }
 .event-details{
     position: absolute;
     bottom: 10%;
     left: 10%;
     z-index: 3;
-    color: var(--secondary-color);
+    /*color: var(--secondary-color);*/
     padding: 1rem;
     width: 100%;
 }
@@ -254,13 +306,13 @@ main.show{
 
 
 .card-highlight{
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
+    background-color: var(--themed-highlight-background);
     width: 100%;
     margin: 3rem;
     display: flex;
     justify-content: center;
 }
-
 
 .spotlights{
     display: flex;
@@ -270,6 +322,7 @@ main.show{
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .company-box{
     border-radius: 5px;
     background-color: var(--secondary-color);
