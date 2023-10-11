@@ -1,7 +1,12 @@
 @media screen and (min-width: 910px) {
-        #hamburger{
+    *{
+        --transparent-dark-accent-color: rgba(40,38,44,0.5);
+    }
+    
+    #hamburger{
         display: none;
     }
+
     .logo{
         justify-self: flex-start;
         margin-right: 15rem;
@@ -10,16 +15,26 @@
         width: 100%;
     }
     .navigation{
+        /*width: 100%;*/
+        padding: 0;
+        margin: 0;
         display: flex;
         justify-content: space-evenly;
     }
     .navigation a, .navigation{
-        background-color: var(--primary-color);
         color: white;
     }
+    .navigation a.active{
+        background-color: transparent;
+    }
+    .navigation a:hover{
+        background-color: var(--highlight-color);
+        color: var(--dark-accent-color);
+        font-weight: 750;
+        transition: 0.25s;
+    }
     .hero h1{
-        font-size: clamp(2rem, 3rem, 5rem);
-        /*top: -15rem;*/
+        bottom: 10%;
     }
     .call-to-action{
         display: grid;
@@ -50,5 +65,26 @@
     .spotlights{
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .calendar-box{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .event{
+
+        flex-basis: calc(40% - 10px);
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .event h3, .event p{
+        height: 40%;
+        width: 100%;
+        font-size: clamp(1.25rem, 2vw, 2rem);
+    }
+    .event-details{
+        left: 5%;
     }
 }

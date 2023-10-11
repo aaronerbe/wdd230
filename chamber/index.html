@@ -28,7 +28,9 @@
     <header>
 
         <div class="logo">
-            <img src="images/logo-light-grey.png" alt="Idaho City Logo" width="212" height="100">
+            <a href="#">
+                <img id="logo-img" src="images/small-white-logo-transparent.png" alt="Idaho City Logo" width="89" height="75">
+            </a>
         </div>       
         
         <nav>    
@@ -43,22 +45,20 @@
                     <li><a href="join.html">Join</a></li>
                 <!--</div>-->
             </ul>
-            <!--<ul class="navigation">
-                <div class="menu-list">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="discovery.html">Discover</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                </div>
-            </ul>-->
         </nav>
     
     </header>
 
-
     <main>
         <div class="hero">
-            <img src="images/hero-tweaked.jpg" alt="Idaho City Area Hero" >
+            <picture>
+                <!-- define different hero images based on size (mobile or desktop) -->
+                <source media="(max-width: 699px)" srcset="images/hero2-mobile.webp">
+                <source media="(min-width: 700px)" srcset="images/hero2-tablet.webp">
+                <source media="(min-width: 910px)" srcset="images/hero2-desktop.webp">
+                <img src="images/hero2-desktop.webp" alt="Idaho City Area Hero" width="1600" height="900">
+            </picture>
+            
             <!--width="300" height="135"-->
             <h1>Idaho City Chamber of Commerce</h1>
         </div>
@@ -96,11 +96,53 @@
     
             <div class="card-highlight">
                 <section class="card">
-                    <h3>Current Events</h3>
-                    <p>calendar or list of upcoming events</p>
+                    <h2>Current Events</h2>
+                    <!--<p>calendar or list of upcoming events</p>-->
                     <div class="calendar-box">
-                        <p>calendar</p>
-                        <p>to be built</p>
+                        <div class="event">
+                            <div class="event-img-container">
+                                <img class="event-img" src="images/Rodeo.webp" alt="Bullrider at Rodeo" width="500" height="281">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="event-details">
+                                <h3 class="event-title">Jack Pine Round-Up</h3>
+                                <p>August 25th - 26th</p>
+                                <p>Jim Haswell Arena</p>
+                            </div>
+                        </div> 
+                        <div class="event">
+                            <div class="event-img-container">
+                                <img class="event-img" src="images/Idaho-City-Gazebo.webp" alt="Idaho City Gazebo" width="500" height="332">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="event-details">
+                                <h3 class="event-title">Idaho City Days</h3>
+                                <p>October 1st & 2nd</p>
+                                <p>Idaho City</p>
+                            </div>
+                        </div> 
+                        <div class="event">
+                            <div class="event-img-container">
+                                <img class="event-img" src="images/jackolantern.webp" alt="Spooky Pumpkin" width="500" height="332">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="event-details">
+                                <h3 class="event-title">Spooky Fall Family Festival</h3>
+                                <p>Oct. 8th 1:30pm-5pm</p>
+                                <p>Cowboy Campground</p>
+                            </div>                            
+                        </div> 
+                        <div class="event">
+                            <div class="event-img-container">
+                                <img class="event-img" src="images/chilli-cookoff.webp" alt="Chili Cook-off" width="500" height="332">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="event-details">
+                                <h3 class="event-title">Chili Cookoff</h3>
+                                <p>October 21st 4pm-8pm</p>
+                                <p>Visitor's Center</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>

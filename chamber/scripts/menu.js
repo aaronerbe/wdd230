@@ -3,6 +3,7 @@
 const navContainer = document.querySelector('.navigation');
 const hamburger = document.querySelector('#hamburger');
 const main=document.querySelector('main');
+const logo=document.getElementById('logo-img')
 /*const logo=document.querySelector('.logo');  
 const header=document.querySelector('header');
 const footer=document.querySelector('footer');
@@ -13,7 +14,10 @@ hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('show');
 	navContainer.classList.toggle('show');
 	main.classList.toggle('show');
-	//logo.classList.toggle('show');
-	//header.classList.toggle('show');
-	//footer.classList.toggle('show');
+	if (logo.src.includes("images/small-brown-logo-transparent.png")){
+		logo.src="images/small-white-logo-transparent.png"
+	}
+	else{
+		logo.src="images/small-brown-logo-transparent.png"
+	}
 });
