@@ -2,11 +2,8 @@
     *{
         --transparent-dark-accent-color: rgba(40,38,44,0.5);
     }
-    body{
-        /*width: 100vw;*/
-        margin: 0;
-        padding: 0;
-        width: auto;
+    header{
+        background: var(--transparent-dark-accent-color2);
     }
     #hamburger{
         display: none;
@@ -72,7 +69,7 @@
         margin-right: 0;
         width: 100%;
     }
-    
+   
     .spotlights{
         flex-direction: row;
         justify-content: space-between;

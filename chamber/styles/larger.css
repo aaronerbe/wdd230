@@ -6,6 +6,9 @@
     #hamburger{
         display: none;
     }
+    header{
+        background: var(--transparent-dark-accent-color2);
+    }
     .theme-container{
         transform: scale(0.6);
         z-index: 3;

@@ -17,7 +17,7 @@ body{
     font-family: "Poppins", Helvetica, Sans-Serif;
     margin: 0;
     background-color: var(--themed-background);
-
+    /*width: 100%;*/
 }
 
 .theme-container{
@@ -57,8 +57,9 @@ header{
     left: 0;
     z-index: 1;
     max-width: 100%;
-    width: 100%;
-    background: var(--transparent-dark-accent-color2);
+    width: 100vw;
+    /*width: 100%;*/
+    background: var(--transparent-dark-accent-color);
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -192,7 +193,8 @@ main.show{
 }
 
 .hero img{
-    width: 100vw;
+    /*width: 100vw;*/
+    width: 100%;
     height: auto;
     max-height: 90vh;
     z-index: -1;
@@ -218,7 +220,6 @@ main.show{
 .card h2, .card h3, .card p{
     color: var(--themed-text);
 }
-
 .call-to-action{
     text-align: left;
     font-family: 'Hanken Grotesk', sans-serif;
@@ -226,7 +227,6 @@ main.show{
     flex-direction: column;
     justify-content: space-between;
 }
-
 .join, .directory, .call-to-action hr{
     text-align: center;
     margin-left: 0;
@@ -249,7 +249,6 @@ main.show{
     margin-top: 3rem;
     color: var(--themed-text);
 }
-
 
 .calendar-box{
     display: flex;
