@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aaron Erbe">
+    <meta name="description"
+    content="Chamber of Commerce
+    Aaron Erbe
+    ">
+    <title>Idaho City Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Idaho City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/14/Idaho_City%2C_Idaho.JPG">
+    <meta property="og:url" content="https://aaronerbe.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700;800&family=Poppins:wght@200;400&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="theme-container shadow-light">
+            <img id="theme-icon" src="images/sun-white.svg" alt="mode button" width="24" height="24">
+        </div>
+
+        <div class="logo">
+            <a href="#">
+                <img id="logo-img" src="images/small-white-logo-transparent.png" alt="Idaho City Logo" width="89" height="75">
+            </a>
+        </div>       
+        
+        <nav>    
+            <!-- for hamburger menu -->
+            <!--<a id="hamburger" href="#"></a>-->
+            <div id="hamburger"></div>
+
+            <!-- In a Class for JS for reactive hambuger menu -->
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discovery.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main class="main-grid">
+        <div class="hero ten-columns">
+            <picture>
+                <!-- define different hero images based on size (mobile or desktop) -->
+                <source media="(max-width: 699px)" srcset="images/hero2-mobile.webp">
+                <source media="(min-width: 700px)" srcset="images/hero2-tablet.webp">
+                <source media="(min-width: 910px)" srcset="images/hero2-desktop.webp">
+                <img src="images/hero2-mobile.webp" alt="Idaho City Area Hero" width="800" height="450">
+            </picture>
+            
+            <!--width="300" height="135"-->
+            <h1>Idaho City Chamber of Commerce</h1>
+        </div>
+        
+        <div class="card call-to-action-card ten-columns">
+            <div class="left-col">
+                <div class="intro">
+                    <h2>Welcome to the Idaho City Chamber of Commerce.</h2>
+                    <p>We are your community's bridge to prosperity and growth. As a dynamic and forward-thinking organization, we are dedicated to fostering a vibrant business environment, driving economic development, and enhancing the quality of life for all residents in our thriving city/region.</p>
+                    <p>Our Chamber is a diverse network of businesses, entrepreneurs, and community leaders, all working collaboratively to create opportunities, advocate for businesses, and facilitate connections. Whether you're a long-standing business, a start-up, or an individual looking to get involved, we invite you to explore the benefits and resources that Idaho City Chamber of Commerce has to offer.
+                    </p>
+                </div>    
+            </div>
+            <div class="right-col">
+                <div class="join">
+                    <h3>Join the Chamber of Commerce</h3>
+                    <div class="button">
+                        <a href="join.html">New Member Page</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="directory">
+                    <h3>Member Business & Service Directory</h3>
+                    <div class="button">
+                        <a href="directory.html">Go To Directory</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<p>calendar or list of upcoming events</p>-->
+        <div class="card weather-card calendar-box even-columns">
+            <div class="event">
+                <div class="event-img-container">
+                    <img class="event-img" src="images/Rodeo.webp" alt="Bullrider at Rodeo" width="500" height="281" loading="lazy">
+                    <div class="overlay"></div>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">Jack Pine Round-Up</h3>
+                    <p>August 25th - 26th</p>
+                    <p>Jim Haswell Arena</p>
+                </div>
+            </div> 
+            <div class="event">
+                <div class="event-img-container">
+                    <img class="event-img" src="images/Idaho-City-Gazebo.webp" alt="Idaho City Gazebo" width="500" height="332" loading="lazy">
+                    <div class="overlay"></div>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">Idaho City Days</h3>
+                    <p>October 1st & 2nd</p>
+                    <p>Idaho City</p>
+                </div>
+            </div> 
+            <div class="event">
+                <div class="event-img-container">
+                    <img class="event-img" src="images/jackolantern.webp" alt="Spooky Pumpkin" width="500" height="332" loading="lazy">
+                    <div class="overlay"></div>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">Spooky Fall Family Festival</h3>
+                    <p>Oct. 8th 1:30pm-5pm</p>
+                    <p>Cowboy Campground</p>
+                </div>                            
+            </div> 
+            <div class="event">
+                <div class="event-img-container">
+                    <img class="event-img" src="images/chilli-cookoff.webp" alt="Chili Cook-off" width="500" height="332" loading="lazy">
+                    <div class="overlay"></div>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">Chili Cookoff</h3>
+                    <p>October 21st 4pm-8pm</p>
+                    <p>Visitor's Center</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card weather-card even-columns">
+            <h3>Local Weather</h3>
+            <div id="weather">
+                <p>Weather</p>
+            </div>
+        </div>
+        
+        <div class="card spotlights company-card even-columns">
+            <div class="company-box">
+                <h4>Company A</h4>
+                <p>Company A info</p>
+            </div>
+            <div class="company-box">
+                <h4>Company B</h4>
+                <p>Company B info</p>
+            </div>
+            <div class="company-box">
+                <h4>Company C</h4>
+                <p>Company C info</p>
+            </div>
+            <div class="company-box">
+                <h4>Company D</h4>
+                <p>Company D info</p>
+            </div>
+        </div>
+            
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="aerbe22002@byui.edu">Contact Developer</a>
+            <p>Aaron Erbe</p>
+            <p>WDD 230 Project - &copy;<span id="currentdate"></span></p> 
+            <p>Last Modification:  <span id="lastModified"></span></p>
+        </div>
+        
+    </footer>
+    <!-- Last saved date js -->
+    <script src="scripts/getdates.js"></script>
+    <!-- JS for Hamburger Menu -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/theme.js"></script>
+</body>
+</html>
