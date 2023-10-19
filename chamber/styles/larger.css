@@ -39,6 +39,16 @@
         font-weight: 750;
         transition: 0.25s;
     }
+
+    /* WK 6 Assignment  */
+    .wk6-label-large{
+        display: block;
+    }
+    .wk6-label-small, .wk6-label-medium{
+        display: none;
+    }
+    /*  */
+
     .hero h1{
         bottom: 10%;
     }

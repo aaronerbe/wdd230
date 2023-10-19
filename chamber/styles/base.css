@@ -170,6 +170,18 @@ main.show{
     font-size: clamp(1rem, 5vw, 3rem);
     max-width: 80%;
 }
+.wk6-label-small, .wk6-label-medium, .wk6-label-large{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    color: white;
+    font-size: clamp(2rem, 4vw, 5rem);
+    background-color: black;
+    z-index: 99999;
+}
+.wk6-label-medium, .wk6-label-large{
+    display: none;
+}
 
 .button{
     min-width: 250px;
@@ -302,6 +314,23 @@ main.show{
     display: flex;
     justify-content: center;
 }
+
+.current-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.current-weather h3{
+    margin: 5px;
+}
+.units{
+    padding-left: 5px;
+}
+.currents{
+    padding-left: 5px;
+}
+
 
 .spotlights{
     display: flex;

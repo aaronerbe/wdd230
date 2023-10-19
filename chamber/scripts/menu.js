@@ -9,10 +9,10 @@ hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('show');
 	navContainer.classList.toggle('show');
 	main.classList.toggle('show');
-	if (logo.src.includes("images/small-brown-logo-transparent.png")){
-		logo.src="images/small-white-logo-transparent.png"
+	if (logo.src.includes("images/small-brown-logo-transparent.webp")){
+		logo.src="images/small-white-logo-transparent.webp"
 	}
 	else{
-		logo.src="images/small-brown-logo-transparent.png"
+		logo.src="images/small-brown-logo-transparent.webp"
 	}
 });
