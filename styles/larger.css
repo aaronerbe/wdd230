@@ -1,56 +1,66 @@
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 960px) {
     header div{
         display: flex;
     }
-    
     header div img{
         padding: 1rem;
     }
-
     nav{
         flex-direction: row;
         justify-content: center;
-
     }
     nav a{
         padding: 1rem;
-        
+        font-size: clamp(1rem, 5px, 2rem);
     }
-
     main {
+        display: block;
+        width: 100%;
+    }
+    .hero  {
+        display: flex;
+        justify-content: center;
+        grid-column: 1/-1;
+        height: auto;
+        margin: 0 auto;
+        max-width: 1700px;
+    }
+
+    .main-content{
+        grid-column: 1/-1;
         display: grid;
-        grid-template: auto 1fr / 2fr 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
     }
-
-    main h2{
+    .main-content h2, .main-content hr{
         grid-column: 1/ -1;
-        grid-row: 1;
     }
-    .card{
-        grid-row: 2;
+    .activities{
+        grid-column: 1/3;
     }
-
+    .info{
+        grid-column: 3/4;
+    }
     .map{
-        grid-row: 3;
+        grid-column: 1/-1;
     }
     .map iframe{
         height: 500px;
     }
-
 /* RESPONSIVE MENU */
 	.navigation {
+        position: static;
 		display: flex;
 	}
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block;
 		flex: 1 1 100%;
 	}
 	.navigation a {
 		text-align: center;
+        font-size: clamp(1rem, 1.5rem, 2rem);  /* set the font sizes */
 	}
 	#menu {
 		display: none;
 	}
-
 }

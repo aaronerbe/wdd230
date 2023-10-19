@@ -1,55 +1,64 @@
 
 body {
-    display: grid;
-    /*height: 100vh;*/
-    grid-template: auto auto 1fr auto auto / 10% 80% 10%;
     margin: 0;
-    /*font-family: sans-serif;*/
+    padding: 0;
     font-family: "Poppins", Helvetica, Sans-Serif;  /*general paragraph text*/
+    display: flex;
+    flex-direction: column;
 }
-
 header {
     background: #1D1E22;
     color: white;
     padding: 1rem;
-    grid-column: 1/4;
     text-align: center;
 }
-
 header div{
-    /*display: flex;*/
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-
 header div img{
-    /**/
+    max-width: 50%;
     height: auto;
-    max-width: 100%;
 }
 header div h1{
-    /*padding: 1rem;*/
     padding: 16px;
-    /*font-size: 3.5em;*/
     font-size: 56px;
+    font-size: clamp(1rem, 6vw, 56px);
+    flex-wrap: nowrap;
+    min-width: 30%;
 }
-
 main {
-    grid-column: 2/3;
-    padding: 1rem;
-    /*justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     align-self: center;
-    margin: 0;*/
+    width: 100%;
 }
-
+hr{
+    padding: 0 1px;
+    width: 90%;
+}
+main picture{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+main img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.main-content{
+    width: 90%;
+    margin: 0 auto;
+}
 main h2{
     text-align: center;
     padding-top: 32px;
     font-size: 32px;
     font-family:  "Comfortaa", Helvetica, sans-serif;
 }
-
 main h3{
     background: #1D1E22;
     color: white;
@@ -58,26 +67,39 @@ main h3{
     font-size: 1.5em;
     font-family:  "Titillium", Helvetica, sans-serif;
 }
-
 main ul li{
     padding: .25rem;
     list-style-type: none;
 }
+.hero{
+    position: relative;
+}
+.hero-title{
+    position: absolute;
+    max-width: 30%;
+    padding: 10px 20px;
+    top: 10%;
+    left: 5%;
+    background: radial-gradient(circle, rgba(197, 198, 216, 0.8) 0%, rgba(113, 117,145, 0.8)  100%);
+    outline: 1px solid #1D1E22;
+    border-radius: 2.5px;
+    box-shadow: 0px 0px 30px 20px rgba(197, 198, 216);
+    white-space: nowrap;
+    font-size: clamp(.5rem, 3vw, 3.5rem);
+    font-family: helvetica;
+}
 
 .card{
     outline: 1px solid grey;
-    border-radius: 5px;
-    /*padding: 3rem;*/
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px gray;
     font-size: 1.5em;
 }
-
-.card div{
+.info{
     text-align: center;
     padding: 1rem;
 }
-
 .map{
-    grid-column: 1/-1;
     text-align: center;
     margin: 2rem 0;
 }
@@ -85,9 +107,7 @@ main ul li{
     width: 100%;
     height: 400px;
 }
-
 footer{
-    grid-column: 1/4;
     background: #1D1E22;
 }
 footer p{
@@ -100,26 +120,46 @@ footer p{
 }
 
 /* RESPONSIVE MENU */
+header.show{
+    display: none;
+}
+main.show{
+    display: none;
+}
+
 #menu {
-    grid-column: 1/-1;          /* make it extend the width of the screen instead of just filling the 1st column */
+    /*grid-column: 1/-1;          make it extend the width of the screen instead of just filling the 1st column*/
 	display: block;             /* makes the items (the hamburger) display in a block */
 	font-size: 2rem;
 	font-weight:700;
 	text-decoration: none;      /* Get rid of the 'underline' for the hyperlink */
-	padding: .5rem .75rem;      
-	background-color: #eee;     /* give it a bit of grey background so it's clear the whole bar across teh screen could be clicked */
-	color: black;               /* black so the 'hyperlink' isn't blue */
+	/*padding: .5rem .75rem;      */
+	/*background-color: #eee;     give it a bit of grey background so it's clear the whole bar across teh screen could be clicked*/
+	/*color: black;               black so the 'hyperlink' isn't blue*/
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 30px;
+    font-size: 50px;
 }
 
 #menu::before {                     /* used to insert the hamburger menu icon.  #menu text is empty until this */
 	content: "≡";
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 30px;
+    font-size: 50px;
 }
 #menu.show::before {                /* when toggled w/ js, it changes the content to an X icon. */
 	content: "✕";
-}
-nav {
-    grid-column: 1/-1;              /* make sure the nav element stretches the width instead of just 1 column */
-                                    /* I don't know why it's needed to apply to nav but wont work for .navigation */
+    color: black;
+    background-color: white;
+    width: 100%;
+    text-align: right;
+    padding-right: 30px;
 }
 
 .navigation {
@@ -127,6 +167,10 @@ nav {
 	list-style: none;
 	margin: 0 auto;
     padding: 0;
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    width: 100%;
 }
 
 .navigation li {
@@ -138,10 +182,11 @@ nav {
     text-decoration: none;          /* gets rid of underlines and such for hyperlinks */
     font-family:  "Comfortaa", Helvetica, sans-serif;
 	display: block;                 /* Displays the elements in a block */
-	padding: 0.75rem;               
-	text-align: left;               /* forces text to left edge of screen */
+	padding: 1rem;               
+	text-align: center;               /* forces text to center of screen */
 	transition: 0.5s;               /* Set the transition time for the hover */
-	font-size: clamp(1rem, 2vmin, 1.5rem);  /* set the font sizes */
+	font-size: clamp(2rem, 2vmin, 1.5rem);  /* set the font sizes */
+    
 }
 
 .navigation a:hover, .navigation a.active{  /*  */
@@ -157,7 +202,5 @@ nav {
 .active::first-letter{              /* Using pseudo-element to apply an underline to the 1st letter of the active link */
     text-decoration: underline;
 }
-.active{
 
-}
 /* END RESPONSIVE MENU */
