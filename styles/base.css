@@ -67,6 +67,9 @@ main h3{
     font-size: 1.5em;
     font-family:  "Titillium", Helvetica, sans-serif;
 }
+.activities h3{
+    border-radius: 10px 10px 0 0;
+}
 main ul li{
     padding: .25rem;
     list-style-type: none;
