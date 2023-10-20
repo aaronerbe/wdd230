@@ -6,9 +6,10 @@
     #hamburger{
         display: none;
     }
-    header{
+    .header{
         background: var(--transparent-dark-accent-color2);
     }
+    
     .theme-container{
         transform: scale(0.6);
         z-index: 3;
@@ -52,7 +53,7 @@
     .hero h1{
         bottom: 10%;
     }
-    .call-to-action{
+    .call-to-action-card{
         display: grid;
         grid-template: auto /auto auto;
     }
@@ -71,7 +72,7 @@
         margin-left: 25px;
         padding: 0;
     }
-    .call-to-action hr{        
+    .call-to-action-card hr{        
         display: block;
         padding: 0;
         margin-left: 25px;
@@ -82,12 +83,16 @@
         flex-direction: row;
         justify-content: space-between;
     }
-
+    .calendar{
+        margin: 6rem;
+    }
     .calendar-box{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
+        gap: 2rem;
+        margin: 2rem;
     }
     .event{
 
@@ -102,5 +107,23 @@
     }
     .event-details{
         left: 5%;
+    }
+    .weather-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 3rem;
+    }
+    .weather-divider{
+        align-self: center;
+        justify-self: center;
+        border: none;
+        background-color: var(--secondary-color);
+        width: 2px;
+        height: clamp(6rem, 20vh, 10rem);
+        margin: 1rem;
+        padding: 0;
     }
 }

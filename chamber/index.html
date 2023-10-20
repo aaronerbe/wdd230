@@ -25,8 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700;800&family=Poppins:wght@200;400&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-
+    <header class="header">
         <div class="theme-container shadow-light">
             <img id="theme-icon" src="images/sun-white.svg" alt="mode button" width="24" height="24">
         </div>
@@ -38,18 +37,13 @@
         </div>       
         
         <nav>    
-            <!-- for hamburger menu -->
-            <!--<a id="hamburger" href="#"></a>-->
             <div id="hamburger"></div>
-
             <!-- In a Class for JS for reactive hambuger menu -->
             <ul class="navigation">
-                <!--<div class="menu-list">-->
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="discovery.html">Discover</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                <!--</div>-->
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discovery.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     
@@ -73,11 +67,9 @@
             <h1>Idaho City Chamber of Commerce</h1>
         </div>
         
-        
         <!--<h1>Idaho City Chamber of Commerce</h1>-->
         <div class="card-content">
-            <section class="card">
-                <div class="call-to-action">
+            <section class="card call-to-action-card">
                     <div class="left-col">
                         <div class="intro">
                             <h2>Welcome to the Idaho City Chamber of Commerce.</h2>
@@ -101,13 +93,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
-    
-            <div class="card-highlight">
-                <section class="card">
+
+            <section class="card highlight-card calendar-card">
+                <div class="calendar">
                     <h2>Current Events</h2>
-                    <!--<p>calendar or list of upcoming events</p>-->
                     <div class="calendar-box">
                         <div class="event">
                             <div class="event-img-container">
@@ -154,65 +144,74 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
-
-            <section class="card">
-                <!--<div id="weather">
-                    <p>Weather</p>
-                </div>-->
-                <div class="current-weather">
-                    <h3>Local Weather</h3>
-
-                    <div>Current Temp: <span class="current-temp currents">30</span><span class="current-weather-unit units">℉</span></div>
-                    <div>Wind Speed: <span class="current-windspeed currents">10</span><span class="current-windspeed-unit units">mph</span></div>
-                    <div>Windchill: <span class="current-windchill currents">3</span><span class="current-windchill-unit units">mph</span></div>
                 </div>
+                
             </section>
-            
-            <div class="card-highlight">
-                <section class="card">
-                    <h3>Company Spotlights</h3>
-                    <p>Spotlight Summary of Info</p>
-                    <div class="spotlights">
-                        <div class="company-box">
-                            <h4>Company A</h4>
-                            <p>Company A info</p>
+
+            <section class="card spotlights-card">
+                <h3>Company Spotlights</h3>
+                <p>Spotlight Summary of Info</p>
+                <div class="spotlights">
+                    <div class="company-box">
+                        <h4>Company A</h4>
+                        <p>Company A info</p>
+                    </div>
+                    <div class="company-box">
+                        <h4>Company B</h4>
+                        <p>Company B info</p>
+                    </div>
+                    <div class="company-box">
+                        <h4>Company C</h4>
+                        <p>Company C info</p>
+                    </div>
+                    <div class="company-box">
+                        <h4>Company D</h4>
+                        <p>Company D info</p>
+                    </div>
+                </div>
+            </section>  
+
+            <section class="card weather-card highlight-card">
+                <span class="weather-title">Local Weather</span>
+                <div class="weather-box">
+                    <div class="weather-left">
+                        <img class="weather-icon large" src="images/icons/clear.svg" data-current-icon/>
+                        <div><span class="current-temp current">31</span><span class="units units-up">&deg;</span></div>
+                    </div>
+                    <hr class="weather-divider">
+                    <div class="weather-right">
+                        <div class="info-group">
+                            <div class="label">High</div>
+                            <div><span data-current-high>32</span><span class="units units-up">&deg;</span></div>
                         </div>
-                        <div class="company-box">
-                            <h4>Company B</h4>
-                            <p>Company B info</p>
+                        <div class="info-group">
+                            <div class="label">Windspeed</div>
+                            <div><span class="current-windspeed current">10</span><span class="units">mph</span></div>
                         </div>
-                        <div class="company-box">
-                            <h4>Company C</h4>
-                            <p>Company C info</p>
-                        </div>
-                        <div class="company-box">
-                            <h4>Company D</h4>
-                            <p>Company D info</p>
+                        <div class="info-group">
+                            <div class="label">Windchill</div>
+                            <div><span class="current-windchill current">3</span><span class="units units-up">&deg;</span></div>
                         </div>
                     </div>
-                </section>    
-            </div>
-            
+                </div>
+            </section>
         </div>
         
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="footer-container">
-            <a href="aerbe22002@byui.edu">Contact Developer</a>
-            <p>Aaron Erbe</p>
+            <a href="aerbe22002@byui.edu">Developer Contact: Aaron Erbe</a>
+            <!--<p>Aaron Erbe</p>-->
             <p>WDD 230 Project - &copy;<span id="currentdate"></span></p> 
             <p>Last Modification:  <span id="lastModified"></span></p>
         </div>
         
     </footer>
-    <!-- Last saved date js -->
     <script src="scripts/getdates.js"></script>
-    <!-- JS for Hamburger Menu -->
     <script src="scripts/menu.js"></script>
     <script src="scripts/theme.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

@@ -51,7 +51,7 @@ body{
         inset -5px -5px 8px rgba(255, 255, 255, 0.3)
     }
     
-header{
+.header{
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@ header{
     margin: 0;
     padding: 0;
 }
-header:hover{
+.header:hover{
     background: var(--dark-accent-color);
     transition: 0.5s;
 }
@@ -218,7 +218,7 @@ main.show{
     align-items: center;
 }
 .card{
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     font-size: 1.5em;
     width: 85%;
     margin: 3rem;
@@ -229,14 +229,23 @@ main.show{
 .card h2, .card h3, .card p{
     color: var(--themed-text);
 }
-.call-to-action{
+.highlight-card{
+    background-color: var(--themed-highlight-background);
+    width: 100%;
+    padding: 0;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.call-to-action-card{
     text-align: left;
     font-family: 'Hanken Grotesk', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.join, .directory, .call-to-action hr{
+.join, .directory, .call-to-action-card hr{
     text-align: center;
     margin-left: 0;
     margin-right: 0;
@@ -245,7 +254,7 @@ main.show{
     color: var(--themed-text);
 }
 
-.call-to-action hr{
+.call-to-action-card hr{
     border: none;
     height: 1px;
     background-color: var(--themed-text);
@@ -258,7 +267,11 @@ main.show{
     margin-top: 3rem;
     color: var(--themed-text);
 }
-
+.calendar{
+    background-color: var(--themed-background);
+    border-radius: 5px;
+    margin: 3rem;
+}
 .calendar-box{
     display: flex;
     flex-direction: column;
@@ -268,6 +281,7 @@ main.show{
 .event{
     position: relative;
     margin-bottom: 50px;
+    margin: 1rem;
 }
 .event h3, .event p{
     text-align: left;
@@ -285,7 +299,7 @@ main.show{
     padding: 1rem;
     width: 100%;
 }
-.event-image-container{
+.event-img-container{
     position: relative;
     display: inline-block;
 }
@@ -305,33 +319,6 @@ main.show{
     background: rgba(0, 0, 0, 0.5);
   }
 
-
-.card-highlight{
-    /*background-color: var(--primary-color);*/
-    background-color: var(--themed-highlight-background);
-    width: 100%;
-    margin: 3rem;
-    display: flex;
-    justify-content: center;
-}
-
-.current-weather{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-}
-.current-weather h3{
-    margin: 5px;
-}
-.units{
-    padding-left: 5px;
-}
-.currents{
-    padding-left: 5px;
-}
-
-
 .spotlights{
     display: flex;
     flex-direction: column;
@@ -339,26 +326,104 @@ main.show{
     flex-wrap: wrap;
     gap: 2rem;
 }
-
 .company-box{
     border-radius: 5px;
     background-color: var(--secondary-color);
 }
 
-footer{
+.weather-card{
+    background-color: var(--themed-highlight-background);
+    color: var(--secondary-color);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0 ;
+    margin: 0;
+}
+.weather-title{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+.weather-box{
+    display: flex;
+    flex-direction: column;
+}
+.weather-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-divider{
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    border: none;
+    background-color: var(--secondary-color);
+    height: 2px;
+    width: clamp(3rem, 50vw, 50rem);
+    margin: 3rem;
+    padding: 0;
+}
+.weather-right{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.info-group{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.weather-icon{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.weather-icon.large{
+    width: 80px;
+    height: 80px;
+}
+.current-temp{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: clamp(0.25rem, .75rem, 5rem);
+}
+.units{
+    font-weight: lighter;
+    font-size: clamp(.25rem, .75rem, 1rem);
+}
+.units-up{
+    vertical-align: top;
+}
+
+
+
+.footer{
     background-color: var(--dark-accent-color);
     color: var(--secondary-color);
     width: 100%;
-    height: auto;
-    margin-top: -3rem;
 }
 .footer-container{
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 5rem;
+    width: 80%;
+    gap: 1rem;
+    padding: 3rem;
 }
 .footer-container a{
     text-decoration: none;

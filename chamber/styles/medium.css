@@ -2,7 +2,7 @@
     *{
         --transparent-dark-accent-color: rgba(40,38,44,0.5);
     }
-    header{
+    .header{
         background: var(--transparent-dark-accent-color2);
     }
     #hamburger{
@@ -50,7 +50,7 @@
     .hero h1{
         bottom: 10%;
     }
-    .call-to-action{
+    .call-to-action-card{
         display: grid;
         grid-template: auto /2fr 1fr;
     }
@@ -70,12 +70,30 @@
         margin-left: 25px;
         padding: 0;
     }
-    .call-to-action hr{        
+    .call-to-action-card hr{        
         display: block;
         padding: 0;
         margin-left: 25px;
         margin-right: 0;
         width: 100%;
+    }
+    .weather-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 3rem;
+    }
+    .weather-divider{
+        align-self: center;
+        justify-self: center;
+        border: none;
+        background-color: var(--secondary-color);
+        width: 2px;
+        height: clamp(6rem, 20vh, 10rem);
+        margin: 1rem;
+        padding: 0;
     }
    
     .spotlights{
