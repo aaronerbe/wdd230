@@ -73,6 +73,7 @@ main ul li{
 }
 .hero{
     position: relative;
+    z-index: -1
 }
 .hero-title{
     position: absolute;
@@ -86,7 +87,7 @@ main ul li{
     box-shadow: 0px 0px 30px 20px rgba(197, 198, 216);
     white-space: nowrap;
     font-size: clamp(.5rem, 3vw, 3.5rem);
-    font-family: helvetica;
+    font-family: helvetica;;
 }
 
 .card{
@@ -123,7 +124,10 @@ footer p{
 header.show{
     display: none;
 }
-main.show{
+.main {
+    display: block;
+}
+.main.show{
     display: none;
 }
 
@@ -142,6 +146,7 @@ main.show{
     right: 0px;
     padding: 30px;
     font-size: 50px;
+    z-index: 1;
 }
 
 #menu::before {                     /* used to insert the hamburger menu icon.  #menu text is empty until this */
