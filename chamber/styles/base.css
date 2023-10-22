@@ -1,4 +1,5 @@
 :root{
+    --content-width: 85%;
     --primary-color: #18488D;
     --highlight-color:  #FF9B42;
     --secondary-color:  #EBF0F0;
@@ -15,9 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: "Poppins", Helvetica, Sans-Serif;
-    margin: 0;
     background-color: var(--themed-background);
-    /*width: 100%;*/
 }
 
 .theme-container{
@@ -58,7 +57,6 @@ body{
     z-index: 1;
     max-width: 100%;
     width: 100vw;
-    /*width: 100%;*/
     background: var(--transparent-dark-accent-color);
     padding: 1rem;
     display: flex;
@@ -75,7 +73,6 @@ body{
     text-decoration: none;
     color: var(--secondary-color);
 }
-
 .navigation ul{
     margin-right: 50px;
 }
@@ -84,16 +81,17 @@ body{
     text-decoration: none;          /* gets rid of underlines and such for hyperlinks */
     font-family:  "Comfortaa", Helvetica, sans-serif;
 	display: block;                 /* Displays the elements in a block */
-    padding: 1rem;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
 	transition: 0.5s;               /* Set the transition time for the hover */
 	font-size: clamp(1rem, 2vmin, 1.5rem);  /* set the font sizes */
+    width: 100%;
 }
 .navigation a.active{
     color: var(--highlight-color);
     background-color: var(--dark-accent-color);
     font-weight: 750;
-    transition: 0.5s;
-    
+    transition: 0.25s;
 }
 .navigation a:hover{
     background-color: var(--highlight-color);
@@ -101,31 +99,29 @@ body{
     font-weight: 750;
     transition: 0.5s;
 }
-
 /* REACTIVE MENU */
 #hamburger::before{
     content: "≡" ;
     font-size: 3em;
     position: absolute;
     top: 10%;
-    right: 50%;
+    left: 0;
+    text-align: center;
     transition: 0.1s;
+    width: 100%;
 }
 #hamburger.show::before{
     content: "✕";
     font-size: 2em;
     color: black;
     position: absolute;
-    text-align: right;
-    top: 0%;
-    right: 0%;
-    width: 100%;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 1rem 0 1.5rem 0;
     background-color: var(--secondary-color);
-    padding-right: 10%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    transition: .5s;
+    transition: 0s;
+    z-index: 2;
 }
 .navigation{
     display: none;
@@ -161,7 +157,6 @@ main.show{
 .hero{
     position: relative;
 }
-
 .hero h1{
     position: absolute;
     bottom: 15%;
@@ -183,16 +178,17 @@ main.show{
     display: none;
 }
 
-.button{
-    min-width: 250px;
-}
 .button a{
+    display: block;
     text-decoration: none;
     background:var(--primary-color);
     text-decoration-color: var(--secondary-color);
     color: var(--secondary-color);
     padding: 1.3rem 2.5rem;
-    font-size: 1.25rem;
+    text-align: center;
+    width: max-content;
+    font-size: clamp(1vw, 3vw 4vw);
+    text-wrap: nowrap;
 }
 .button:hover{
     transform: scale(1.1);
@@ -210,93 +206,85 @@ main.show{
     max-height: 90vh;
     z-index: -1;
 }
-
-.card-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.card{
-    /*border-radius: 5px;*/
-    font-size: 1.5em;
-    width: 85%;
-    margin: 3rem;
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--themed-background);
-}
 .card h2, .card h3, .card p{
     color: var(--themed-text);
 }
 .highlight-card{
     background-color: var(--themed-highlight-background);
-    width: 100%;
-    padding: 0;
-    margin: 3rem;
-    display: flex;
-    justify-content: center;
 }
-
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 .call-to-action-card{
-    text-align: left;
-    font-family: 'Hanken Grotesk', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.join, .directory, .call-to-action-card hr{
+.cta-left-col{
+    margin: 10%;
+}
+.cta-right-col *{
+    width: var(--content-width);
+    margin: 1.7rem auto;
     text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    color: var(--themed-text);
+}
+.cta-divider{
+    border: none;
+    background-color: var(--themed-text);
+    height: 1px;
+    width: clamp(40%, 60vw, 65%);
+    margin: 2rem auto;
+}
+.call-to-action-card h2{
+    font-size: 2.3rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    margin: 3rem 0;
+}
+.call-to-action-card p{
+    font-size: 1.3rem;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.call-to-action-card h3{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.8rem;
 }
 
-.call-to-action-card hr{
-    border: none;
-    height: 1px;
-    background-color: var(--themed-text);
-    margin: auto 0;
-    /*display: none;*/
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.intro p, .intro h2{
-    margin-top: 3rem;
-    color: var(--themed-text);
-}
 .calendar{
     background-color: var(--themed-background);
     border-radius: 5px;
     margin: 3rem;
+}
+.calendar h2{
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 1.5rem;
 }
 .calendar-box{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 .event{
+    align-self: center;
     position: relative;
-    margin-bottom: 50px;
     margin: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .event h3, .event p{
     text-align: left;
-    font-size: clamp(1rem, 3.5vw, 3rem);
-    padding: 0;
+    font-size: clamp(1rem, 3vw + .25rem, 3rem);
     margin: 0;
     color: var(--secondary-color);
 }
 .event-details{
     position: absolute;
     bottom: 10%;
-    left: 10%;
+    left: 0%;
     z-index: 3;
-    /*color: var(--secondary-color);*/
-    padding: 1rem;
+    padding: 0 5%;
     width: 100%;
 }
 .event-img-container{
@@ -317,8 +305,12 @@ main.show{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-  }
+}
 
+.spotlights-card{
+    width: var(--content-width);
+    margin: 0 auto;
+}
 .spotlights{
     display: flex;
     flex-direction: column;
