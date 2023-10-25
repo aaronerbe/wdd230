@@ -130,10 +130,10 @@ footer p{
 header.show{
     display: none;
 }
-.main, .header, .footer{
+.main, header, footer{
     display: block;
 }
-.main.show, .header.show, .footer.show{
+.main.show, header.show, footer.show{
     display: none;
 }
 
