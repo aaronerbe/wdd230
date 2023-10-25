@@ -21,14 +21,15 @@
     <meta property="og:url" content="https://aaronerbe.github.io/wdd230/">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
             <img src="images/family-backpacking.webp" alt="Family Backpacking at Strawberry Lake" width="400" height="225">
             <h1>Aaron Erbe</h1>
         </div>
     </header>
         <!-- empty menu link that is controlled w/ js and some css to make a reactive hamburger menu -->
-        <a id="menu" href="#"></a>
+        <!--<a id="menu" href="#"></a>-->
+        <div id="menu"></div>
         <nav>
             <!-- put in a class to make it easier to grab in js and toggle visibility with the menu link.  Put in a list too.   -->
             <ul class="navigation">
@@ -47,7 +48,7 @@
                 <img src="images/hawaii-large.webp" alt="Hawaii Temple" width="1400" height="876">
             </picture>
             <div class="hero-title">
-                <p>Laie Hawaii Temple</p>
+                <h2>Laie Hawaii Temple</h2>
             </div>
         </div>
 
@@ -72,8 +73,8 @@
             <section class="card info">
                 <h3>Information</h3>
                 <div id="info-placeholder">
-                    <p>Weather</p>
-                    <p>Page Visits:  <span class="visits"></span></p>
+                    <h4>Weather</h4>
+                    <h4>Page Visits:  <span class="visits"></span></h4>
                 </div>
     
             </section>
@@ -83,7 +84,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <p>&copy;<span id="currentdate"></span></p> 
         <p>Aaron Erbe</p>
         <p>Idaho</p>
