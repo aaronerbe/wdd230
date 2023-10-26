@@ -459,6 +459,10 @@ main.show{
     width: 100%;
     height: auto;
 }
+.discovery-img  > img:hover{
+    transform: scale(1.03) ;
+    transition: 0.5s;
+}
 .discovery-card h2{
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -468,10 +472,6 @@ main.show{
 .discovery-card p{
     padding: 1rem;
 }
-/*.history, .demographics{
-    background-color: var(--dark-accent-color);
-    color: var(--secondary-color);
-}*/
 
 /* fix the header when not on home page and it's not floating over a hero img */
 .discovery-header{
