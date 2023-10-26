@@ -459,10 +459,6 @@ main.show{
     width: 100%;
     height: auto;
 }
-.discovery-img  > img:hover{
-    transform: scale(1.03) ;
-    transition: 0.5s;
-}
 .discovery-card h2{
     background-color: var(--primary-color);
     color: var(--secondary-color);
