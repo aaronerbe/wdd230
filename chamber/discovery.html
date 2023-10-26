@@ -5,62 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Aaron Erbe">
     <meta name="description"
-    content="content
+    content="Chamber of Commerce - Discovery Site
     Aaron Erbe
     ">
-    <title>Aaron Erbe - title</title>
+    <title>Idaho City Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     
     <link rel="icon" href="favicon.ico">
 
-    <meta property="og:title" content="Aaron Erbe meta_title">
+    <meta property="og:title" content="Idaho City Chamber of Commerce - Discovery">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="meta_image">
-    <meta property="og:url" content="meta_url">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/14/Idaho_City%2C_Idaho.JPG">
+    <meta property="og:url" content="https://aaronerbe.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700;800&family=Poppins:wght@200;400&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="{7:header_img}
-8:header_alt}
-400" height="225">
-            <h1></h1>
+    <header class="header discovery-header">
+        <div class="theme-container shadow-light">
+            <img id="theme-icon" src="images/sun-white.svg" alt="mode button" width="24" height="24">
         </div>
-    </header>
-        <!-- for hamburger menu -->
-        <!-- <a id="menu" href="#"></a> -->
-        <nav>
-            <!-- IN a Class for JS for reactive hambuger menu -->
+
+        <div class="logo">
+            <a href="index.html">
+                <img id="logo-img" src="images/small-white-logo-transparent.webp" alt="Idaho City Logo" width="89" height="75">
+            </a>
+        </div>       
+        
+        <nav>    
+            <div id="hamburger"></div>
+            <!-- In a Class for JS for reactive hambuger menu -->
             <ul class="navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="">Link 2</a></li>
-                <li><a href="">Link 3</a></li>
-                <li><a href="" target="_blank">Link 4</a></li>
-                <li><a href="" target="_blank">Link 5</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discovery.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
-    <main>
-        <h2>Heading 2</h2>
-        <hr>
-        <section class="card">
-            <h3>Heading 3</h3>
-        </section>
-        <section class="card">
-            <h3>Heading 3</h3>
-            <div id="info-placeholder">
-                <p>Weather</p>
-                <p>Page Visits:  <span id="visits"></span></p>
+    
+    </header>
+
+    <main class="discovery-main">
+        <div class="discovery-visit">
+            <h2 class="visit-content">Welcome! Let us know if you have any questions.</h2>
+        </div>
+        <div class="discovery-left-col">
+            <div class="discovery-card history">
+                <h2>Idaho City History</h2>
+                <p>
+                    During its peak in the mid-1860s, Idaho City swelled to a population of 7,000, making it the largest city in the Northwest. It holds a unique place in Masonic history, as the Grand Lodge of Idaho was founded here in 1867.
+                </p>
+                <p>
+                    The town's prosperity during the gold rush attracted a significant Chinese population of 1,751, nearly half of the city's residents in 1870. Like many Chinese immigrants at the time, they came to work as miners or took up jobs as laundrymen and cooks in the area. Their legacy is still felt today in places like the Pon Yam House.
+                </p>
+                <p>
+                    For those interested in its rich history, Idaho City is now a designated historic district, listed on the National Register of Historic Places. Notable structures within this district include the Boise County Courthouse, Masonic Hall, I.O.O.F. Hall, Boise Basin Mercantile Company, Idaho City Fire Station, and the Idaho City Schoolhouse, each preserving the town's fascinating past.
+                </p>
             </div>
-        </section>
+            <div class="discovery-card climate-geo">
+                <h2>Geography and Climate</h2>
+                <p>
+                    Idaho City is at the elevation 3907 feet above sea level.  
+                </p>
+                <p>
+                    Idaho City features a classic Inland Northwest continental Mediterranean climate, with cold, snowy winters and warm, dry summers. This results in significant temperature fluctuations between day and night. The town experiences around 224.3 nights below freezing annually, surpassing Fairbanks, Alaska. It's notably colder than nearby Boise, with roughly 25.6 days below freezing and 12 nights dropping below 0°F. In terms of temperature, highs and lows vary, but typically range from the 20s to 40s (°F) during winters and the 70s to 90s (°F) in the summer. Due to its exposed location and higher altitude, Idaho City is both cooler and wetter than Boise, receiving twice the precipitation and nearly four times the snowfall, averaging 69.1 inches of snow, with a max depth of 74 inches in February 1949.
+                </p>
+                <picture class="discovery-img">
+                    <source srcset="images/climate_500_544.webp" media="(max-width: 700px)">
+                    <source srcset="images/climate_700_762.webp" media="(max-width: 910px)">
+                    <img src="images/climate.webp" alt="chart and table showing Idaho City climate information">
+                </picture>
+
+                
+            </div>
+            <div class="discovery-card demographics">
+                <h2>Idaho City Demographics</h2>
+                <p> 
+                    In 2010, Idaho City had a population of 485 people. The city's population was quite diverse, with 94.2% White, 1.6% Native American, 0.8% Asian, and 4.9% Hispanic or Latino of any race.
+                </p>
+                <p>
+                    There were 216 households in the city, with 28.2% having children under 18, 43.5% being married couples, and 37.0% consisting of individuals. The average household size was 2.25, and the average family size was 2.97.
+                </p>
+                <p>
+                    The median age of Idaho City residents was 42.2 years. About 23.9% were under 18, 34.1% were between 45 and 64, and 13% were 65 or older. The city had a fairly balanced gender distribution, with 51.1% male and 48.9% female.
+                </p>
+            </div>
+        </div>
+
+        <div class="discovery-right-col">
+                <!--<h2>Idaho City Points of Interest</h2>-->
+            <picture class="discovery-img">
+                <source srcset="images/Miners-Exchange_500_333.webp" media="(max-width: 700px)">
+                <source srcset="images/Miners-Exchange_700_433.webp" media="(max-width: 910px)">
+                <img src="images/Miners-Exchange_900_600.webp" alt="Miners Exchange"  width="900" height="600">
+            </picture>
+            <picture class="discovery-img">
+                <source srcset="images/Ore-Car_500_333.webp" media="(max-width: 700px)">
+                <source srcset="images/Ore-Car_700_433.webp" media="(max-width: 910px)">
+                <img src="images/Ore-Car_900_600.webp" alt="Ore Car" width="900" height="600" loading="lazy">
+            </picture>
+            <picture class="discovery-img">
+                <source srcset="images/idaho-city-pioneer-cemetary_500_333.webp" media="(max-width: 700px)">
+                <source srcset="images/idaho-city-pioneer-cemetary_700_433.webp" media="(max-width: 910px)">
+                <img src="images/idaho-city-pioneer-cemetary_900_600.webp" alt="Pioneer Cemetery" width="900" height="600" loading="lazy">
+            </picture>
+            <picture class="discovery-img">
+                <source srcset="images/merc-pic-2_500_333.webp" media="(max-width: 700px)">
+                <source srcset="images/merc-pic-2_700_433.webp" media="(max-width: 910px)">
+                <img src="images/merc-pic-2_900_600.webp" alt="Idaho City Merc" width="900" height="600" loading="lazy">
+            </picture>
+            <picture class="discovery-img">
+                <source srcset="images/Idaho-City-Grocery_500_333.webp" media="(max-width: 700px)">
+                <source srcset="images/Idaho-City-Grocery_700_433.webp" media="(max-width: 910px)">
+                <img src="images/Idaho-City-Grocery_900_600.webp" alt="Idaho City Grocery" width="900" height="600" loading="lazy">
+            </picture>
+            <picture class="discovery-img">
+                <source srcset="images/Church_500_333.webp" media="(max-width: 700px)">
+                <source srcset="images/Church_700_433.webp" media="(max-width: 910px)">
+                <img src="images/Church_900_600.webp" alt="Idaho City Church" width="900" height="600" loading="lazy">
+            </picture>
+            <picture class="discovery-img">
+                <source srcset="images/Idaho-City-Vistors-Center_500_333.webp" media="(max-width: 700px)">
+                <source srcset="images/Idaho-City-Vistors-Center_700_433.webp" media="(max-width: 910px)">
+                <img src="images/Idaho-City-Vistors-Center_900_600.jpg" alt="Idaho City Grocery" width="900" height="600" loading="lazy">
+            </picture>
+        </div>
+        
     </main>
-    <footer>
-        <p>&copy;<span id="currentdate"></span></p> 
-        <p>Aaron Erbe</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="aerbe22002@byui.edu">Developer Contact: Aaron Erbe</a>
+            <!--<p>Aaron Erbe</p>-->
+            <p>WDD 230 Project - &copy;<span id="currentdate"></span></p> 
+            <p>Last Modification:  <span id="lastModified"></span></p>
+        </div>
+        
     </footer>
-    <!-- JS for Hamburger Menu -->
+    <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

@@ -98,4 +98,32 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+
+/* DISCOVERY PAGE */
+.discovery-main{
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
+.discovery-left-col{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin: 0;
+}
+.discovery-right-col{
+    grid-column: 2/3;
+}
+.discovery-card{
+    margin: 0;
+}
+
+.discovery-visit{
+    grid-column: 1/3;
+}
+
+
+}
+
+

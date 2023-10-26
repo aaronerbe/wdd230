@@ -24,7 +24,8 @@ body{
     height: 70px;
     border-radius: 50%;
     position: absolute;
-    top: 5%;
+    /*top: 5%;*/
+    top: 0;
     right: 0%;
     display: flex;
     justify-content: center;
@@ -77,13 +78,13 @@ body{
     margin-right: 50px;
 }
 .navigation a {
-    color: black;               /* make sure the link text is white instead of blue default */
+    color: var(--themed-text);               /* make sure the link text is white instead of blue default */
     text-decoration: none;          /* gets rid of underlines and such for hyperlinks */
     font-family:  "Comfortaa", Helvetica, sans-serif;
 	display: block;                 /* Displays the elements in a block */
-    padding: 1rem 0;
-    margin: 0.5rem 0;
-	transition: 0.5s;               /* Set the transition time for the hover */
+    padding: 2rem 0;
+    /*margin: 0.5rem 0;*/
+	transition: 0.25s;               /* Set the transition time for the hover */
 	font-size: clamp(1rem, 2vmin, 1.5rem);  /* set the font sizes */
     width: 100%;
 }
@@ -118,7 +119,7 @@ body{
     top: 0;
     left: 0;
     text-align: center;
-    padding: 1rem 0 1.5rem 0;
+    padding: 1.5rem 0 1.5rem 0;
     background-color: var(--secondary-color);
     transition: 0s;
     z-index: 2;
@@ -131,7 +132,7 @@ body{
 .navigation.show{
     display: block;
     position: absolute;
-    top: 53px;
+    top: 65px;
     left: 0%;
     width: 100vw;
     padding: 0;
@@ -150,7 +151,7 @@ main.show{
     opacity: 0%;
     z-index: -1;
     margin-top: -20px;
-    transition: 1s;
+    transition: .25s;
 }
 /* END REACTIVE MENU */
 
@@ -187,8 +188,8 @@ main.show{
     padding: 1.3rem 2.5rem;
     text-align: center;
     width: max-content;
-    font-size: clamp(1vw, 3vw 4vw);
-    text-wrap: nowrap;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    /*text-wrap: nowrap;*/
 }
 .button:hover{
     transform: scale(1.1);
@@ -421,4 +422,58 @@ main.show{
     text-decoration: none;
     color: var(--secondary-color);
     margin: auto 0;
+}
+
+/*  */
+/* discovery specific */
+.discovery-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 90%;
+    gap: 6rem;
+    }
+.discovery-visit{
+    margin: 3rem 0;
+    color: var(--themed-text);
+    text-align: center;
+}
+    
+.discovery-left-col, .discovery-right-col{
+    /*margin: 3rem 0;*/
+    grid-column: 1/2;
+    /*gap: 6rem;*/
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.discovery-card{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--themed-highlight-background);
+    color: var(--themed-text);
+}
+
+.discovery-img img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.discovery-card h2{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+    margin: 0;
+}
+.discovery-card p{
+    padding: 1rem;
+}
+/*.history, .demographics{
+    background-color: var(--dark-accent-color);
+    color: var(--secondary-color);
+}*/
+
+/* fix the header when not on home page and it's not floating over a hero img */
+.discovery-header{
+    position: relative;
 }

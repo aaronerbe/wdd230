@@ -110,4 +110,29 @@
         margin: 1rem;
         padding: 0;
     }
+
+
+    /* DISCOVERY PAGE */
+    .discovery-main{
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+    }
+    .discovery-left-col{
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        margin: 0;
+        /*justify-content: space-between;*/
+    }
+    .discovery-right-col{
+        grid-column: 2/3;
+    }
+    .discovery-card{
+        margin: 0;
+    }
+
+    .discovery-visit{
+        grid-column: 1/3;
+    }
 }
