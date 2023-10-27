@@ -210,8 +210,15 @@ main.show{
 .card h2, .card h3, .card p{
     color: var(--themed-text);
 }
+.card-heading{
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    padding: 4rem ;
+}
 .highlight-card{
     background-color: var(--themed-highlight-background);
+    /*margin: 6rem;*/
 }
 .card-content{
     display: flex;
@@ -238,11 +245,7 @@ main.show{
     width: clamp(40%, 60vw, 65%);
     margin: 2rem auto;
 }
-.call-to-action-card h2{
-    font-size: 2.3rem;
-    font-family: "Hanken Grotesk", sans-serif;
-    margin: 3rem 0;
-}
+
 .call-to-action-card p{
     font-size: 1.3rem;
     font-family: "Hanken Grotesk", sans-serif;
@@ -257,20 +260,25 @@ main.show{
     border-radius: 5px;
     margin: 3rem;
 }
-.calendar h2{
-    font-size: 2.3rem;
-    text-align: center;
-    padding: 1.5rem;
+.calendar-heading{
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*display: block;*/
+    /*position: static;*/
+    /*gap: 0;*/
+
 }
 .calendar-box{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding: 6rem 0;
 }
 .event{
     align-self: center;
     position: relative;
-    margin: 1rem;
+    /*margin: 1rem;*/
     justify-content: space-evenly;
     align-items: center;
 }
@@ -297,8 +305,10 @@ main.show{
     width: 100%;
     height: 100%;
     z-index: 1;
-    transition: filter 0.3s;
+    /*box-shadow: 0 0 50px #333;*/
+    /*transition: filter 0.3s;*/
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -311,17 +321,35 @@ main.show{
 .spotlights-card{
     width: var(--content-width);
     margin: 0 auto;
+    /*display: flex;*/
 }
 .spotlights{
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    flex-direction: row;
     background-color: var(--secondary-color);
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 6rem;
+    /*margin: 3rem;*/
 }
+
 .company-box{
+    flex: 1;
+    border: 1px solid var(--themed-highlight-background);
     border-radius: 5px;
-    background-color: var(--secondary-color);
+    background-color: var(--themed-background);
+    min-width: 250px;
+}
+.company-box h4{
+    font-size: 1.5rem;
+    background-color: var(--dark-accent-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+}
+.company-box p{
+    padding: 1rem;
 }
 
 .weather-card{
