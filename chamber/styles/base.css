@@ -481,20 +481,6 @@ main.show{
     border: 1px solid var(--themed-highlight-background);
     color: var(--themed-text);
 }
-
-.discovery-img{
-    display: flex;
-    flex-direction: column;
-}
-.discovery-img img{
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-.discovery-img span{
-    text-align: left;
-    margin: .75rem 0;
-}
 .discovery-card h2{
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -504,6 +490,20 @@ main.show{
 .discovery-card p{
     padding: 1rem;
 }
+
+.discovery-img-container{
+    display: flex;
+    flex-direction: column;
+}
+.discovery-img img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.discovery-img-caption{
+    align-self: flex-start;
+}
+
 
 /* fix the header when not on home page and it's not floating over a hero img */
 .discovery-header{

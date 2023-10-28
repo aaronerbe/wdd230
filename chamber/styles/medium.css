@@ -113,8 +113,8 @@
     .discovery-right-col{
         grid-column: 2/3;
     }
-    .discovery-img span{
-        text-align: right;
+    .discovery-img-caption{
+        align-self: flex-end;
     }
     .discovery-card{
         margin: 0;
