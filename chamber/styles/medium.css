@@ -113,6 +113,9 @@
     .discovery-right-col{
         grid-column: 2/3;
     }
+    .discovery-img span{
+        text-align: right;
+    }
     .discovery-card{
         margin: 0;
     }
