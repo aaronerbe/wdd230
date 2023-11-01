@@ -1,3 +1,30 @@
+Forms:
+https://designsystem.digital.gov/components/form/
+https://www.w3schools.com/html/html_forms_attributes.asp
+
+https://video.byui.edu/media/Web+Forms+B/0_jdu5mnzx
+https://video.byui.edu/media/Web+Forms+C/0_3h97cgsf
+https://video.byui.edu/media/Web+Forms+D/0_pcj60gc1
+https://video.byui.edu/media/Web+Forms+E/0_rzx02f2n
+    descriptive title
+    submit button doesn't say submit
+    id all required fields
+    lables above and left aligned
+    phone number = single input
+    items < 5 options not drop downs
+    single column form
+    placeholder text when appropriate
+    logical ordering and sorting (alphabetical )
+    Wrap all inputs in lable text so clicking labels selecsts the input
+    keep labels close to input (proximity) so it's obvious what it applies to
+    button height = 44px at a min
+https://video.byui.edu/media/Web+Forms+F/0_s0xpkb7y
+
+
+Input height must be minimum of 44px tall
+Group related data
+Chunk large forms using fieldsence
+
 Local Storage:
 https://developer.mozilla.org/en-US/docs/Web/API/Storage
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
