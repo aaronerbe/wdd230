@@ -8,7 +8,7 @@
     content="WDD 230 - Web Frontend Development Form Build Assignment
     Aaron Erbe
     Course Assignment Portal">
-    <title>Aaron Erbe - WDD 230 - Web Frontend Development Form Build</title>
+    <title>Aaron Erbe - Form Build Assignment</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -16,7 +16,7 @@
     
     <link rel="icon" href="favicon.ico">
 
-    <meta property="og:title" content="Aaron Erbe WDD 230 Site">
+    <meta property="og:title" content="Aaron Erbe Form Build Assignment">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/14/Idaho_City%2C_Idaho.JPG">
     <meta property="og:url" content="https://aaronerbe.github.io/wdd230/">
@@ -51,12 +51,12 @@
                 <label for="username" class="grp1">Username*<input type="text" id="username" name="username" required autofocus></label>
                 <label for="password" class="grp1">Password (8 Alphanumeric Characters Miminum)<input type="password" id="password" name="password" required pattern="[A-Z,a-z]{8,}"></label>
                 <label for="password2" class="grp1">Confirm Password<input type="password" id="password2" name="password2" required></label>
-                <label for="email" class="grp1">Email Address<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"></label>
+                <label for="email" class="grp1">Email Address<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
                 
                 <label for="rating" class="grp1"><span id="rangevalue">Page Rating: 1</span> <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" class="grp1"></label>
                 
             </fieldset>
-            <input type="submit" value="Provide Feedback" class="submitBtn">
+            <button><input type="submit" value="Provide Feedback" class="submitBtn"></button>
 
 
         </form>

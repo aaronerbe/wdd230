@@ -79,3 +79,11 @@ form label.grp1 input:required:valid{
     display: none;
     color: var(--warning-color);
 }
+
+button{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--background-color);
+    border: none;
+}
