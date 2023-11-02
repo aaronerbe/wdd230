@@ -53,7 +53,7 @@ form label.grp1 input{
     background-color: rgba(0,0,0,0.1);
 }
 
-form input.submitBtn{
+.submitBtn{
     border: none;
     background-color: #9c2c13;
     color: white;
@@ -80,10 +80,10 @@ form label.grp1 input:required:valid{
     color: var(--warning-color);
 }
 
-button{
+/*button{
     display: block;
     margin: 0 auto;
     width: 100%;
     background-color: var(--background-color);
     border: none;
-}
+}*/
