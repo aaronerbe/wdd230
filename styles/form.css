@@ -6,12 +6,22 @@
     --warning-background-color: #fff0f3;
     --warning-color: red;   
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+.title{
+    padding: 5rem 0 0 0;
+}
 form{
-    margin: 3rem auto;
-    /*margin: 0 auto;*/
+
+    margin: 0 auto;
     text-align: center;
     width: 100%;
-    /*max-width: 25rem;*/
+    /*To keep Submit button in line by preventing enough room to stack sxs  */
+    max-width: 40rem;
 }
 form fieldset{
     display: inline-block;
