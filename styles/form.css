@@ -1,0 +1,66 @@
+form{
+    margin: 3rem auto;
+    /*margin: 0 auto;*/
+    text-align: center;
+    width: 100%;
+    /*max-width: 25rem;*/
+}
+form fieldset{
+    display: inline-block;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 2rem;
+    
+}
+form legend{
+    color: #445ba9;
+}
+form label.grp1{
+    text-align: left;
+    display: block;
+    padding-top: 2rem;
+    font-size: .8rem;
+    width: 100%;
+}
+form label.grp1 input{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem 0;
+    color: #555;
+    /* for mobile */
+    width: 100%;
+    /* keep it narrow for larger devices */
+    max-width: 30rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form input.submitBtn{
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 3rem 0;
+    /*spread for mobile*/
+    width: 96%;
+    /* limit for bigger devices */
+    max-width: 20rem;
+}
+form label.grp1 input:required{
+    /*border-left: black solid 1px;*/
+    background-color: #E5E5E5;
+
+}
+form label.grp1 input:required:valid{
+    border-left: green solid 2px;
+    background-color: #fff;
+}
+
+
+#pw_message{
+    /*visibility: none;*/
+    display: none;
+    color: red;
+}

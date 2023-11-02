@@ -215,3 +215,13 @@ header.show{
 }
 
 /* END RESPONSIVE MENU */
+
+
+/* RECORD.HTML SPECIFIC */
+.record-submission{
+    margin: 10rem 1rem;
+    text-align: center;
+}
+.record-submission-title, .record-submission-message{
+    margin: 3rem auto;
+}
