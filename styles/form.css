@@ -53,7 +53,7 @@ form label.grp1 input{
     background-color: rgba(0,0,0,0.1);
 }
 
-.submitBtn{
+button{
     border: none;
     background-color: #9c2c13;
     color: white;
