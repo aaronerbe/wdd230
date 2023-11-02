@@ -11,17 +11,17 @@ function checkSame() {
 		message.textContent = "PASSWORDS DO NOT MATCH!";
 		//message.style.visibility = "show";
         message.style.display = "block";
-		pw2.style.backgroundColor = "#fff0f3";
-        pw1.style.backgroundColor = "#fff0f3";
+		pw2.style.backgroundColor = "var(--warning-background-color)";
+        pw1.style.backgroundColor = "var(--warning-background-color)";
 		pw1.value = "";
         pw2.value = "";
 		pw1.focus();
 	} else if(pw1.value == pw2.value) {
 		message.style.display = "none";
-		pw2.style.backgroundColor = "#fff";
-        pw1.style.backgroundColor = "#fff";
-        pw1.style.color = "#000";
-		pw2.style.color = "#000";
+		pw2.style.backgroundColor = "var(--background-color)";
+        pw1.style.backgroundColor = "var(--background-color)";
+        pw1.style.color = "var(--primary-color)";
+		pw2.style.color = "var(--primary-color)";
 	}
 }
 

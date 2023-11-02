@@ -1,3 +1,11 @@
+:root{
+    --border-color: #E5E5E5;
+    --primary-color: black;
+    --input-text: #E5E5E5;
+    --background-color: #fff;
+    --warning-background-color: #fff0f3;
+    --warning-color: red;   
+}
 form{
     margin: 3rem auto;
     /*margin: 0 auto;*/
@@ -7,13 +15,13 @@ form{
 }
 form fieldset{
     display: inline-block;
-    border: 1px solid #445ba9;
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: 2rem;
-    
 }
 form legend{
     color: #445ba9;
+    color: var(--primary-color);
 }
 form label.grp1{
     text-align: left;
@@ -25,7 +33,6 @@ form label.grp1{
 form label.grp1 input{
     display: block;
     font-size: 1rem;
-    border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem 0;
     color: #555;
@@ -50,17 +57,15 @@ form input.submitBtn{
 }
 form label.grp1 input:required{
     /*border-left: black solid 1px;*/
-    background-color: #E5E5E5;
-
+    background-color: var(--input-text);
+    border: 2px solid var(--border-color);
 }
 form label.grp1 input:required:valid{
     border-left: green solid 2px;
-    background-color: #fff;
+    background-color: var(--background-color);
 }
 
-
 #pw_message{
-    /*visibility: none;*/
     display: none;
-    color: red;
+    color: var(--warning-color);
 }
