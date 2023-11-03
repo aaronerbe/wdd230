@@ -159,6 +159,7 @@
         margin: 0;
         border-right: 1px solid var(--secondary-color);
         padding: 1.5rem;
+        padding-top: 0;
       }
       #membership-right {
         grid-column: 2 / 3; /* Make it span the second column */

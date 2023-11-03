@@ -4,8 +4,8 @@
     --highlight-color:  #FF9B42;
     --secondary-color:  #EBF0F0;
     --dark-accent-color:  #28262C;
-    --transparent-dark-accent-color: rgba(40,38,44,0.4);
-    --transparent-dark-accent-color2: rgba(40,38,44,0.75);
+    --transparent-dark-accent-color: rgba(40,38,44,0.85);
+    --transparent-dark-accent-color2: rgba(40,38,44,0.85);
     --themed-background: var(--secondary-color);
     --themed-text:  var(--dark-accent-color);
     --themed-highlight-background: var(--primary-color);
@@ -211,6 +211,7 @@ main.show{
     background:var(--highlight-color);
     text-decoration-color: var(--primary-color);
     border: .1px solid var(--transparent-dark-accent-color);
+    border-radius: 20px;
     box-shadow: 4px 4px 10px var(--transparent-dark-accent-color2); /* Add a shadow effect */
     color: black;
     padding: 1.3rem 2.5rem;
@@ -578,7 +579,7 @@ main.show{
     width: 90%;
     margin: 0 auto;
     padding-bottom: 3rem;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-around;
 }
 #membership{
@@ -598,7 +599,7 @@ main.show{
 .level{
     display: flex;
     gap: .75rem;
-    padding: .5rem 0;
+    padding: .5rem 1.5rem;
 }
 input[type=radio] {
     accent-color: var(--dark-accent-color);
@@ -624,9 +625,12 @@ input[type=radio] {
     margin: 1rem;
     font-size: 1rem;
 }
-#submit{
-    margin: 0 auto;
-    padding: 3rem 0;
+#join-submit{
+    margin: 10rem 0 0 0;
+    max-width: 90%;
+    font-size: clamp(1rem, 2vw, 2rem);
+    padding: 1.2rem;
+    text-wrap: nowrap;
 }
 
 /* THANK YOU PAGE */
