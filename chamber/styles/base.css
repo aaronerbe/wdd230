@@ -284,14 +284,6 @@ main.show{
     border-radius: 5px;
     margin: 3rem;
 }
-.calendar-heading{
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*display: block;*/
-    /*position: static;*/
-    /*gap: 0;*/
-
-}
 .calendar-box{
     display: flex;
     flex-direction: column;
@@ -630,7 +622,6 @@ input[type=radio] {
     max-width: 90%;
     font-size: clamp(1rem, 2vw, 2rem);
     padding: 1.2rem;
-    text-wrap: nowrap;
 }
 
 /* THANK YOU PAGE */
