@@ -8,4 +8,7 @@ document.getElementById('currentdate').textContent = new Date().toLocaleDateStri
 document.getElementById('lastModified').innerHTML = formattedDate;
 
 //Add todays date to the timestamp in the join.html.  NOTE - depending on use, I could change it from lastModified to formattedDate
-document.getElementById("timestamp").value = lastModified;
+if(document.getElementById("timestamp")){
+    document.getElementById("timestamp").value = lastModified;
+
+}
