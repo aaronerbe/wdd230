@@ -540,7 +540,6 @@ main.show{
     gap: 3rem;
     width: 100%;
     margin: 0 auto;
-    /*max-width: 20rem;*/
 }
 #join-info-fieldset{
     display: flex;
@@ -551,6 +550,9 @@ main.show{
 }
 .join-info, .join-inputs{
     display: block;
+}
+.join-info span{
+    color: red;
 }
 .join-info{
     padding: 2rem 0 0 0;
@@ -627,6 +629,7 @@ input[type=radio] {
     padding: 3rem 0;
 }
 
+/* THANK YOU PAGE */
 #thankyou-title{
     margin: 5rem auto;
     text-align: center;
