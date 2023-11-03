@@ -6,8 +6,32 @@ https://video.byui.edu/media/Web+Forms+B/0_jdu5mnzx
 https://video.byui.edu/media/Web+Forms+C/0_3h97cgsf
 https://video.byui.edu/media/Web+Forms+D/0_pcj60gc1
 https://video.byui.edu/media/Web+Forms+E/0_rzx02f2n
-    descriptive title
-    submit button doesn't say submit
+    descriptive title - every form needs one.  Descriptive of what were doing
+    Never use the word submit
+        I want to..."    "
+    Don't require information that isn't essential - don't look like your datamining.  be professional
+    Clearly identify what is required
+    Labels above and left aligned with input
+    Keep eye tracking pattern simple.  Straight line to submission button
+        Single Column format.  
+    Use a Single input area for phone number (don't have seperate area for area code)
+    Use Radio buttons for <5 choices
+    Use dropdown for buttons for >5 choices
+    Use Placehoder Text to reduce confusion.  Not a replacement for labels.  
+    Order choices logically
+        abc ordering, or locical ordering 
+    Wrap all inputs in a Label - allows users to selec the label as well as input
+        Wrapping inside of lable eliminates need for the "for=" attribute
+    Don't use reset buttons
+    Show a confirmation page.
+    Anything that needs to be touched/interacted with needs min of 44px tall
+    Group Related Items
+        Keep labels close to it's input and padded away from others.
+        Chunk large forms into groups.
+
+
+
+
     id all required fields
     lables above and left aligned
     phone number = single input

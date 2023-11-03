@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aaron Erbe">
+    <meta name="description"
+    content="Chamber of Commerce Join Confirmation page
+    Aaron Erbe
+    ">
+    <title>Idaho City Chamber of Commerce Join Confirmation Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Idaho City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/14/Idaho_City%2C_Idaho.JPG">
+    <meta property="og:url" content="https://aaronerbe.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700;800&family=Poppins:wght@200;400&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body id="thankyou-body">
+    <header class="header thankyou-header">
+        <div class="theme-container shadow-light">
+            <img id="theme-icon" src="images/sun-white.svg" alt="mode button" width="24" height="24">
+        </div>
+
+        <div class="logo">
+            <a href="#">
+                <img id="logo-img" src="images/small-white-logo-transparent.webp" alt="Idaho City Logo" width="89" height="75">
+            </a>
+        </div>       
+        
+        <nav>    
+            <div id="hamburger"></div>
+            <!-- In a Class for JS for reactive hambuger menu -->
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discovery.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main id="thankyou-main">
+        <h1 id="thankyou-title"><span>Thank you</span> for joining the Idaho City Chamber of Commerce</h1>
+        <h2 id="thankyou-content">We appreciate the opportunity to <br><span>help your business grow!</span></h2>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="aerbe22002@byui.edu">Developer Contact: Aaron Erbe</a>
+            <!--<p>Aaron Erbe</p>-->
+            <p>WDD 230 Project - &copy;<span id="currentdate"></span></p> 
+            <p>Last Modification:  <span id="lastModified"></span></p>
+        </div>
+        
+    </footer>
+    <!--<script src="scripts/getdates.js"></script>-->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/theme.js"></script>
+    <!--<script src="scripts/windchill.js"></script>-->
+    <script src="scripts/weather.js"></script>
+    <!--<script src="scripts/membership.js"></script>-->
+</body>
+</html>
