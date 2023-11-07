@@ -1,0 +1,42 @@
+{
+    "familyName": "Smith",
+    "moveInDate" : "8/1/2013",
+    "numInFamily" : "7",
+    "indFamMembers" : [
+        {
+            "name":"John",
+            "gender":"m",
+            "bDate":"5/1/1978"
+        },
+        {
+            "name":"Jane",
+            "gender":"f",
+            "bDate":"5/3/1979"
+        },
+        {
+            "name":"Bubba",
+            "gender":"m",
+            "bDate":"6/16/2001"
+        },
+        {
+            "name":"Junior",
+            "gender":"m",
+            "bDate":"11/1/2002"
+        },
+        {
+            "name":"Sassy",
+            "gender":"f",
+            "bDate":"7/1/2005"
+        },
+        {
+            "name":"Rock",
+            "gender":"m",
+            "bDate":"8/1/2007"
+        },
+        {
+            "name":"Sally",
+            "gender":"f",
+            "bDate":"12/31/2009"
+        }
+    ]
+}
