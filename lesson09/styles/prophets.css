@@ -1,0 +1,51 @@
+
+body{
+    background-color: #456990;
+    color: #FDFFF7;
+}
+h1{
+    text-align: center;
+    font-size: clamp(.75rem, 3rem, 3.5rem);
+    font-family: Helvetica, sans-serif;
+    margin: 3rem auto;
+    width: 90%;
+    /*color: #407899;*/
+    
+}
+h2{
+    font-family: Helvetica, sans-serif;
+    color: #1B1A19;
+}
+p{
+    color: #1B1A19;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+section{
+    /*margin: 0 auto;*/
+    /*background-color: rgb(27,26,25);*/
+    background-color: #FDFFF7;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+img{
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+    box-shadow: 0 0 20px black;
+}
+p{
+    font-size: 1.1rem;
+    margin: 0.25rem;
+}
+footer{
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
