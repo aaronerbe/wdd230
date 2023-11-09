@@ -1,0 +1,60 @@
+{
+    "contacts":[
+        {
+            "name":"Diamond Lil's Steakhouse and Saloon",
+            "address":"407 Main St",
+            "number":"(208) 392-4400",
+            "website":"http://www.diamondlils.net",
+            "img":"images/dir_images/diamondlils_500_333.webp",
+            "mLevel":"Silver"
+        },
+        {
+            "name":"Idaho City Gold Mine Grill and Salon",
+            "address":"100 Gold Rd",
+            "number":"(208) 392-4787",
+            "website":"https://www.thegoldminehotel.com/restaurants",
+            "img":"images/dir_imagesicGoldMine_500_333.webp",
+            "mLevel":"Bronze"
+        },
+        {
+            "name":"Idaho City Hotel",
+            "address":"215 Montgomery Street",
+            "number":"(208) 392-4499",
+            "website":"https://www.idahocityhotel.net",
+            "img":"images/dir_images/icHotesl_500_333.webp",
+            "mLevel":"Non-Profit"
+        },
+        {
+            "name":"The Springs",
+            "address":"3742 Hwy 21",
+            "number":"(208) 392-9500",
+            "website":"https://www.thespringsid.com/",
+            "img":"images/dir_images/theSprings_500_333.webp",
+            "mLevel":"Gold"
+        },
+        {
+            "name":"Harleys Pub",
+            "address":"305 Main St.",
+            "number":"(208) 392-6028",
+            "website":"https://www.facebook.com/people/Harleys-pub/100052847784370/",
+            "img":"images/dir_images/HarleysPub_500_333.webp",
+            "mLevel":"Bronze"
+        },
+        {
+            "name":"Idaho City Grocery Store",
+            "address":"3868 Highway 21",
+            "number":"(208) 392-4426",
+            "website":"https://idahocitygrocery.com/",
+            "img":"images/dir_images/Idaho-City-Grocery_500_333.webp",
+            "mLevel":"Silver"
+        },
+        {
+            "name":"Anderson Hardware & Supply",
+            "address":"3845 Highway 21",
+            "number":"(208) 392-2271",
+            "website":"https://www.facebook.com/people/Anderson-Hardware-Supply/100078401731711/",
+            "img":"images/dir_images/AndersonHardware_500_333.webp",
+            "mLevel":"Bronze"
+        }
+    ]
+}
