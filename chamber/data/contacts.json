@@ -5,7 +5,9 @@
             "address":"407 Main St",
             "number":"(208) 392-4400",
             "website":"http://www.diamondlils.net",
-            "img":"images/dir_images/diamondlils_500_333.webp",
+            "imgS":"images/dir_images/diamondlils_500_333.webp",
+            "imgM":"images/dir_images/diamondlils_700_467.webp",
+            "imgL":"images/dir_images/diamondlils_900_600.webp",
             "mLevel":"Silver"
         },
         {
@@ -13,7 +15,9 @@
             "address":"100 Gold Rd",
             "number":"(208) 392-4787",
             "website":"https://www.thegoldminehotel.com/restaurants",
-            "img":"images/dir_images/icGoldMine_500_333.webp",
+            "imgS":"images/dir_images/icGoldMine_500_333.webp",
+            "imgM":"images/dir_images/icGoldMine_700_467.webp",
+            "imgL":"images/dir_images/icGoldMine_900_600.webp",
             "mLevel":"Bronze"
         },
         {
@@ -21,7 +25,9 @@
             "address":"215 Montgomery Street",
             "number":"(208) 392-4499",
             "website":"https://www.idahocityhotel.net",
-            "img":"images/dir_images/icHotel_500_333.webp",
+            "imgS":"images/dir_images/icHotel_500_333.webp",
+            "imgM":"images/dir_images/icHotel_700_467.webp",
+            "imgL":"images/dir_images/icHotel_900_600.webp",
             "mLevel":"Non-Profit"
         },
         {
@@ -29,7 +35,9 @@
             "address":"3742 Hwy 21",
             "number":"(208) 392-9500",
             "website":"https://www.thespringsid.com/",
-            "img":"images/dir_images/theSprings_500_333.webp",
+            "imgS":"images/dir_images/theSprings_500_333.webp",
+            "imgM":"images/dir_images/theSprings_700_467.webp",
+            "imgL":"images/dir_images/theSprings_900_600.webp",
             "mLevel":"Gold"
         },
         {
@@ -37,7 +45,9 @@
             "address":"305 Main St.",
             "number":"(208) 392-6028",
             "website":"https://www.facebook.com/people/Harleys-pub/100052847784370/",
-            "img":"images/dir_images/HarleysPub_500_333.webp",
+            "imgS":"images/dir_images/HarleysPub_500_333.webp",
+            "imgM":"images/dir_images/HarleysPub_700_467.webp",
+            "imgL":"images/dir_images/HarleysPub_900_600.webp",
             "mLevel":"Bronze"
         },
         {
@@ -45,7 +55,9 @@
             "address":"3868 Highway 21",
             "number":"(208) 392-4426",
             "website":"https://idahocitygrocery.com/",
-            "img":"images/dir_images/Idaho-City-Grocery_500_333.webp",
+            "imgS":"images/dir_images/Idaho-City-Grocery_500_333.webp",
+            "imgM":"images/dir_images/Idaho-City-Grocery_700_467.webp",
+            "imgL":"images/dir_images/Idaho-City-Grocery_900_600.webp",
             "mLevel":"Silver"
         },
         {
@@ -53,7 +65,9 @@
             "address":"3845 Highway 21",
             "number":"(208) 392-2271",
             "website":"https://www.facebook.com/people/Anderson-Hardware-Supply/100078401731711/",
-            "img":"images/dir_images/AndersonHardware_500_333.webp",
+            "imgS":"images/dir_images/AndersonHardware_500_333.webp",
+            "imgM":"images/dir_images/AndersonHardware_700_467.webp",
+            "imgL":"images/dir_images/AndersonHardware_900_600.webp",
             "mLevel":"Bronze"
         }
     ]
