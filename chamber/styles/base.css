@@ -52,9 +52,10 @@ body{
         inset 5px 5px 8px rgba(209, 217, 230, 0.35),
         inset -5px -5px 8px rgba(255, 255, 255, 0.3)
     }
-    
+
 .header{
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
     top: 0;
     left: 0;
     z-index: 1;
@@ -71,6 +72,10 @@ body{
 .header:hover{
     background: var(--dark-accent-color);
     transition: 0.5s;
+}
+/* giving home-header a unique attribute as it needs absolute in order to handle the hero image */
+.home-header{
+    position: absolute;
 }
 #hamburger{
     text-decoration: none;
@@ -647,8 +652,68 @@ input[type=radio] {
     color: var(--primary-color); /* Color to transition to */
 }
 
+/* GRID VIEW */
+.contacts-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: 2rem auto;
+    width: 80%;
+}
+.contacts-grid .contact-card{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contacts-grid .contact-name{
+
+}
+.contacts-grid .contact-address{
+
+}
+.contacts-grid .contact-number{
+
+}
+.contacts-grid .contact-website{
+
+}
+.contacts-grid .contact-img{
+    width: 80%;
+    height: auto;
+    margin: 2rem;
+}
+.contacts-grid .contact-mLevel{
+
+}
+
+
+/* LIST VIEW */
+.contacts-list{
+
+}
+.contacts-list .contact-name{
+
+}
+.contacts-list .contact-address{
+
+}
+.contacts-list .contact-number{
+
+}
+.contacts-list .contact-website{
+
+}
+.contacts-list .contact-img{
+    display: none;
+}
+.contacts-list .contact-mLevel{
+
+}
+
 
 /* fix the header when not on home page and it's not floating over a hero img */
-.discovery-header, .join-header, .thankyou-header{
+/*.discovery-header, .join-header, .thankyou-header, .directory-header{
     position: relative;
-}
+}*/
