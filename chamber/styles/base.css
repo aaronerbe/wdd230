@@ -706,7 +706,7 @@ input[type=radio] {
     border-radius: 10px;
 }
 .contacts-grid > * > *{
-    color: var(--content-width);
+    color: var(--dark-accent-color);
     padding: .3rem 0;
 }
 .contacts-grid .contact-img{
