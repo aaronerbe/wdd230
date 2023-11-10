@@ -5,14 +5,12 @@
     --secondary-color:  #EBF0F0;
     --dark-accent-color:  #28262C;
     --transparent-dark-accent-color: rgba(40,38,44,0.85);
-    /*--transparent-dark-accent-color2: rgba(40,38,44,0.85);*/
     --themed-background: var(--secondary-color);
     --themed-text:  var(--dark-accent-color);
     --themed-highlight-background: var(--primary-color);
   }
 
 /*      MAIN PAGE CSS      */
-
 body{
     
     display: flex;
@@ -53,7 +51,6 @@ body{
     }
 
 .header{
-    /*position: absolute;*/
     position: relative;
     top: 0;
     left: 0;
@@ -160,9 +157,6 @@ main.show{
 }
 /* END REACTIVE MENU */
 
-/*.hero{
-    position: relative;
-}*/
 .hero img{
     width: 100%;
     height: auto;
@@ -306,11 +300,9 @@ main.show{
 .spotlights-card{
     width: var(--content-width);
     margin: 0 auto;
-    /*display: flex;*/
 }
 .spotlights{
     display: flex;
-    /*flex-direction: column;*/
     flex-direction: row;
     background-color: var(--secondary-color);
     flex-wrap: wrap;
@@ -481,7 +473,6 @@ main.show{
 }
 
 /*      JOIN PAGE CSS      */
-
 #join-title{
     text-align: center;
 }
@@ -529,7 +520,6 @@ main.show{
     width: 90%;
     margin: 0 auto;
     padding-bottom: 3rem;
-    /*align-items: center;*/
     justify-content: space-around;
 }
 #membership{
@@ -631,7 +621,6 @@ input[type=radio] {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    /*text-decoration: underline;*/
 }
 .contact-mLevel{
     font-weight: bold;
