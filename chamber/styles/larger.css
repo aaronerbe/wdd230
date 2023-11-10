@@ -1,72 +1,8 @@
 @media screen and (min-width: 910px) {
-    *{
-        --transparent-dark-accent-color: rgba(40,38,44,0.5);
-    }
-    
-    #hamburger{
-        display: none;
-    }
-    .header{
-        background: var(--transparent-dark-accent-color2);
-    }
-    
-    .theme-container{
-        transform: scale(0.6);
-        z-index: 3;
-    }
-    .logo{
-        justify-self: flex-start;
-        margin-right: 15rem;
-    }
-    nav{
-        width: 100%;
-    }
-    .navigation{
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-evenly;
-        margin-right: 50px;
-    }
-    .navigation a, .navigation{
-        color: white;
-    }
-    .navigation a.active{
-        background-color: transparent;
-    }
-    .navigation a:hover{
-        background-color: var(--highlight-color);
-        color: var(--dark-accent-color);
-        font-weight: 750;
-        transition: 0.25s;
-    }
 
-    /* WK 6 Assignment  */
-    .wk6-label-large{
-        display: block;
-    }
-    .wk6-label-small, .wk6-label-medium{
-        display: none;
-    }
-    /*  */
-
-    .hero h1{
-        bottom: 10%;
-    }
     .call-to-action-card{
         display: grid;
         grid-template: auto /auto auto;
-    }
-    .cta-left-col {
-        grid-column: 1/2;
-    }
-    .cta-right-col{
-        grid-column: 2/3;
-        text-align: center;
-        margin: auto auto;
-    }
-    .company-box{
-        min-width: 40%;
     }
     .calendar{
         margin: 6rem;
@@ -78,7 +14,6 @@
         justify-content: space-evenly;
     }
     .event{
-
         flex-basis: calc(40% - 10px);
         flex-grow: 0;
         flex-shrink: 0;
@@ -91,79 +26,10 @@
     .event-details{
         left: 5%;
     }
-    .weather-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        padding: 3rem;
-    }
-    .weather-divider{
-        align-self: center;
-        justify-self: center;
-        border: none;
-        background-color: var(--secondary-color);
-        width: 2px;
-        height: clamp(6rem, 20vh, 10rem);
-        margin: 1rem;
-        padding: 0;
-    }
-
 
     /* DISCOVERY PAGE */
-    .discovery-main{
-        grid-template-columns: 1fr 2fr;
-        gap: 3rem;
-    }
-    .discovery-left-col{
-        grid-column: 1/2;
-        display: flex;
-        flex-direction: column;
-        gap: 6rem;
-        margin: 0;
-    }
-    .discovery-right-col{
-        grid-column: 2/3;
-    }
-    .discovery-img-caption{
-        align-self: flex-end;
-    }
-    .discovery-card{
-        margin: 0;
-    }
-    .discovery-visit{
-        grid-column: 1/3;
-    }
-    .discovery-img  > img:hover{
-        transform: scale(1.03) ;
-        filter: saturate(125%);
-        box-shadow: 0 0 50px #333;
-        transition: 0.5s;
-    }
+    
 
      /* JOIN INFO */
-     #membership {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 1.5rem;
-        margin: 3rem auto;
-      }
-      #membership h2{
-        font-size: 2rem;
-    }
-      #membership-left {
-        grid-column: 1 / 2;
-        grid-row: 1/2;
-        margin: 0;
-        border-right: 1px solid var(--secondary-color);
-        padding: 1.5rem;
-        padding-top: 0;
-      }
-      #membership-right {
-        grid-column: 2 / 3; /* Make it span the second column */
-        grid-row: 1/2;
-        margin: 0 0 0 .75rem;
-      }
+
 }

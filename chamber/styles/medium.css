@@ -1,16 +1,6 @@
-@media screen and (min-width: 700px) and (max-width: 910px) {
-    *{
-        --transparent-dark-accent-color: rgba(40,38,44,0.5);
-    }
-    .header{
-        background: var(--transparent-dark-accent-color2);
-    }
+@media screen and (min-width: 700px){
     #hamburger{
         display: none;
-    }
-    .theme-container{
-        transform: scale(0.4);
-        z-index: 3;
     }
     .logo{
         justify-self: flex-start;
@@ -27,32 +17,10 @@
         margin-right: 50px;
     }
     .navigation a, .navigation{
-        color: white;
+        color: var(--secondary-color);
     }
     .navigation a.active{
         background-color: transparent;
-    }
-    .navigation a:hover{
-        background-color: var(--highlight-color);
-        color: var(--dark-accent-color);
-        font-weight: 750;
-        transition: 0.25s;
-    }
-    /* WK 6 Assignment  */
-    .wk6-label-medium{
-        display: block;
-    }
-    .wk6-label-small, .wk6-label-large{
-        display: none;
-    }
-    /*  */
-    .hero h1{
-        bottom: 10%;
-    }
-    /*.button a{*/
-    .button{
-        /*padding: 1.3rem 1.5rem;*/
-        /*font-size: clamp(1rem, 1.2rem, 3rem)*/
     }
     .call-to-action-card{
         display: grid;
@@ -99,6 +67,7 @@
 
     /* DISCOVERY PAGE */
     .discovery-main{
+        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
     }

@@ -5,7 +5,7 @@
     --secondary-color:  #EBF0F0;
     --dark-accent-color:  #28262C;
     --transparent-dark-accent-color: rgba(40,38,44,0.85);
-    --transparent-dark-accent-color2: rgba(40,38,44,0.85);
+    /*--transparent-dark-accent-color2: rgba(40,38,44,0.85);*/
     --themed-background: var(--secondary-color);
     --themed-text:  var(--dark-accent-color);
     --themed-highlight-background: var(--primary-color);
@@ -26,14 +26,13 @@ body{
     height: 70px;
     border-radius: 50%;
     position: absolute;
-    /*top: 5%;*/
-    top: 0;
+    top: 5%;
     right: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0s;
-    transform: scale(0.3);
+    transform: scale(0.4);
     z-index: 100;
 }
 .theme-container:hover {
@@ -90,7 +89,6 @@ body{
     font-family:  "Comfortaa", Helvetica, sans-serif;
 	display: block;                 /* Displays the elements in a block */
     padding: 2rem 0;
-    /*margin: 0.5rem 0;*/
 	transition: 0.25s;               /* Set the transition time for the hover */
 	font-size: clamp(1rem, 2vmin, 1.5rem);  /* set the font sizes */
     width: 100%;
@@ -105,9 +103,24 @@ body{
     background-color: var(--highlight-color);
     color: var(--dark-accent-color);
     font-weight: 750;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 /* REACTIVE MENU */
+.navigation{
+    display: none;
+    position: static;
+    list-style: none;
+}
+.navigation.show{
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 0%;
+    width: 100vw;
+    padding: 0;
+    text-align: center;
+    height: 100vw;
+}
 #hamburger::before{
     content: "≡" ;
     font-size: 3em;
@@ -131,21 +144,6 @@ body{
     transition: 0s;
     z-index: 2;
 }
-.navigation{
-    display: none;
-    position: static;
-    list-style: none;
-}
-.navigation.show{
-    display: block;
-    position: absolute;
-    top: 65px;
-    left: 0%;
-    width: 100vw;
-    padding: 0;
-    text-align: center;
-    height: 100vw;
-}
 .logo{
     z-index: 3;
 }
@@ -162,31 +160,15 @@ main.show{
 }
 /* END REACTIVE MENU */
 
-.hero{
+/*.hero{
     position: relative;
+}*/
+.hero img{
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    z-index: -1;
 }
-.hero h1{
-    position: absolute;
-    bottom: 15%;
-    left: 10%;
-    color: var(--secondary-color);
-    font-size: clamp(1rem, 5vw, 3rem);
-    max-width: 80%;
-}
-.wk6-label-small, .wk6-label-medium, .wk6-label-large{
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    color: white;
-    font-size: clamp(2rem, 4vw, 5rem);
-    background-color: black;
-    z-index: 99999;
-}
-.wk6-label-medium, .wk6-label-large{
-    display: none;
-}
-
-/*.button a{*/
 .button{
     display: block;
     text-decoration: none;
@@ -205,7 +187,6 @@ main.show{
     background-color: var(--highlight-color);
     color: black;
 }
-
 .button-inverse{
     display: block;
     text-decoration: none;
@@ -225,25 +206,17 @@ main.show{
     transition: .5s;
 }
 
-
-.hero img{
-    width: 100%;
-    height: auto;
-    max-height: 90vh;
-    z-index: -1;
-}
 .card h2, .card h3, .card p{
     color: var(--themed-text);
+    font-family: Helvetica, sans-serif;
 }
 .card-heading{
     font-size: 2.3rem;
     text-align: center;
-    font-family: Helvetica, sans-serif;
     padding: 4rem ;
 }
 .highlight-card{
     background-color: var(--themed-highlight-background);
-    /*margin: 6rem;*/
 }
 .card-content{
     display: flex;
@@ -273,10 +246,8 @@ main.show{
 
 .call-to-action-card p{
     font-size: 1.3rem;
-    font-family: Helvetica, sans-serif;
 }
 .call-to-action-card h3{
-    font-family: Helvetica, sans-serif;
     font-size: 1.8rem;
 }
 
@@ -295,7 +266,6 @@ main.show{
 .event{
     align-self: center;
     position: relative;
-    /*margin: 1rem;*/
     justify-content: space-evenly;
     align-items: center;
 }
@@ -322,8 +292,6 @@ main.show{
     width: 100%;
     height: 100%;
     z-index: 1;
-    /*box-shadow: 0 0 50px #333;*/
-    /*transition: filter 0.3s;*/
 }
 
 .overlay {
@@ -347,7 +315,6 @@ main.show{
     background-color: var(--secondary-color);
     flex-wrap: wrap;
     gap: 6rem;
-    /*margin: 3rem;*/
 }
 
 .company-box{
@@ -365,8 +332,8 @@ main.show{
     text-align: center;
     margin: 0;
 }
-.company-box p{
-    padding: 1rem;
+.padded-p{
+    padding: .5rem 2rem;
 }
 
 .weather-card{
@@ -469,22 +436,21 @@ main.show{
 
 
 /*      DISCOVERY PAGE CSS      */
-.discovery-main{
-    display: grid;
-    grid-template-columns: 1fr;
+.main-flex{
+    display: flex;
+    flex-direction: column;
+    color: var(--themed-text);    
     margin: 3rem auto;
-    width: 90%;
+    width: 85%;
     gap: 6rem;
-    }
+}
 .discovery-visit{
     margin: 3rem 0;
     color: var(--themed-text);
     text-align: center;
 }
 .discovery-left-col, .discovery-right-col{
-    /*margin: 3rem 0;*/
     grid-column: 1/2;
-    /*gap: 6rem;*/
     display: flex;
     flex-direction: column;
     gap: 6rem;
@@ -501,9 +467,6 @@ main.show{
     padding: 2rem;
     margin: 0;
 }
-.discovery-card p{
-    padding: 1rem;
-}
 .discovery-img-container{
     display: flex;
     flex-direction: column;
@@ -518,13 +481,7 @@ main.show{
 }
 
 /*      JOIN PAGE CSS      */
-#join-main{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: var(--themed-background);
-    color: var(--themed-text);
-}
+
 #join-title{
     text-align: center;
 }
@@ -605,11 +562,9 @@ input[type=radio] {
 #membership h2{
     font-size: 2.5rem;
 }
-.membership-info h3{
-    font-size: 2rem;
-}
 .membership-details{
     font-size: 1.5rem;
+    padding: 0;
 }
 .membership-details ol{
     margin: 1.5rem;
@@ -650,14 +605,12 @@ input[type=radio] {
 
 
 /* DIRECTORY CSS */
-.directory-main{
-}
 /* Buttons */
 #directory-btn-container{
     display: flex;
-    /*justify-content: space-evenly;*/
     margin: 10rem auto 3rem auto;
     justify-content: center;
+
 }
 #gridBtn, #listBtn{
     margin: 0 3vw;
