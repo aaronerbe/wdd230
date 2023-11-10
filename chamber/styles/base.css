@@ -238,7 +238,6 @@ main.show{
 .card-heading{
     font-size: 2.3rem;
     text-align: center;
-    /*font-family: "Hanken Grotesk", sans-serif;*/
     font-family: Helvetica, sans-serif;
     padding: 4rem ;
 }
@@ -274,11 +273,9 @@ main.show{
 
 .call-to-action-card p{
     font-size: 1.3rem;
-    /*font-family: "Hanken Grotesk", sans-serif;*/
     font-family: Helvetica, sans-serif;
 }
 .call-to-action-card h3{
-    /*font-family: "Hanken Grotesk", sans-serif;*/
     font-family: Helvetica, sans-serif;
     font-size: 1.8rem;
 }
