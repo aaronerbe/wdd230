@@ -63,8 +63,8 @@ function displayContacts(contacts){
         card.appendChild(address);
         card.appendChild(number);
         card.appendChild(website);
-        card.appendChild(mLevel);
         card.appendChild(picture);
+        card.appendChild(mLevel);
 
         div.appendChild(card);
     });

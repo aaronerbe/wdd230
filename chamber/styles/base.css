@@ -663,7 +663,6 @@ input[type=radio] {
     margin: 0 3vw;
 }
 
-
 /* General to all contact info */
 .contact-card{
     font-family: Helvetica, Sans-Serif;
@@ -673,21 +672,18 @@ input[type=radio] {
     font-size: clamp(.25rem, 2vh, 2rem);
     padding: 0;
     margin: 0;
-    text-decoration: none;
     color: var(--secondary-color);
-}
-.contact-address{
-}
-.contact-number{
 }
 .contact-website{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-.contact-img{
+    /*text-decoration: underline;*/
 }
 .contact-mLevel{
+    font-weight: bold;
+    margin-top: auto;
+
 }
 
 
@@ -696,11 +692,10 @@ input[type=radio] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-content: space-evenly;
-    padding: 2rem;
+    padding: 5rem 10rem 5rem 10rem;
     gap: 2rem;
-    margin: 3rem auto;
-    width: 90%;    
-    background-color: var(--themed-text);
+    margin: 3rem 0 0 0;
+    background-color: var(--dark-accent-color);
 }
 .contacts-grid .contact-card{
     background-color: var(--secondary-color);
@@ -708,36 +703,45 @@ input[type=radio] {
     flex-direction: column;
     text-align: center;
     padding: 1rem;
+    border-radius: 10px;
 }
 .contacts-grid > * > *{
     color: var(--content-width);
     padding: .3rem 0;
 }
 .contacts-grid .contact-img{
-    width: 80%;
+    width: 90%;
     height: auto;
-    margin: 2rem;
-}
-.contacts-grid .contact-mLevel{
+    margin: 2rem auto;
 }
 
 /* LIST VIEW */
 .contacts-list{
     display: flex;
     flex-direction: column;
-    /*gap: .1rem;*/
-    margin: 3rem auto;
-    width: 70%;
+    margin: 3rem 0 0 0;
+    padding: 5rem 0 0 0;
+    background-color: var(--dark-accent-color);
+    justify-content: center;
+    align-items: center;
 }
 .contacts-list .contact-card{
     background-color: var(--themed-highlight-background);
     padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--highlight-color);
+    border-bottom: 3px solid var(--highlight-color);
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
 }
 .contacts-list .contact-card:nth-child(2n){
     background-color: var(--transparent-dark-accent-color);
+    background-color: var(--themed-background);
+    color: var(--primary-color);
+}
+.contacts-list>*:nth-child(2n)>*{
+    color: var(--primary-color);
 }
 .contacts-list .contact-card:last-child{
     border-bottom: 0px none var(--themed-highlight-background);
