@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700;800&family=Poppins:wght@200;400&family=Roboto&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700;800&family=Poppins:wght@200;400&family=Roboto&display=swap');*/
 
 :root{
     --content-width: 85%;
@@ -240,7 +240,8 @@ main.show{
 .card-heading{
     font-size: 2.3rem;
     text-align: center;
-    font-family: "Hanken Grotesk", sans-serif;
+    /*font-family: "Hanken Grotesk", sans-serif;*/
+    font-family: Helvetica, sans-serif;
     padding: 4rem ;
 }
 .highlight-card{
@@ -275,10 +276,12 @@ main.show{
 
 .call-to-action-card p{
     font-size: 1.3rem;
-    font-family: "Hanken Grotesk", sans-serif;
+    /*font-family: "Hanken Grotesk", sans-serif;*/
+    font-family: Helvetica, sans-serif;
 }
 .call-to-action-card h3{
-    font-family: "Hanken Grotesk", sans-serif;
+    /*font-family: "Hanken Grotesk", sans-serif;*/
+    font-family: Helvetica, sans-serif;
     font-size: 1.8rem;
 }
 
