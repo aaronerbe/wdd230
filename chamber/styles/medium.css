@@ -49,11 +49,10 @@
     .hero h1{
         bottom: 10%;
     }
-    .button a{
-        padding: 1.3rem 1.5rem;
-        font-size: clamp(1rem, 1.2rem, 3rem)
-        
-        /*text-wrap: nowrap;*/
+    /*.button a{*/
+    .button{
+        /*padding: 1.3rem 1.5rem;*/
+        /*font-size: clamp(1rem, 1.2rem, 3rem)*/
     }
     .call-to-action-card{
         display: grid;

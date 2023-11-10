@@ -44,7 +44,7 @@ function displayContacts(contacts){
         img.setAttribute('width',"500");
         img.setAttribute('height',"333");
         img.setAttribute('loading',"lazy");
-        mLevel.innerText = contact.mLevel;
+        mLevel.innerText = `Membership Level: ${contact.mLevel}`;
 
         //create picture element for optimized display
         let picture = document.createElement('picture');

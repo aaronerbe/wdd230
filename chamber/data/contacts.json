@@ -2,7 +2,7 @@
     "contacts":[
         {
             "name":"Diamond Lil's Steakhouse and Saloon",
-            "address":"407 Main St",
+            "address":"407 Main St, Idaho City, ID 83631",
             "number":"(208) 392-4400",
             "website":"http://www.diamondlils.net",
             "imgS":"images/dir_images/diamondlils_500_333.webp",
@@ -12,7 +12,7 @@
         },
         {
             "name":"Idaho City Gold Mine Grill and Salon",
-            "address":"100 Gold Rd",
+            "address":"100 Gold Rd, Idaho City, ID 83631",
             "number":"(208) 392-4787",
             "website":"https://www.thegoldminehotel.com/restaurants",
             "imgS":"images/dir_images/icGoldMine_500_333.webp",
@@ -22,7 +22,7 @@
         },
         {
             "name":"Idaho City Hotel",
-            "address":"215 Montgomery Street",
+            "address":"215 Montgomery Street, Idaho City, ID 83631",
             "number":"(208) 392-4499",
             "website":"https://www.idahocityhotel.net",
             "imgS":"images/dir_images/icHotel_500_333.webp",
@@ -32,7 +32,7 @@
         },
         {
             "name":"The Springs",
-            "address":"3742 Hwy 21",
+            "address":"3742 Hwy 21, Idaho City, ID 83631",
             "number":"(208) 392-9500",
             "website":"https://www.thespringsid.com/",
             "imgS":"images/dir_images/theSprings_500_333.webp",
@@ -42,7 +42,7 @@
         },
         {
             "name":"Harleys Pub",
-            "address":"305 Main St.",
+            "address":"305 Main St., Idaho City, ID 83631",
             "number":"(208) 392-6028",
             "website":"https://www.facebook.com/people/Harleys-pub/100052847784370/",
             "imgS":"images/dir_images/HarleysPub_500_333.webp",
@@ -52,7 +52,7 @@
         },
         {
             "name":"Idaho City Grocery Store",
-            "address":"3868 Highway 21",
+            "address":"3868 Highway 21, Idaho City, ID 83631",
             "number":"(208) 392-4426",
             "website":"https://idahocitygrocery.com/",
             "imgS":"images/dir_images/Idaho-City-Grocery_500_333.webp",
@@ -62,7 +62,7 @@
         },
         {
             "name":"Anderson Hardware & Supply",
-            "address":"3845 Highway 21",
+            "address":"3845 Highway 21, Idaho City, ID 83631",
             "number":"(208) 392-2271",
             "website":"https://www.facebook.com/people/Anderson-Hardware-Supply/100078401731711/",
             "imgS":"images/dir_images/AndersonHardware_500_333.webp",

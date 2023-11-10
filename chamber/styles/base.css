@@ -186,28 +186,24 @@ main.show{
     display: none;
 }
 
-.button a{
+/*.button a{*/
+.button{
     display: block;
     text-decoration: none;
     background:var(--primary-color);
-    text-decoration-color: var(--secondary-color);
     box-shadow: 4px 4px 10px var(--transparent-dark-accent-color2); /* Add a shadow effect */
-
     color: var(--secondary-color);
-    padding: 1.3rem 2.5rem;
+    padding: 1.5rem;
     text-align: center;
-    width: max-content;
-    font-size: clamp(1rem, 2.5vw, 2rem);
-    /*text-wrap: nowrap;*/
+    max-width: 200px;
+    min-width: 150px;
+    font-size: clamp(1rem, 1.2rem, 1.5rem)
 }
 .button:hover{
-    transform: scale(1.1);
-    transition: .5s;
-}
-.button a:hover{
+    transform: scale(1.04);
+    transition: 0.25s;
     background-color: var(--highlight-color);
     color: black;
-    transition: 0.25s;
 }
 
 .button-inverse{
@@ -652,32 +648,70 @@ input[type=radio] {
     color: var(--primary-color); /* Color to transition to */
 }
 
+
+/* DIRECTORY CSS */
+.directory-main{
+}
+/* Buttons */
+#directory-btn-container{
+    display: flex;
+    /*justify-content: space-evenly;*/
+    margin: 10rem auto 3rem auto;
+    justify-content: center;
+}
+#gridBtn, #listBtn{
+    margin: 0 3vw;
+}
+
+
+/* General to all contact info */
+.contact-card{
+    font-family: Helvetica, Sans-Serif;
+}
+/* reset everything to a base level */
+.contact-name, .contact-address, .contact-number, .contact-website, .contact-mLevel{
+    font-size: clamp(.25rem, 2vh, 2rem);
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.contact-address{
+}
+.contact-number{
+}
+.contact-website{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.contact-img{
+}
+.contact-mLevel{
+}
+
+
 /* GRID VIEW */
 .contacts-grid{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: space-evenly;
+    padding: 2rem;
     gap: 2rem;
-    justify-content: space-around;
-    margin: 2rem auto;
-    width: 80%;
+    margin: 3rem auto;
+    width: 90%;    
+    background-color: var(--themed-text);
 }
 .contacts-grid .contact-card{
-    background-color: pink;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 1rem;
 }
-.contacts-grid .contact-name{
-
-}
-.contacts-grid .contact-address{
-
-}
-.contacts-grid .contact-number{
-
-}
-.contacts-grid .contact-website{
-
+.contacts-grid > * > *{
+    color: var(--content-width);
+    padding: .3rem 0;
 }
 .contacts-grid .contact-img{
     width: 80%;
@@ -685,35 +719,32 @@ input[type=radio] {
     margin: 2rem;
 }
 .contacts-grid .contact-mLevel{
-
 }
-
 
 /* LIST VIEW */
 .contacts-list{
-
+    display: flex;
+    flex-direction: column;
+    /*gap: .1rem;*/
+    margin: 3rem auto;
+    width: 70%;
 }
-.contacts-list .contact-name{
-
+.contacts-list .contact-card{
+    background-color: var(--themed-highlight-background);
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--highlight-color);
 }
-.contacts-list .contact-address{
-
+.contacts-list .contact-card:nth-child(2n){
+    background-color: var(--transparent-dark-accent-color);
 }
-.contacts-list .contact-number{
-
+.contacts-list .contact-card:last-child{
+    border-bottom: 0px none var(--themed-highlight-background);
 }
-.contacts-list .contact-website{
-
+.contacts-list > * > *{
+    padding: .25rem 0;
 }
 .contacts-list .contact-img{
     display: none;
 }
-.contacts-list .contact-mLevel{
-
-}
-
-
-/* fix the header when not on home page and it's not floating over a hero img */
-/*.discovery-header, .join-header, .thankyou-header, .directory-header{
-    position: relative;
-}*/
