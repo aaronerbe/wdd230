@@ -335,12 +335,6 @@ p:not(.footer-dates, .footer-container a){
     border: 1px solid var(--themed-text);
     color: var(--themed-text);
 }
-.discovery-card h2{
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 2rem;
-    margin: 0;
-}
 
 /*      JOIN PAGE CSS      */
 #join-info-fieldset{
