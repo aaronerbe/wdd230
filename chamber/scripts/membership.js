@@ -54,15 +54,23 @@ function displayInfo() {
 
 function buildList(lists){
     //build the list
+    const p = document.querySelector('.membership-details')
     //steps through each list passed on, creates a li element and adds the text from the list at that index to the li element
     //then appends the li to the ol
     lists.forEach(myList => {
         myList.forEach((itemText) => {
             const li = document.createElement("li");
             li.textContent = itemText;
+            li.style.fontSize = '1rem';
+            //li.style.margin = '1rem';
             ol.appendChild(li);
         });    
     });
+    p.style.color = 'var(--secondary-color)';
+    p.style.fontSize = '1.25rem';
+    //p.style.margin = '1rem';
+    //p.style.padding = '1rem';
+    p.style.fontWeight = 'normal';
     //append the ol to the memberInfo space
     memberInfo.appendChild(ol);
     

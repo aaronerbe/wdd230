@@ -14,7 +14,6 @@
   }
 
 /*      MAIN PAGE CSS      */
-
 .header{
     position: relative;
     top: 0;
@@ -22,7 +21,6 @@
     z-index: 1;
     max-width: 100%;
     width: 100vw;
-    /*background: var(--transparent-dark-accent-color);*/
     background: var(--dark-accent-color);
     padding: 1rem;
     display: flex;
@@ -32,7 +30,6 @@
     padding: 0;
     color: var(--secondary-color);
     text-decoration: none;
-    /*z-index: -1;*/
 }
 .navigation ul{
     margin-right: 50px;
@@ -96,12 +93,14 @@
 }
 /* END REACTIVE MENU */
 
-img{
+img:not(#logo-img, .weather-icon){
     display: block;
     width: 100%;
+    max-width: 100vw;
     height: auto;
     z-index: -1;
 }
+
 .button{
     display: block;
     text-decoration: none;
@@ -120,15 +119,6 @@ img{
     transition: 0.25s;
     background-color: var(--highlight-color);
     color: black;
-}
-.card h2, .card h3, .card p{
-    color: var(--themed-text);
-    font-family: Helvetica, sans-serif;
-}
-.card-heading{
-    font-size: 2.3rem;
-    text-align: center;
-    padding: 4rem ;
 }
 .highlight-card{
     background-color: var(--themed-highlight-background);
@@ -158,18 +148,19 @@ img{
     width: clamp(40%, 60vw, 65%);
     margin: 2rem auto;
 }
-
-.call-to-action-card p{
-    font-size: 1.3rem;
-}
-.call-to-action-card h3{
-    font-size: 1.8rem;
+h3:not(.weather-title, .event-title){
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+    color: var(--themed-text);
 }
 
 .calendar{
     background-color: var(--themed-background);
     border-radius: 5px;
     margin: 3rem;
+    padding-top: 3rem;
 }
 .calendar-box{
     display: flex;
@@ -184,7 +175,7 @@ img{
     justify-content: space-evenly;
     align-items: center;
 }
-.event h3, .event p{
+.event *{
     text-align: left;
     font-size: clamp(1rem, 3vw + .25rem, 3rem);
     margin: 0;
@@ -222,14 +213,17 @@ img{
     background-color: var(--secondary-color);
     flex-wrap: wrap;
     gap: 6rem;
+    padding: 3rem 0;
 }
 
 .company-box{
-    flex: 1;
     border: 1px solid var(--themed-highlight-background);
     border-radius: 5px;
     background-color: var(--themed-background);
     min-width: 250px;
+    max-width: 350px;
+    margin: 0 auto;
+    
 }
 .company-box h4{
     font-size: 1.5rem;
@@ -239,10 +233,12 @@ img{
     text-align: center;
     margin: 0;
 }
-.padded-p{
+p{
+    color: var(--themed-text);
+    font-family: Helvetica, sans-serif;
     padding: .5rem 2rem;
+    font-size: clamp(1rem, 1.3rem, 2rem);
 }
-
 .weather-card{
     background-color: var(--themed-highlight-background);
     color: var(--secondary-color);
@@ -253,17 +249,10 @@ img{
     align-items: center;
     padding: 4rem 0 ;
     margin: 0;
+    color: var(--secondary-color);
+    font-size: clamp(1rem,2rem,2.5rem);
 }
-.weather-title{
-    font-family: sans-serif;
-    font-size: 2.5rem;
-    margin: 2rem;
-    text-align: center;
-}
-.weather-box{
-    display: flex;
-    flex-direction: column;
-}
+
 .weather-left{
     display: flex;
     align-items: center;
@@ -287,24 +276,11 @@ img{
     gap: 1rem;
     flex-wrap: wrap;
 }
-.info-group{
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
 .weather-icon{
     width: 40px;
     height: 40px;
     object-fit: contain;
-}
-.weather-icon.large{
-    width: 80px;
-    height: 80px;
-}
-.current-temp{
-    font-size: 2rem;
-    margin-left: 2rem;
+    margin: 0 2rem;
 }
 .label{
     text-transform: uppercase;
@@ -317,6 +293,7 @@ img{
 }
 .units-up{
     vertical-align: top;
+    font-size: 2rem;
 }
 
 .footer{
@@ -340,7 +317,6 @@ img{
     color: var(--secondary-color);
     margin: auto 0;
 }
-
 
 /*      DISCOVERY PAGE CSS      */
 .discovery-visit{
@@ -369,14 +345,12 @@ img{
     margin: 0;
 }
 
-
 /*      JOIN PAGE CSS      */
 #join-title{
     text-align: center;
     margin: 3rem auto;
 }
 #join-info-fieldset{
-
     display: flex;
     flex-direction: column;
     padding-bottom: 3rem;
@@ -422,19 +396,9 @@ img{
     gap: .75rem;
     padding: .5rem 1.5rem;
 }
-/* CAN REMOVE */
-input[type=radio] {
-    accent-color: var(--dark-accent-color);
- }
-
 #membership-right{
     margin: 2rem 0;
     height: 100%;
-}
-
-.membership-details{
-    font-size: 1.5rem;
-    padding: 0;
 }
 .membership-details li{
     margin: 1rem;
@@ -443,7 +407,7 @@ input[type=radio] {
 #join-submit{
     display: block;
     text-align: center;
-    margin: 10rem 0 0 0;
+    margin: 3rem 0;
     padding: 1.2rem;
     width: max-content;
     max-width: 90%;
