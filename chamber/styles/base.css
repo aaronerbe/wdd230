@@ -346,26 +346,16 @@ p{
 }
 
 /*      JOIN PAGE CSS      */
-#join-title{
-    text-align: center;
-    margin: 3rem auto;
-}
 #join-info-fieldset{
     display: flex;
     flex-direction: column;
     padding-bottom: 3rem;
     width: 85%;
     margin: 3rem auto;
-}
-.join-info, .join-inputs{
-    display: block;
-}
-
-.join-info{
-    padding: 2rem 0 0 0;
-    font-size: .8rem;
+    color: var(--themed-text);
 }
 .join-inputs{
+    display: block;
     border: 1px solid lightgrey;
     border-radius: 4px;
     padding: .75rem 0;
@@ -388,9 +378,6 @@ p{
     justify-content: space-around;
 }
 
-.membership-title{
-    color: var(--highlight-color);
-}
 .level{
     display: flex;
     gap: .75rem;

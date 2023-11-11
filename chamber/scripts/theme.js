@@ -6,8 +6,21 @@ const moon = "images/moon-white.svg"
 var theme = "light";
 const root = document.querySelector(":root");
 const container = document.getElementsByClassName("theme-container")[0];
-const themeIcon = document.getElementById("theme-icon");
 container.addEventListener("click", setTheme);
+const themeIcon = document.getElementById("theme-icon");
+//setup join themes:
+const joinTitle = document.getElementById("join-title");
+const memTitle = document.querySelectorAll('.membership-title');
+if (joinTitle){
+  joinTitle.style.color = 'var(--themed-text)';
+  joinTitle.style.textAlign = 'center';
+  joinTitle.style.margin = '3rem auto';
+  memTitle.forEach(memTitle => {
+    memTitle.style.color = 'var(--highlight-color)';
+  });
+}
+//memTitle.style.backgroundColor = 'pink';
+
 
   function setTheme() {
     switch (theme) {
@@ -69,6 +82,7 @@ container.addEventListener("click", setTheme);
     container.style.transition = '0s';
     container.style.transform = 'scale(0.4)';
     container.style.zIndex = '100';
+    
   }
   function shadowSetLight(){
     container.style.background = 'transparent';
