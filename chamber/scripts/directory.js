@@ -27,18 +27,24 @@ function displayContacts(contacts){
         //set classes for css ease
         card.classList.add("contact-card");
         name.classList.add("contact-name");
+        name.classList.add("contact");
         address.classList.add("contact-address");
+        address.classList.add("contact");
         number.classList.add("contact-number");
+        number.classList.add("contact");
         website.classList.add("contact-website");
+        website.classList.add("contact");
         img.classList.add("contact-img");
         mLevel.classList.add("contact-mLevel");
+        mLevel.classList.add("contact");
 
         //add all the info to the elements
         name.innerText = contact.name;
         address.innerText = contact.address;
         number.innerText = contact.number;
         website.setAttribute('href',contact.website);
-        website.textContent = contact.website;
+        //website.textContent = contact.website;
+        website.textContent = "Website";
         img.setAttribute('src',contact.imgL);
         img.setAttribute('alt',`Image of ${name}`);
         img.setAttribute('width',"500");
@@ -80,6 +86,11 @@ gridbutton.addEventListener("click", () => {
 	// example using arrow function
 	div.classList.add("contacts-grid");
 	div.classList.remove("contacts-list");
+    //show the images if they've been hidden.  
+    const contactImgs = document.querySelectorAll('.contact-img');
+    contactImgs.forEach(img => {
+        img.style.display = 'block';
+    });
 });
 
 listbutton.addEventListener("click", showList); // example using defined function
@@ -87,6 +98,12 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
 	div.classList.add("contacts-list");
 	div.classList.remove("contacts-grid");
+    //hide the images.  cheating to put here instead of css to shrink my css
+    
+    const contactImgs = document.querySelectorAll('.contact-img');
+    contactImgs.forEach(img => {
+        img.style.display = 'none';
+    });
 }
 
 

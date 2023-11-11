@@ -29,20 +29,18 @@
     }
     .cta-left-col{
         grid-column: 1/2;
-        margin: 0 0 0 7.5%;
+        margin: 0 7.5%;
     }
     .cta-right-col{
         grid-column: 2/3;
         display: flex;
         flex-direction: column;
-        margin: auto auto 7.5% 0;
+        margin: auto auto 7.5% auto;
     }
     .cta-divider{
         width: clamp(40%, 30vw, 50rem);
     }
-    .event{
-        margin: 1rem auto;
-    }
+
     .weather-box{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -61,10 +59,6 @@
         margin: 1rem;
         padding: 0;
     }
-    .company-box{
-        min-width: 40%;
-    }
-
     /* DISCOVERY PAGE */
     .discovery-main{
         display: grid;
@@ -77,15 +71,11 @@
         flex-direction: column;
         gap: 6rem;
         margin: 0;
+        padding-right: 0;
     }
     .discovery-right-col{
         grid-column: 2/3;
-    }
-    .discovery-img-caption{
-        align-self: flex-end;
-    }
-    .discovery-card{
-        margin: 0;
+        padding-left: 0;
     }
     .discovery-visit{
         grid-column: 1/3;
@@ -105,9 +95,6 @@
         gap: 1.5rem;
         margin: 3rem auto;
       }
-      #membership h2{
-        font-size: 2rem;
-    }
       #membership-left {
         grid-column: 1 / 2;
         grid-row: 1/2;
