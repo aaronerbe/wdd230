@@ -54,7 +54,7 @@ function displayInfo() {
 
 function buildList(lists){
     //build the list
-    const p = document.querySelector('.membership-details')
+    const p = document.querySelector('.membership-details');
     //steps through each list passed on, creates a li element and adds the text from the list at that index to the li element
     //then appends the li to the ol
     lists.forEach(myList => {

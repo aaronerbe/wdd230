@@ -19,8 +19,16 @@ if (joinTitle){
     memTitle.style.color = 'var(--highlight-color)';
   });
 }
-//memTitle.style.backgroundColor = 'pink';
+const footerDates = document.querySelectorAll('.footer-dates');
+if (footerDates){
+  footerDates.forEach(footerDates => {
+    footerDates.style.color = 'var(--secondary-color)';
+  });
+}
 
+const footerInfo = document.querySelector('.footer-info');
+footerInfo.style.color = 'var(--secondary-color)';
+footerInfo.style.textDecoration = 'none';
 
   function setTheme() {
     switch (theme) {
