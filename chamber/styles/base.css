@@ -14,36 +14,6 @@
   }
 
 /*      MAIN PAGE CSS      */
-.theme-container{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    position: absolute;
-    top: 5%;
-    right: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0s;
-    transform: scale(0.4);
-    z-index: 100;
-}
-.theme-container:hover {
-    opacity: 0.8;
-  }
-.shadow-dark {
-    background: linear-gradient(145deg, #23282c, #1e2125);
-    box-shadow: 17px 17px 20px var(--dark-accent-color),
-    -17px -17px 24px var(--dark-accent-color), 
-    inset 5px 5px 8px rgba(209, 217, 230, 0.35),
-    inset -5px -5px 8px rgba(255, 255, 255, 0.3)
-    }
-.shadow-light {
-    box-shadow: 10px 10px 15px -5px var(--secondary-color), 
-    -10px -10px 25px var(--secondary-color),
-        inset 5px 5px 8px rgba(209, 217, 230, 0.35),
-        inset -5px -5px 8px rgba(255, 255, 255, 0.3)
-    }
 
 .header{
     position: relative;
@@ -126,10 +96,10 @@
 }
 /* END REACTIVE MENU */
 
-.hero img{
+img{
+    display: block;
     width: 100%;
     height: auto;
-    max-height: 90vh;
     z-index: -1;
 }
 .button{
@@ -231,12 +201,6 @@
 .event-img-container{
     position: relative;
     display: inline-block;
-}
-.event img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
 }
 
 .overlay {
@@ -404,11 +368,6 @@
     padding: 2rem;
     margin: 0;
 }
-.discovery-img img{
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
 
 
 /*      JOIN PAGE CSS      */
@@ -562,11 +521,6 @@ input[type=radio] {
 .contacts-grid > * > *{
     color: var(--dark-accent-color);
     padding: .3rem 0;
-}
-.contacts-grid .contact-img{
-    width: 90%;
-    height: auto;
-    margin: 2rem auto;
 }
 
 /* LIST VIEW */

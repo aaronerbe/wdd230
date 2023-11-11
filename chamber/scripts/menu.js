@@ -5,8 +5,8 @@ const main=document.querySelector('main');
 const logo=document.getElementById('logo-img')
 
 hamburger.addEventListener('click', () => {
-	//navMenu.classList.toggle('show');
 	hamburger.classList.toggle('show');
+	//hamburger.id.toggle('show')
 	navContainer.classList.toggle('show');
 	main.classList.toggle('show');
 	if (logo.src.includes("images/small-brown-logo-transparent.webp")){
