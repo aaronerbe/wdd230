@@ -233,7 +233,7 @@ h3:not(.weather-title, .event-title){
     text-align: center;
     margin: 0;
 }
-p:not(.footer-dates, .footer-container a){
+p:not(.footer-dates, .footer-container a, .event-details p){
     color: var(--themed-text);
     font-family: Helvetica, sans-serif;
     padding: .5rem 2rem;
