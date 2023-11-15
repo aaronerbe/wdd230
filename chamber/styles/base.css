@@ -257,6 +257,19 @@ p:not(.footer-dates, .footer-container a, .event-details p){
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: clamp(1rem,2rem,2.5rem);
+
+}
+#current-temp-description{
+    /* force it on it's own line */
+    flex: 0 0 100%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.75rem;
+    font-size: clamp(1rem,2rem,2.5rem);
+
 }
 .weather-divider{
     justify-self: center;
@@ -266,8 +279,8 @@ p:not(.footer-dates, .footer-container a, .event-details p){
     background-color: var(--secondary-color);
     height: 2px;
     width: clamp(3rem, 50vw, 50rem);
-    margin: 3rem;
-    padding: 0;
+    margin: 3rem auto;
+    padding: 0rem;
 }
 .weather-right{
     text-align: center;
@@ -275,25 +288,45 @@ p:not(.footer-dates, .footer-container a, .event-details p){
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    font-size: clamp(1rem,2rem,2.5rem);
+
 }
-.weather-icon{
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    margin: 0 2rem;
+.weather-forecast{
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 3rem;
+    font-size: clamp(1rem,2rem,2.5rem);
+
+}
+#weather-forecast-details{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: clamp(1rem,2rem,2.5rem);
+    gap: 2rem;
+}
+.forecast-days{
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1rem,2rem,2.5rem);
+
 }
 .label{
     text-transform: uppercase;
     font-weight: bold;
     font-size: clamp(0.25rem, .75rem, 5rem);
+    
 }
 .units{
     font-weight: lighter;
     font-size: clamp(.25rem, .75rem, 1rem);
+    
 }
 .units-up{
     vertical-align: top;
     font-size: 2rem;
+    font-size: clamp(1rem,2rem,2.5rem);
+
 }
 
 .footer{

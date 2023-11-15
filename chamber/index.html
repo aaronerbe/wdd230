@@ -166,26 +166,48 @@
             </div>  
 
             <div class="card weather-card highlight-card">
-                <h3 class="weather-title">Local Weather</h3>
+                <h3 class="weather-title">Current Weather</h3>
                 <div class="weather-box">
                     <div class="weather-left">
-                        <img class="weather-icon large" src="images/icons/clear.svg" alt="weather icon">
-                        <div><h2 class="current-temp current">31</><span class="units units-up">&deg;</span></div>
+                        <img id="current-weather-icon" class="weather-icon large" src="" alt="">
+                        <h2 id="current-temp" class="current">31</h2>
+                        <span id="current-temp-description" class="label"></span>
                     </div>
                     <hr class="weather-divider">
                     <div class="weather-right">
                         <div class="info-group">
                             <div class="label">High</div>
-                            <div><span data-current-high>32</span><span class="units units-up">&deg;</span></div>
+                            <div><span id="data-current-high">32</span><span class="units units-up">&deg;</span></div>
                         </div>
                         <div class="info-group">
                             <div class="label">Windspeed</div>
-                            <div><span class="current-windspeed current">10</span><span class="units">mph</span></div>
+                            <div><span id="current-windspeed" class="current">10</span><span class="units">mph</span></div>
                         </div>
                         <div class="info-group">
                             <div class="label">Windchill</div>
-                            <div><span class="current-windchill current">3</span><span class="units units-up">&deg;</span></div>
+                            <div><span id="current-windchill" class="current">3</span><span class="units units-up">&deg;</span></div>
                         </div>
+                    </div>
+                    <div class="weather-forecast">
+                        <h3 class="weather-title">3 Day Forecast</h3>
+                        <div id="weather-forecast-details">
+                            <div id="day1" class="forecast-days">
+                                <h2 id="day1-day" class="forecast-days"></h2>
+                                <span id="day1-forecast-high" class="forecast-hi-lo"></span>
+                                <span id="day1-forecast-low" class="forecast-hi-lo"></span>
+                            </div>
+                            <div id="day2" class="forecast-days">
+                                <h2 id="day2-day" class="forecast-days"></h2>
+                                <span id="day2-forecast-high" class="forecast-hi-lo"></span>
+                                <span id="day2-forecast-low" class="forecast-hi-lo"></span>
+                            </div>
+                            <div id="day3" class="forecast-days">
+                                <h2 id="day3-day" class="forecast-days"></h2>
+                                <span id="day3-forecast-high" class="forecast-hi-lo"></span>
+                                <span id="day3-forecast-low" class="forecast-hi-lo"></span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -206,5 +228,6 @@
     <script src="scripts/theme.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
 </body>
 </html>
