@@ -244,3 +244,18 @@ header.show{
 .record-submission-title, .record-submission-message{
     margin: 3rem auto;
 }
+
+/* WEATHER */
+#weather-figure{
+    display: flex;    
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+}
+#weather-figure *{
+    padding: 1rem;
+}
+#weather-icon{
+    width: 100px;
+    height: auto;
+}
