@@ -181,7 +181,7 @@ img:not(#logo-img, .weather-icon, #hero-banner-close-button){
     width: clamp(40%, 60vw, 65%);
     margin: 2rem auto;
 }
-h3:not(.weather-title, .event-title), h1{
+h3:not(.weather-title, .event-title, .contact), h1{
     font-size: 2.3rem;
     text-align: center;
     padding-top: 2rem;
@@ -266,7 +266,7 @@ h3:not(.weather-title, .event-title), h1{
     text-align: center;
     margin: 0;
 }
-p:not(.footer-dates, .footer-container a, .event-details p,#hero-banner-details){
+p:not(.footer-dates, .footer-container a, .event-details p, .contact,#hero-banner-details){
     color: var(--themed-text);
     font-family: Helvetica, sans-serif;
     padding: .5rem 2rem;
@@ -402,7 +402,7 @@ p:not(.footer-dates, .footer-container a, .event-details p,#hero-banner-details)
 #join-info-fieldset{
     display: flex;
     flex-direction: column;
-    padding-bottom: 3rem;
+    padding: 3rem 1rem;
     width: 85%;
     margin: 3rem auto;
     color: var(--themed-text);
@@ -548,8 +548,9 @@ p:not(.footer-dates, .footer-container a, .event-details p,#hero-banner-details)
     max-width: 400px;
 }
 .contacts-list .contact-card:nth-child(2n){
-    background-color: var(--transparent-dark-accent-color);
-    background-color: var(--themed-background);
+    /*background-color: var(--transparent-dark-accent-color);
+    background-color: var(--themed-background);*/
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 .contacts-list>*:nth-child(2n)>*{
