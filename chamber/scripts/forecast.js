@@ -67,13 +67,12 @@ function displayForecast(tempByDate){
     const date2 = dates[index+1];
     const date3 = dates[index+2];
     //now extract the high/low for those keys    
-    day1High.innerText = `High: ${Math.ceil(tempByDate[date1].high)}`;
-    day1Low.innerText = `Low: ${Math.ceil(tempByDate[date1].low)}`;
-    day2High.innerText = `High: ${Math.ceil(tempByDate[date2].high)}`;
-    day2Low.innerText = `Low: ${Math.ceil(tempByDate[date2].low)}`;
-    day3High.innerText = `High: ${Math.ceil(tempByDate[date3].high)}`;
-    day3Low.innerText = `Low: ${Math.ceil(tempByDate[date3].low)}`;
-    //currentTemp.innerHTML = `${Math.ceil(data.main.temp)}&deg;F`;
+    day1High.innerHTML = `⬆️ ${Math.ceil(tempByDate[date1].high)}&deg`;
+    day1Low.innerHTML = `⬇️ ${Math.ceil(tempByDate[date1].low)}&deg`;
+    day2High.innerHTML = `⬆️ ${Math.ceil(tempByDate[date2].high)}&deg`;
+    day2Low.innerHTML = `⬇️ ${Math.ceil(tempByDate[date2].low)}&deg`;
+    day3High.innerHTML = `⬆️ ${Math.ceil(tempByDate[date3].high)}&deg`;
+    day3Low.innerHTML = `⬇️ ${Math.ceil(tempByDate[date3].low)}&deg`;
     
     //populate the days info
     //convert first to Date object
