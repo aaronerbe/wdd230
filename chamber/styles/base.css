@@ -359,7 +359,7 @@ p:not(.footer-dates, .footer-container a, .event-details p, .contact,#hero-banne
 
 }
 
-.footer{
+footer{
     background-color: var(--dark-accent-color);
     color: var(--themed-background);
     width: 100%;
