@@ -1,5 +1,5 @@
 const baseURL = "https://aaronerbe.github.io/wdd230/chamber/";
-const linksURL = "https://aaronerbe.github.io/wdd230/chamber/data/contacts.json"
+const linksURL = "https://aaronerbe.github.io/wdd230/chamber/data/contacts.json";
 const div = document.getElementById("contacts");
 
 
