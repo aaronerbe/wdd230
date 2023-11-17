@@ -24,12 +24,12 @@ portrait.addEventListener("change", function(e) {
 	//close the menu by 'clicking' the button which kicks off the function above to toggle all the elements
 	if(e.matches) {
         // Portrait mode
-		console.log("portrait");
+		//console.log("portrait");
     } else {
         // Landscape
 		if (hamburger.classList.contains('show')){
 			hamburger.click();
 		}
-		console.log("landscape");
+		//console.log("landscape");
     }
 })

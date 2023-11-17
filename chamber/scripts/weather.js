@@ -13,20 +13,20 @@ const units = '&units=imperial'
 const apiKey = '&appid=cc208746db6a946dc89c0ffb1c8e1c19';
 
 const url = `https://api.openweathermap.org/data/2.5/weather?${lat}${lon}${units}${apiKey}`;
-console.log(url);
+//console.log(url);
 
 async function apiFetch(){
     try{
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            console.log(data)//testing
+            //console.log(data)//testing
             displayWeather(data); 
         }else{
             throw Error(await response.txt());
         }
     } catch (error){
-        console.log(error);
+        //console.log(error);
     }
 }
 
@@ -38,7 +38,7 @@ function displayWeather(data){
     currentWeatherIcon.setAttribute('alt',desc);
     captionDesc.textContent =`${desc}`;
     //captionDesc.style.textTransform = 'capitalize';
-    console.log(data.main.temp_max);
+    //console.log(data.main.temp_max);
     currentHigh.textContent = Math.ceil(data.main.temp_max);
     currentWindSpeed.textContent = Math.ceil(data.wind.speed);
     //call windchill calculations now that windspeed is set

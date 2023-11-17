@@ -11,7 +11,7 @@ const day3Low = document.getElementById('day3-forecast-low');
 
 //lat/lon/units pulled from weather.js script
 const forecasturl = `https://api.openweathermap.org/data/2.5/forecast?${lat}${lon}${units}${apiKey}`;
-console.log(forecasturl);
+//console.log(forecasturl);
 
 async function apiForecastFetch(){
     try{
@@ -25,7 +25,7 @@ async function apiForecastFetch(){
             throw Error(await response.txt());
         }
     } catch (error){
-        console.log(error);
+        //console.log(error);
     }
 }
 
@@ -49,7 +49,7 @@ function buildDay(forecastData){
     displayForecast(temperatureByDate);
 }
 function displayForecast(tempByDate){
-    console.log("writing Display Forecast");
+    //console.log("writing Display Forecast");
     //have to build a list of the keys from the key value pairs in temperatureByDate
     const dates = Object.keys(tempByDate);
 

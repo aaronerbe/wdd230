@@ -7,7 +7,7 @@ async function getLinks(){
     const response = await fetch(linksURL);
     if (response.ok){
         const data = await response.json();
-        console.table(data.contacts);
+        //console.table(data.contacts);
         displayContacts(data.contacts);
     }
 }

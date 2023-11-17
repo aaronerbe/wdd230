@@ -6,8 +6,8 @@ const dayOfWeek = today.toLocaleDateString('en-US', bannerDateOption);
 const listOfBannerDays = ['Monday', 'Tuesday', 'Wednesday'];
 
 if (listOfBannerDays.includes(dayOfWeek)){
-    console.log(`Today is ${dayOfWeek}`);
-    banner.style.display = 'block';
+    //console.log(`Today is ${dayOfWeek}`);
+    banner.style.display = 'flex';
 }
 else{
     banner.style.display = 'none';

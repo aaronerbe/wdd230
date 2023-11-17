@@ -18,13 +18,13 @@ let lastDate = getVisitDate() || today;
 const daysDifference = (today - lastDate) / msToDays;
 
 if (today == lastDate) {
-    console.log("First visit.");
+    //console.log("First visit.");
     //do nothing to the visitsContent as it's correct by default
 } else if (daysDifference <1) {
-    console.log("Less than a day since the last visit.");
+    //console.log("Less than a day since the last visit.");
     visitContent.textContent = "Back so soon! Awesome!";
 } else {
-    console.log("More than 1 day since the last visit.");
+    //console.log("More than 1 day since the last visit.");
     visitContent.textContent = "You last visited " + parseInt(daysDifference) + " ago.";
 }
 
