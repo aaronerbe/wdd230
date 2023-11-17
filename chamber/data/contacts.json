@@ -63,6 +63,7 @@
             "imgS":"images/dir_images/HarleysPub_500_333.webp",
             "imgM":"images/dir_images/HarleysPub_700_467.webp",
             "imgL":"images/dir_images/HarleysPub_900_600.webp",
+            "about":"",
             "mLevel":"Bronze"
         },
         {
@@ -73,6 +74,7 @@
             "imgS":"images/dir_images/Idaho-City-Grocery_500_333.webp",
             "imgM":"images/dir_images/Idaho-City-Grocery_700_467.webp",
             "imgL":"images/dir_images/Idaho-City-Grocery_900_600.webp",
+            "about":"Since 1952 we've been serving the community of Idaho City and its visitors. We take great pride in providing our customers with the finest quality products from Idaho and beyond!",
             "mLevel":"Silver"
         },
         {
@@ -83,6 +85,7 @@
             "imgS":"images/dir_images/AndersonHardware_500_333.webp",
             "imgM":"images/dir_images/AndersonHardware_700_467.webp",
             "imgL":"images/dir_images/AndersonHardware_900_600.webp",
+            "about":"Find all the things you need to accomplish your next custom project!",
             "mLevel":"Gold"
         },
         {
@@ -94,7 +97,7 @@
             "imgM":"images/dir_images/simply-fun_700_467.webp",
             "imgL":"images/dir_images/simply-fun_900_600.webp",
             "about":"Your tour guide has been giving Historic District Walking Tours for over 20 years! Join her on a prescheduled tour through Idaho City to learn more about the rich History of this old mining town. When you're finished stop in and shop down memory lane exploring Simply Fun's unique selection of toys and games from your childhood.",
-            "mLevel":"Gold"
+            "mLevel":"Bronze"
         },
         {
             "name":"Idaho World",
