@@ -15,6 +15,15 @@ async function getLinks(){
 function displayContacts(contacts){
     
     contacts.forEach(contact => {
+        //grab the skeletons 1 at a time
+        let skeleton = document.querySelector('.skeleton-card');
+        //if skeleton exists, remove it.  
+        //this is to try to mitigate page shifts when loading
+        //this worked beautifully.  Must always have more than 6 contacts (in order to remove 6 skeletons that are hardcoded in html)
+        //actually, going to add a piece of code after this to remove any remaining skeletons just in case there's < 6 contacts...
+        if(skeleton){
+            skeleton.remove();
+        }
         const card = document.createElement('div');
         let name = document.createElement('h3');
         let address = document.createElement('h4');
@@ -74,6 +83,13 @@ function displayContacts(contacts){
 
         div.appendChild(card);
     });
+    //little something extra to remove any straggler skeletons incase there's < 6 contacts to replace them with
+    let skeletons = document.querySelectorAll('.skeleton-card');
+    if (skeletons){
+        skeletons.forEach(skeleton => {
+            skeleton.remove();
+        });
+    }
 }
 
 

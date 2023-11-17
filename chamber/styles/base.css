@@ -184,7 +184,7 @@ img:not(#logo-img, .weather-icon, #hero-banner-close-button){
     width: clamp(40%, 60vw, 65%);
     margin: 2rem auto;
 }
-h3:not(.weather-title, .event-title, .contact), h1{
+h3:not(.weather-title, .forecast-days,.event-title, .contact), h1, h2{
     font-size: 2.3rem;
     text-align: center;
     padding-top: 2rem;
