@@ -8,6 +8,18 @@
             "imgS":"images/dir_images/diamondlils_500_333.webp",
             "imgM":"images/dir_images/diamondlils_700_467.webp",
             "imgL":"images/dir_images/diamondlils_900_600.webp",
+            "about":"Dining at Diamond Lils is taking a stroll through time. From the minute you step in our rustic wooden doors from the historic boardwalk, you will marvel at the antiques and curios collected through many years. Saunter up to our world famous Money Bar. Diamond Lils sits in the heart of historic Main Street in Idaho City and has been a gem of dining spot for over 50 years. Built as a mercantile during the heyday of gold mining, We are the oldest functioning bar in town!",
+            "mLevel":"Silver"
+        },
+        {
+            "name":"Sasaparilla Ice Cream Parler and Shop",
+            "address":"101 Montgomery St Idaho City, Idaho 83631",
+            "number":"(208) 392-4484",
+            "website":"https://www.facebook.com/sarsaparillaicecreamparlor/",
+            "imgS":"images/dir_images/diamondlils_500_333.webp",
+            "imgM":"images/dir_images/diamondlils_700_467.webp",
+            "imgL":"images/dir_images/diamondlils_900_600.webp",
+            "about":"The Sarsparilla Ice Cream Parlor is a favorite among visitors exploring Idaho City. Enjoy from their wide variety of amazing ice cream flavors, served in one of the parlor's famous handmade waffle cones. It's the perfect treat after spending an hour or two roaming around this historic town!",
             "mLevel":"Silver"
         },
         {
@@ -18,6 +30,7 @@
             "imgS":"images/dir_images/icGoldMine_500_333.webp",
             "imgM":"images/dir_images/icGoldMine_700_467.webp",
             "imgL":"images/dir_images/icGoldMine_900_600.webp",
+            "about":"",
             "mLevel":"Bronze"
         },
         {
@@ -28,6 +41,7 @@
             "imgS":"images/dir_images/icHotel_500_333.webp",
             "imgM":"images/dir_images/icHotel_700_467.webp",
             "imgL":"images/dir_images/icHotel_900_600.webp",
+            "about":"",
             "mLevel":"Non-Profit"
         },
         {
@@ -38,6 +52,7 @@
             "imgS":"images/dir_images/theSprings_500_333.webp",
             "imgM":"images/dir_images/theSprings_700_467.webp",
             "imgL":"images/dir_images/theSprings_900_600.webp",
+            "about":"Come soak in our natural hot springs pools under the clear Mountain skies just 45 minutes from downtown Boise. Let your worries melt away. Reservations are for a full day pass. Arrive within the hour that you reserve for and from then on, you are welcome to stay until we close even if you leave and return later.",
             "mLevel":"Gold"
         },
         {
@@ -68,7 +83,29 @@
             "imgS":"images/dir_images/AndersonHardware_500_333.webp",
             "imgM":"images/dir_images/AndersonHardware_700_467.webp",
             "imgL":"images/dir_images/AndersonHardware_900_600.webp",
-            "mLevel":"Bronze"
+            "mLevel":"Gold"
+        },
+        {
+            "name":"Simply Fun - Historic Walking Tours",
+            "address":"206 Main St, Idaho City, ID 83631",
+            "number":"(208) 392-9766",
+            "website":"https://www.facebook.com/idahocitywalkingtours/",
+            "imgS":"images/dir_images/AndersonHardware_500_333.webp",
+            "imgM":"images/dir_images/AndersonHardware_700_467.webp",
+            "imgL":"images/dir_images/AndersonHardware_900_600.webp",
+            "about":"Your tour guide has been giving Historic District Walking Tours for over 20 years! Join her on a prescheduled tour through Idaho City to learn more about the rich History of this old mining town. When you're finished stop in and shop down memory lane exploring Simply Fun's unique selection of toys and games from your childhood.",
+            "mLevel":"Gold"
+        },
+        {
+            "name":"Idaho World",
+            "address":"P.O. Box 220 Idaho City, Idaho 83631",
+            "number":"(208) 202-9288",
+            "website":"idahoworld.com",
+            "imgS":"images/dir_images/AndersonHardware_500_333.webp",
+            "imgM":"images/dir_images/AndersonHardware_700_467.webp",
+            "imgL":"images/dir_images/AndersonHardware_900_600.webp",
+            "about":"The Idaho World is the oldest continuous newspaper in the State of Idaho, established in 1863. Rich in gold and history, Boise County has withstood the test of time and its people flourished. Stay up-to-date with current events and happenings of the county. The Idaho World explores local politics, covers school events, and much more! <br>The Idaho World newspaper has been serving the community for 156 years and is now offered online. The newspaper includes classified ads, legal notices and obituaries; as well as information about the various businesses, functions and happenings of the county.",
+            "mLevel":"Gold"
         }
     ]
 }
