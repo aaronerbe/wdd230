@@ -26,6 +26,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
+        align-content: start;
     }
     .cta-left-col{
         grid-column: 1/2;
@@ -35,10 +36,13 @@
         grid-column: 2/3;
         display: flex;
         flex-direction: column;
-        margin: auto auto 7.5% auto;
+        /*margin: auto auto 7.5% auto;*/
+        align-items: flex-start;
     }
     .cta-divider{
         width: clamp(40%, 30vw, 50rem);
+        /*margin: 20rem auto;*/
+        margin-top: 6rem;
     }
 
     .weather-box{

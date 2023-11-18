@@ -174,7 +174,8 @@ img:not(#logo-img, .weather-icon, #hero-banner-close-button){
 }
 .cta-right-col *{
     width: var(--content-width);
-    margin: 1.7rem auto;
+    /*margin: 1.7rem auto;*/
+    margin: 0 auto;
     text-align: center;
 }
 .cta-divider{
@@ -190,6 +191,7 @@ h3:not(.weather-title, .forecast-days,.event-title, .contact), h1, h2:not(.membe
     padding-top: 2rem;
     padding-bottom: .5rem;
     color: var(--themed-text);
+    margin: 1.5rem ;
 }
 
 .calendar{
@@ -221,10 +223,11 @@ h3:not(.weather-title, .forecast-days,.event-title, .contact), h1, h2:not(.membe
     position: absolute;
     bottom: 10%;
     left: 0%;
-    z-index: 3;
+    z-index: 5;
     padding: 5% 5%;
     /*width: 100%;*/
-    background-color: var(--dark-accent-color);
+    /*background-color: var(--dark-accent-color);*/
+
 }
 .event-img-container{
     position: relative;
@@ -366,7 +369,7 @@ p:not(.footer, .event-details p, .contact, .footer-dates,#hero-banner-details){
 
 footer{
     background-color: var(--dark-accent-color);
-    color: var(--themed-background);
+    /*color: var(--themed-background);*/
     width: 100%;
 }
 .footer-dates{
@@ -387,7 +390,8 @@ footer{
     width: 80%;
     gap: 1rem;
     padding: 3rem;
-    color: var(--themed-background);
+    /*color: var(--themed-background);*/
+    color: var(--secondary-color);
 }
 
 /*      DISCOVERY PAGE CSS      */
