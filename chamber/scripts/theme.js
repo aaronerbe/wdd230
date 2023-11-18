@@ -9,26 +9,29 @@ const container = document.getElementsByClassName("theme-container")[0];
 container.addEventListener("click", setTheme);
 const themeIcon = document.getElementById("theme-icon");
 //setup join themes:
-const joinTitle = document.getElementById("join-title");
-const memTitle = document.querySelectorAll('.membership-title');
-if (joinTitle){
-  joinTitle.style.color = 'var(--themed-text)';
-  joinTitle.style.textAlign = 'center';
-  joinTitle.style.margin = '3rem auto';
-  memTitle.forEach(memTitle => {
-    memTitle.style.color = 'var(--highlight-color)';
-  });
-}
-const footerDates = document.querySelectorAll('.footer-dates');
-if (footerDates){
-  footerDates.forEach(footerDates => {
-    footerDates.style.color = 'var(--secondary-color)';
-  });
-}
+//const joinTitle = document.getElementById("join-title");
+//const memTitle = document.querySelectorAll('.membership-title');
+//if (joinTitle){
+//  joinTitle.style.color = 'var(--themed-text)';
+//  joinTitle.style.textAlign = 'center';
+//  joinTitle.style.margin = '3rem auto';
+  //memTitle.forEach(memTitle => {
+  ////  memTitle.style.color = 'var(--highlight-color)';
+  //  memTitle.style.fontSize = '2rem';
+  //  memTitle.style.padding = '2rem 0';
 
-const footerInfo = document.querySelector('.footer-info');
-footerInfo.style.color = 'var(--secondary-color)';
-footerInfo.style.textDecoration = 'none';
+  //});
+//}
+//const footerDates = document.querySelectorAll('.footer-dates');
+//if (footerDates){
+//  footerDates.forEach(footerDates => {
+//    //footerDates.style.color = 'var(--secondary-color)';
+//  });
+//}
+
+//const footerInfo = document.querySelector('.footer-info');
+//footerInfo.style.color = 'var(--secondary-color)';
+//footerInfo.style.textDecoration = 'none';
 
   function setTheme() {
     switch (theme) {

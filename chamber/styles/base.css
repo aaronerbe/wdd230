@@ -222,8 +222,9 @@ h3:not(.weather-title, .forecast-days,.event-title, .contact), h1, h2:not(.membe
     bottom: 10%;
     left: 0%;
     z-index: 3;
-    padding: 0 5%;
-    width: 100%;
+    padding: 5% 5%;
+    /*width: 100%;*/
+    background-color: var(--dark-accent-color);
 }
 .event-img-container{
     position: relative;
@@ -270,7 +271,7 @@ h3:not(.weather-title, .forecast-days,.event-title, .contact), h1, h2:not(.membe
     text-align: center;
     margin: 0;
 }
-p:not(.footer, .event-details p, .contact,#hero-banner-details){
+p:not(.footer, .event-details p, .contact, .footer-dates,#hero-banner-details){
     color: var(--themed-text);
     font-family: Helvetica, sans-serif;
     padding: .5rem 2rem;
@@ -368,6 +369,13 @@ footer{
     color: var(--themed-background);
     width: 100%;
 }
+.footer-dates{
+    color: var(--secondary-color);
+}
+.footer-info{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
 .footer-container{
     margin: 0 auto;
     text-align: center;
@@ -412,13 +420,22 @@ footer{
     margin: 3rem auto;
     color: var(--themed-text);
 }
+#join-title{
+    color: var(--themed-text);
+    text-align: center;
+    margin: 3rem auto;
+}
 .join-inputs{
     display: block;
     border: 1px solid lightgrey;
     border-radius: 4px;
-    padding: 1rem 0;
-    width: 100%;
+    padding: 1rem;
+    /*width: 100%;*/
+    width: 100vw;
     max-width: 20rem;
+}
+.join-info{
+    padding: .75rem 0;
 }
 #highlight-fieldset{
     width: 100%;
@@ -434,6 +451,10 @@ footer{
     margin: 0 auto;
     padding-bottom: 3rem;
     justify-content: space-around;
+}
+.membership-title{
+    font-size: 2rem;
+    padding: 2rem 0;
 }
 
 .level{
@@ -514,10 +535,10 @@ footer{
 /* GRID VIEW */
 .contacts-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-evenly;
     padding: 5rem 10rem 5rem 10rem;
-    gap: 2rem;
+    gap: 4rem;
     margin: 3rem 0 0 0;
     background-color: var(--dark-accent-color);
 }
@@ -528,6 +549,7 @@ footer{
     text-align: center;
     padding: 1rem;
     border-radius: 10px;
+    
 }
 .contacts-grid > * > *{
     color: var(--dark-accent-color);
