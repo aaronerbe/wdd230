@@ -8,6 +8,27 @@ const root = document.querySelector(":root");
 const container = document.getElementsByClassName("theme-container")[0];
 container.addEventListener("click", setTheme);
 const themeIcon = document.getElementById("theme-icon");
+
+window.onload = function(){
+  //check local storage for a theme state, if set, use that.  else use setLight() to default to light theme
+  //setLight();
+  var theme = getThemeState() || "light";
+  if (theme == "dark"){
+    setDark();
+  }else{
+    setLight()
+  }
+}
+
+//save the theme state to local storage to remember for persistent theme
+function setThemeState(theme){
+  localStorage.setItem("themeState", theme);
+}
+//get the theme state from local storage
+function getThemeState(){
+  return localStorage.getItem("themeState");
+}
+
 //setup join themes:
 //const joinTitle = document.getElementById("join-title");
 //const memTitle = document.querySelectorAll('.membership-title');
@@ -44,6 +65,7 @@ const themeIcon = document.getElementById("theme-icon");
         theme = "dark";
         break;
     }
+    setThemeState(theme);
   }
 
   function setLight() {
@@ -59,6 +81,8 @@ const themeIcon = document.getElementById("theme-icon");
     }, 300);
     themeIcon.classList.add("change");
     themeIcon.src = sun;
+    //make sure theme var is set incase it was loaded from local storage
+    theme = "light";
   }
 
   function setDark() {
@@ -75,6 +99,8 @@ const themeIcon = document.getElementById("theme-icon");
     }, 300);
     themeIcon.classList.add("change");
     themeIcon.src = moon;
+    //make sure theme var is set incase it was loaded from local storage
+    theme = "dark";
   }
 
   /* Apply dynamic styling to the buttons */
@@ -117,6 +143,3 @@ const themeIcon = document.getElementById("theme-icon");
   container.addEventListener('mouseout', function(){
     container.style.opacity = 1;
   })
-  window.onload = function(){
-    setLight();
-  }

@@ -364,7 +364,6 @@ p:not(.footer, .event-details p, .contact, .footer-dates,#hero-banner-details){
     vertical-align: top;
     font-size: 2rem;
     font-size: clamp(1rem,2rem,2.5rem);
-
 }
 
 footer{
