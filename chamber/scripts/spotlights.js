@@ -32,11 +32,13 @@ function displaySpotlights(members){
     let randomList = randomize(indexList);
 
     // Get the first four unique random numbers)
-    let random4 = randomList.slice(0, 4);
+    //randomList = randomList.slice(0, 3);
     //iterate through the list and apply to the elements 
-    for (let i = 0; i<random4.length; i++){
-        spotlightCompName[i].innerHTML = members[random4[i]].name;
-        spotlightAbout[i].innerHTML = members[random4[i]].about
+    //length of the list is determined by the smaller of the two lists (spotlightCompName) or (randomList).  This way we don't run out of bounds 
+    const length = Math.min(randomList.length, spotlightCompName.length)
+    for (let i = 0; i<length; i++){
+        spotlightCompName[i].innerHTML = members[randomList[i]].name;
+        spotlightAbout[i].innerHTML = members[randomList[i]].about
     }
 }
 

@@ -92,7 +92,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 1.5rem;
+        /*gap: 1.5rem;*/
         margin: 3rem auto;
       }
       #membership-left {
@@ -101,13 +101,17 @@
         margin: 0;
         border-right: 1px solid var(--secondary-color);
         padding: 1.5rem;
+        /*padding-right: 3rem;*/
         
 
       }
       #membership-right {
         grid-column: 2 / 3; /* Make it span the second column */
         grid-row: 1/2;
-        margin: 0 0 0 .75rem;
+        padding: 1.5rem;
+        padding-left: 3rem;
+
+        /*margin: 0 0 0 .75rem;*/
         /*max-width: 70%;*/
       }
 
