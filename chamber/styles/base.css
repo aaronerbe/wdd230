@@ -125,6 +125,7 @@ img:not(#logo-img, .weather-icon, #hero-banner-close-button){
 }
 #hero-banner-title{
     font-size: clamp(.25rem, 5vw, 2.5rem);
+    color: var(--secondary-color);
 }
 #hero-banner-details{
     font-size: clamp(.25rem, 5vw, 2rem);

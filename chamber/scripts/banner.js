@@ -24,6 +24,8 @@ bannerCloseButton.addEventListener('mouseover',function(){
     bannerCloseButton.style.transition ='.5s' ;
     bannerCloseButton.style.backgroundColor = 'var(--highlight-color)' ;
     bannerCloseButton.style.borderRadius = '4px';
+    //bannerCloseButton.setAttribute('fill','#ffffff');
+    bannerCloseButton.setAttribute('src','images/icons/close-button-black.svg');
 })
 bannerCloseButton.addEventListener('mouseout',function(){
     banner.style.opacity = "1";
@@ -32,4 +34,6 @@ bannerCloseButton.addEventListener('mouseout',function(){
     bannerCloseButton.style.transition ='0.25s' ;
     bannerCloseButton.style.backgroundColor = 'transparent' ;
     bannerCloseButton.style.borderRadius = '4px';
+    //bannerCloseButton.setAttribute('fill','#000000');
+    bannerCloseButton.setAttribute('src','images/icons/close-button-white.svg');
 })
