@@ -1,4 +1,4 @@
-const visitContent = document.querySelector('.visit-content');
+const visitContent = document.getElementById('visit-content');
 const today = Date.now();
 const msToDays = 84600000;
 

@@ -404,6 +404,10 @@ footer{
     color: var(--themed-text);
     text-align: center;
 }
+#visit-content{
+    font-size: 1.5rem;
+    margin: 6rem auto 0 auto;
+}
 .discovery-left-col, .discovery-right-col{
     color: var(--themed-text);    
     grid-column: 1/2;
