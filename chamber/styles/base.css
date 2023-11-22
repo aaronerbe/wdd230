@@ -234,6 +234,7 @@ h3:not(.weather-title, .forecast-days,.event-title, .contact), h1, h2:not(.membe
 .event-img-container{
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
 .overlay {
@@ -243,6 +244,7 @@ h3:not(.weather-title, .forecast-days,.event-title, .contact), h1, h2:not(.membe
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
 }
 
 .spotlights-card{
