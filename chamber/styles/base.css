@@ -113,9 +113,9 @@ img:not(#logo-img, .weather-icon, #hero-banner-close-button){
     transform: translate(-50%, -25%); /* Center the banner */
     width: 90%;
     display: none;
+    /* hidden by default.  turned on by js */
     /*display: flex;*/
     flex-direction: column;
-    padding: 1.5rem 0;
     text-align: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -132,6 +132,7 @@ img:not(#logo-img, .weather-icon, #hero-banner-close-button){
 }
 #hero-banner-close-button{
     width: 40px;
+    width: clamp(10px, 6vw, 40px);
     height: auto;
     position: absolute;
     top: 10px;
@@ -262,6 +263,7 @@ h3:not(.weather-title, .forecast-days,.event-title, .contact), h1, h2:not(.membe
     border: 1px solid var(--themed-highlight-background);
     border-radius: 5px;
     background-color: var(--themed-background);
+    width: 85%;
     min-width: 250px;
     max-width: 350px;
     margin: 0 auto;
@@ -590,5 +592,5 @@ footer{
     color: var(--primary-color);
 }
 .contacts-list > * > *{
-    padding: .25rem 0;
+    padding: .25rem 2rem;
 }
