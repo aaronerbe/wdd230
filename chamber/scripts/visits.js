@@ -23,9 +23,11 @@ if (today == lastDate) {
 } else if (daysDifference <1) {
     //console.log("Less than a day since the last visit.");
     visitContent.textContent = "Back so soon! Awesome!";
-} else {
+} else if (daysDifference <2) {
     //console.log("More than 1 day since the last visit.");
-    visitContent.textContent = "You last visited " + parseInt(daysDifference) + " ago.";
+    visitContent.textContent = "You last visited " + parseInt(daysDifference) + "day ago.";
+} else{
+    visitContent.textContent = "You last visited " + parseInt(daysDifference) + "day ago.";
 }
 
 //set for next visit
