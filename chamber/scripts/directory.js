@@ -55,7 +55,7 @@ function displayContacts(contacts){
         //website.textContent = contact.website;
         website.textContent = "Website";
         img.setAttribute('src',contact.imgL);
-        img.setAttribute('alt',`Image of ${contact.name}`);
+        img.setAttribute('alt',`${contact.name}`);
         img.setAttribute('width',"500");
         img.setAttribute('height',"333");
         img.setAttribute('loading',"lazy");
