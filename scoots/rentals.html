@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Aaron Erbe">
+        <meta name="description" content="Rental Info for ~Scoots~ Scooter, ATV and Jeep Rentals - WDD212 Assignment">
+        <title>~Scoots~ Rentals Info</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+
+        <meta property="og:title" content="Rental for Scoots Scooter, ATV and Jeep Rentals in Cozumel - Rental Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/6/63/Arrecifes_de_Cozumel_National_Park.jpg">
+        <meta property="og:url" content="https://aaronerbe.github.io/scoots">
+    </head>
+    <body>
+        <header>
+            <div class="header dark-color">
+                <a id="logo" href="index.html"><img id="logo-img" src="images/logo/logo.svg" alt="scoots logo" width="200" height="50" loading="lazy"></a>
+                <nav id="navigation">    
+                    <div id="mobile-menu">
+                        <img id="hamburger-menu"  class="show"src="images/icons/hamburger-icon.svg" alt="mobile menu hamburger menu" height="50" width="50" loading="lazy">
+                        <img id="close-menu"  class="hide" src="images/icons/close-button-white.svg" alt="mobile menu close button font-size-sm" height="50" width="50" loading="lazy">
+                    </div>
+                    <div id="navigation-links" class="dark-accent hide">
+                        <a href="index.html">Home</a>
+                        <a href="rentals.html" class="active">Rentals</a>
+                        <a href="reservations.html">Reservations</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        
+        <main>
+            <div class="hero-container dark-color">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/hero/hero_jeep_sm.webp">
+                    <source media="(max-width: 910px)" srcset="images/hero/hero_jeep_md.webp">
+                    <img class="hero-img" src="images/hero/hero_jeep_lg.webp" alt="Jeep on the sandy beach" width="1400" height="300">
+                </picture>
+                <div class="overlay"></div>
+                <div class="hero-heading-container">
+                    <h1 class="hero-heading"><br><br>Choose Your Adventure</h1>
+                </div>
+            </div>
+
+            <div id="rental-benefits" class="dark-accent padded">
+                <h2 class="whitespace-content">~SCOOTS~ Benefits</h2>
+                <ul>
+                    <li class="whitespace-content">Unlimited miles</li>
+                    <li class="whitespace-content">Liability Insurance included</li>
+                    <li class="whitespace-content">Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals</li>
+                    <li class="whitespace-content">Rentals may be returned to either physical location</li>
+                </ul>
+            </div>
+            <div class="cyr-container whitespace-content padded">
+                <div id="metro" class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/honda-metro-scooter2_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/honda-metro-scooter2_md.webp">
+                        <img class="cyr-img" src="images/products/honda-metro-scooter2_lg.webp" alt="Honda Metro Scooter" width="300" height="200">
+                    </picture>
+                    <h2 class="cyr-heading">Honda Metro Scooter</h2>
+                    <div id="metro-rider" class="max-rider rental-details"></div>
+                    <div id="metro-description" class="description rental-details"></div>
+                    <div id="metro-prices" class="rental-details emphasize"></div>
+                </div>
+                <div id="dio" class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/honda-dio-scooter1_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/honda-dio-scooter1_md.webp">
+                        <img class="cyr-img" src="images/products/honda-dio-scooter1_lg.webp" alt="Honda Dio Scooter" width="300" height="200">
+                    </picture>
+                    <h2 class="cyr-heading">Honda Dio Scooter</h2>
+                    <div id="dio-rider" class="max-rider rental-details"></div>
+                    <div id="dio-description" class="description rental-details"></div>
+                    <div id="dio-prices" class="rental-details emphasize"></div>
+                </div>
+                <div id="pcx150" class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/honda-pcx150-scooter1_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/honda-pcx150-scooter1_md.webp">
+                        <img class="cyr-img" src="images/products/honda-pcx150-scooter1_lg.webp" alt="Honda PCX150 Scooter" width="300" height="200">
+                    </picture>
+                    <h2 class="cyr-heading">Honda PCX150 Scooter</h2>
+                    <div id="pcx150-rider" class="max-rider rental-details"></div>
+                    <div id="pcx150-description" class="description rental-details"></div>
+                    <div id="pcx150-prices" class="rental-details emphasize"></div>
+                </div>
+                <div id="pioneer" class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/honda-pioneer-atv1_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/honda-pioneer-atv1_md.webp">
+                        <img class="cyr-img" src="images/products/honda-pioneer-atv1_lg.webp" alt="Honda Pioneer ATV" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h2 class="cyr-heading">Honda Pioneer ATV</h2>
+                    <div id="pioneer-rider" class="max-rider rental-details"></div>
+                    <div id="pioneer-description" class="description rental-details"></div>
+                    <div id="pioneer-prices" class="rental-details emphasize"></div>
+                </div>
+                <div id="jeep2" class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/jeep-wrangler-2door2_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/jeep-wrangler-2door2_md.webp">
+                        <img class="cyr-img" src="images/products/jeep-wrangler-2door2_lg.webp" alt="Jeep Wrangler 2 Door" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h2 class="cyr-heading">Jeep Wrangler 2 Door</h2>
+                    <div id="jeep2-rider" class="max-rider rental-details"></div>
+                    <div id="jeep2-description" class="description rental-details"></div>
+                    <div id="jeep2-prices" class="rental-details emphasize"></div>
+                    </div>
+                <div id="jeep4" class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/jeep-wrangler-4door2_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/jeep-wrangler-4door2_md.webp">
+                        <img class="cyr-img" src="images/products/jeep-wrangler-4door2_lg.webp" alt="Jeep Wrangler 4 Door with AC" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h2 class="cyr-heading">Jeep Wrangler 4 Door</h2>
+                    <div id="jeep4-rider" class="max-rider rental-details"></div>
+                    <div id="jeep4-description" class="description rental-details"></div>
+                    <div id="jeep4-prices" class="rental-details emphasize"></div>
+                </div>
+            </div>
+
+            <div class="summary-tbl-container whitespace-content margined padded">
+                <h2 class="rental-headings">Summary Table</h2>
+                <!--<div id="tbl-container"></div>-->
+                <table id="summary-tbl">
+                </table>
+            
+                <div class="padded">
+                    <button class="button form-submit font-size-sm" type="submit">Reserve Your Rental</button>
+                </div>
+
+            </div>
+
+
+              
+        </main>
+
+        <footer class="dark-color padded">
+
+            <div id="phone-num" class="footer-content">
+                <img src="images/icons/phone.svg" alt="phone icon" width="15" height="15" loading="lazy">  
+                <span>+221-123-1234</span>
+            </div>
+            <div id="phone-email" class="footer-content">
+                <img src="images/icons/email.svg" alt="email icon" width="15" height="15" loading="lazy">
+                <span>info@scootsrentals.com</span>
+            </div>
+            <div id="social-media-container">
+                <img class="social-media-buttons" src="images/icons/facebook-white.svg" alt="facebook icon" height="20" width="20" loading="lazy">
+                <img class="social-media-buttons" src="images/icons/x-white.svg" alt="x icon"  height="20" width="20" loading="lazy">
+                <img class="social-media-buttons" src="images/icons/instagram-white.svg" alt="instagram icon"  height="20" width="20" loading="lazy">
+            </div>
+            <div id="attributions" class="footer-content">
+                <a href="attributions.html">
+                    <img src="images/icons/scooter-icon1.svg" alt="cartoon image of scooter" width="15" height="15" loading="lazy"> <span>Resources</span>
+                </a>
+                <a href=""></a>
+            </div>
+        </footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/rentals.js"></script>
+    </body>
+</html>

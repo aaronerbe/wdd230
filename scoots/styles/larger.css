@@ -1,0 +1,161 @@
+@media screen and (min-width: 910px) {
+
+    /* REACTIVE MENU */
+    /* Initially hide the close button and navigation links */
+    .hide{
+        display: none;
+    }
+    /* display when classes are applied via js */
+    .show{
+        display: none;
+    }
+    /*#mobile-menu, #hamburger-menu, #close-menu{
+        display: none;
+    }*/
+    .header{
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+    #logo{
+        /*display: block;*/
+        /*display: static;*/
+        position: static;
+        max-width: 70%;
+        min-width: 340px;
+        padding: 0;
+        margin: 0;
+    }
+    #navigation-links{
+        /* reset everything from mobile */
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        left: initial;
+        top: initial;
+        transform: initial;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        background-color: var(--dark-color);
+        border: 1px solid var(--dark-color);
+        margin: 0 2rem;
+    }
+    #navigation-links a{
+        padding: 1rem 0;
+        margin: 1.5rem;
+        border: 1px solid var(--dark-color);
+    }
+    #navigation .active, #navigation a:hover{
+        color: var(--button-color);
+        background-color: var(--dark-color);
+        border: 1px solid var(--dark-color);
+        border-bottom: 1px solid var(--button-color);
+    }
+    /* CTA */
+    /* Choose Your Ride */
+    .cyr-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+    }
+    .cyr-container h2{
+            grid-column: 1/-1;
+    }
+
+    /* EXPLORE*/
+    #explore-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 4rem 3rem;
+    }
+    #explore-container h2{
+        grid-column: 1/-1;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .explore-card{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .explore-img-container{
+        grid-row: 1/2;
+    }
+    .explore-info{
+        grid-row: 2/3
+    }
+
+
+    /* WEATHER */
+    /* FORECAST WEATHER */
+    #weather-forecast{
+        grid-template-columns: 1fr 1fr 1fr .1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+    #forecast-3pm-title{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    #forecast-hi-low-title{
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }
+    #forecast-icon-group{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #forecast-temp-group{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #forecast-humidity-group{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    #forecast-divider-bot{
+        grid-column: 4/5;
+        grid-row: 2/5;
+        width: .1px;
+        height: 100%;
+    }
+    #forecast-low-group{
+        grid-column: 5/6;
+        grid-row: 3/4;
+        transform: translate(0%);
+
+    }
+    #forecast-high-group{
+        grid-column: 6/7;
+        grid-row: 3/4;
+        transform: translate(0%);
+
+    }
+    #forecast-desc-group{
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    #forecast-compare-group{
+        grid-column: 5/7;
+        grid-row: 4/5;
+    }
+
+/* FOOTER */
+    footer{
+        /*flex-direction: row;*/
+        padding: 10rem;
+    }
+
+
+    /* RENTALS */
+    #summary-tbl tr td:last-child:not(#exclude-cell), #summary-tbl tr th:last-child {
+        display: table-cell;
+    }
+    #summary-tbl th{
+        white-space: nowrap;
+    }
+
+}

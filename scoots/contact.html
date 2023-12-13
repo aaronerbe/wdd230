@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Aaron Erbe">
+        <meta name="description" content="Contact information for ~Scoots~ Scooter, ATV and Jeep Rentals - WDD212 Assignment">
+        <title>~Scoots~ Contact Info</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+
+        <meta property="og:title" content="Contact Information for Scoots Scooter, ATV and Jeep Rentals in Cozumel - Rental Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/6/63/Arrecifes_de_Cozumel_National_Park.jpg">
+        <meta property="og:url" content="https://aaronerbe.github.io/scoots">
+    </head>
+    <body>
+        <header>
+            <div class="header dark-color">
+                <a id="logo" href="index.html"><img id="logo-img" src="images/logo/logo.svg" alt="scoots logo" width="200" height="50" loading="lazy"></a>
+                <nav id="navigation">    
+                    <div id="mobile-menu">
+                        <img id="hamburger-menu"  class="show" src="images/icons/hamburger-icon.svg" alt="mobile menu hamburger menu" height="50" width="50" loading="lazy">
+                        <img id="close-menu" class="hide" src="images/icons/close-button-white.svg" alt="mobile menu close button" height="50" width="50" loading="lazy">
+                    </div>
+                    <div id="navigation-links" class="dark-accent hide">
+                        <a href="index.html">Home</a>
+                        <a href="rentals.html">Rentals</a>
+                        <a href="reservations.html">Reservations</a>
+                        <a href="contact.html" class="active">Contact</a>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        
+        <main>
+            <div class="hero-container dark-color">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/hero/contact_sm.webp">
+                    <source media="(max-width: 910px)" srcset="images/hero/contact_md.webp">
+                    <img class="hero-img" src="images/hero/contact_lg.webp" alt="Happy Man calling on Phone" width="1400" height="300">
+                </picture>
+                <div class="overlay"></div>
+                <div class="hero-heading-container">
+                    <h1 class="hero-heading"><br><br>Contact Us</h1>
+                </div>
+            </div>
+
+            <div class="banner-container dark-accent">
+                <h2 class="banner dark-accent font-size-units">Need Help?  Call us at: <span class="emphasize">+221-123-1234</span> or use the form below and we'll be in contact!</h2>
+            </div>
+
+            <h2 id="contact-title" class="margined h2heading">How Can We Help?</h2>
+            <form id="contact-form"  class="whitespace-content forms margined" method="get" action="contact-confirmation.html">
+                <fieldset id="contact-info">
+                    <legend class="legend">Contact Information</legend>
+                    <!-- Name -->
+                    <label for="contact-fname" class="labels">First Name
+                        <input type="text" id="contact-fname" class="inputs required" name="contact-fname" required>
+                    </label>
+                    <label for="contact-lname" class="labels">Last Name
+                        <input type="text" id="contact-lname" class="inputs required" name="contact-lname" required>
+                    </label>
+                    <!-- contact -->
+                    <label for="contact-email" class="labels">Email Address
+                        <input class="inputs required" type="email" id="contact-email" name="contact-email" required pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b" title="Please enter a valid email address" placeholder="example@domain.com" autocomplete="email">
+                    </label>   
+                    <label for="contact-mobile" class="labels">Phone
+                        <input class="inputs required" type="tel" id="contact-mobile" name="contact-mobile" required pattern="\d{10}" title="10 digit phone number">
+                    </label> 
+                    <!-- Country -->
+                    <label for="country" class="labels">Home Country
+                        <select class="inputs inputs-select required" id="country" name="country" required>
+                            <option value="" disabled selected hidden>Select Home Country</option>
+                            <option value="usa">United States</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="bahamas">Bahamas</option>
+                            <option value="barbados">Barbados</option>
+                            <option value="belize">Belize</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="canada">Canada</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="costa-rica">Costa Rica</option>
+                            <option value="cuba">Cuba</option>
+                            <option value="dominican-republic">Dominican Republic</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="grenada">Grenada</option>
+                            <option value="guatemala">Guatemala</option>
+                            <option value="haiti">Haiti</option>
+                            <option value="honduras">Honduras</option>
+                            <option value="jamaica">Jamaica</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="nicaragua">Nicaragua</option>
+                            <option value="panama">Panama</option>
+                            <option value="peru">Peru</option>
+                            <option value="saint-lucia">Saint Lucia</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="venezuela">Venezuela</option>
+                        </select>
+                    </label>
+
+
+                    <label for="comments" class="labels">Comments
+                        <textarea class="inputs" name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </label>
+                </fieldset>
+                <div class="padded">
+                    <button class="button form-submit font-size-sm" type="submit">Send Message</button>
+                </div>
+            </form>
+
+            <div id="maps-container" class="dark-accent">
+                <h2 id="map-title" class="whitespace-content h2heading padded">Come Visit Us At Either Of Our Two Great Locations</h2>
+                <p class="whitespace-content">We are located near the Ferry dock for those coming in from the mainland as well as near the Cruise Ship dock for those visiting us from sea.<br> <br>Remember, you can return your rentals to either location and Walk-Ins are always welcome!</p>
+
+                <div id="map1" class="map whitespace-content">
+                    <!-- iframe showing google map of 1st location -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14947.53682587053!2d-86.9544676368078!3d20.510972543659932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1702364047240!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Playa del Carmen-Cozumel Ferry dock - el Centro de Cozumel"></iframe>
+                    <h3 class="form-subtitle whitespace-content">Playa del Carmen-Cozumel Ferry dock - el Centro de Cozumel</h3>
+                </div>
+
+                
+                <div id="map2" class="map whitespace-content">
+                    <!-- iframe showing google map of 1st location -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7337954775144!2d-86.97695227404017!3d20.47612405652865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sus!4v1702364312309!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Terminal Puerta Maya - Cozumel"></iframe>
+                    <h3 class="form-subtitle whitespace-content">Terminal Puerta Maya - Cozumel</h3>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer class="dark-color padded">
+
+            <div id="phone-num" class="footer-content">
+                <img src="images/icons/phone.svg" alt="phone icon" width="15" height="15" loading="lazy">  
+                <span>+221-123-1234</span>
+            </div>
+            <div id="phone-email" class="footer-content">
+                <img src="images/icons/email.svg" alt="email icon" width="15" height="15" loading="lazy">
+                <span>info@scootsrentals.com</span>
+            </div>
+            <div id="social-media-container">
+                <img class="social-media-buttons" src="images/icons/facebook-white.svg" alt="facebook icon" height="20" width="20" loading="lazy">
+                <img class="social-media-buttons" src="images/icons/x-white.svg" alt="x icon"  height="20" width="20" loading="lazy">
+                <img class="social-media-buttons" src="images/icons/instagram-white.svg" alt="instagram icon"  height="20" width="20" loading="lazy">
+            </div>
+            <div id="attributions" class="footer-content">
+                <a href="attributions.html">
+                    <img src="images/icons/scooter-icon1.svg" alt="cartoon image of scooter" width="15" height="15" loading="lazy"> <span>Resources</span>
+                </a>
+                <a href=""></a>
+            </div>
+        </footer>
+
+        <script src="scripts/menu.js"></script>
+        <!--<script src="scripts/rentals.js"></script>-->
+    </body>
+</html>

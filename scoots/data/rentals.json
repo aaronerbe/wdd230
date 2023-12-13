@@ -1,0 +1,118 @@
+{
+    "rentals":[
+        {
+            "code": "metro",
+            "type": "Honda Metro Scooter",
+            "max" : "1",
+            "desc": "beginners",
+            "features":"light, easy to handle",
+            "reservation":[
+                {
+                    "halfDay":"20",
+                    "fullDay":"30"
+                }
+            ],
+            "walkIn":[
+                {
+                    "halfDay":"25",
+                    "fullDay":"35"
+                }
+            ]
+        },
+        {
+            "code": "dio",
+            "type": "Honda Dio Scooter",
+            "max" : "2",
+            "desc": "two person economy",
+            "features":"130mpg",
+            "reservation":[
+                {
+                    "halfDay":"30",
+                    "fullDay":"40"
+                }
+            ],
+            "walkIn":[
+                {
+                    "halfDay":"35",
+                    "fullDay":"45"
+                }
+            ]
+        },
+        {
+            "code": "pcx150",
+            "type": "Honda PCX150 Scooter",
+            "max" : "2",
+            "desc": "long distance riding with two people",
+            "features": "more power and comfort",
+            "reservation":[
+                {
+                    "halfDay":"40",
+                    "fullDay":"50"
+                }
+            ],
+            "walkIn":[
+                {
+                    "halfDay":"45",
+                    "fullDay":"55"
+                }
+            ]
+        },
+        {
+            "code": "pioneer",
+            "type": "Honda Pioneer ATV",
+            "max" : "4",
+            "desc": "any off-road adventures",
+            "features":"4x4, locking differential and roll-cage",
+            "reservation":[
+                {
+                    "halfDay":"50",
+                    "fullDay":"70"
+                }
+            ],
+            "walkIn":[
+                {
+                    "halfDay":"60",
+                    "fullDay":"80"
+                }
+            ]
+        },
+        {
+            "code": "jeep4",
+            "type": "Jeep Wrangler - 4 Door With A/C",
+            "max" : "5",
+            "desc": "those looking for adenture in comfort with AC and extra room",
+            "features":"air conditioning and soft-top",
+            "reservation":[
+                {
+                    "halfDay":"70",
+                    "fullDay":"100"
+                }
+            ],
+            "walkIn":[
+                {
+                    "halfDay":"85",
+                    "fullDay":"125"
+                }
+            ]
+        },
+        {
+            "code": "jeep2",
+            "type": "Jeep Wrangler - 2 Door",
+            "max" : "4",
+            "desc": "on and off-road adventure",
+            "features": "open air with removable hard-top",
+            "reservation":[
+                {
+                    "halfDay":"60",
+                    "fullDay":"85"
+                }
+            ],
+            "walkIn":[
+                {
+                    "halfDay":"70",
+                    "fullDay":"90"
+                }
+            ]
+        }
+    ]
+}

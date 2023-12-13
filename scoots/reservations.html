@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Aaron Erbe">
+        <meta name="description" content="Reservations for ~Scoots~ Scooter, ATV and Jeep Rentals - WDD212 Assignment">
+        <title>~Scoots~ Reservations</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+
+        <meta property="og:title" content="Reservations for Scoots Scooter, ATV and Jeep Rentals in Cozumel">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/6/63/Arrecifes_de_Cozumel_National_Park.jpg">
+        <meta property="og:url" content="https://aaronerbe.github.io/scoots">
+    </head>
+    <body>
+        <header>
+            <div class="header dark-color">
+                <a id="logo" href="index.html"><img id="logo-img" src="images/logo/logo.svg" alt="scoots logo" width="200" height="50" loading="lazy"></a>
+                <nav id="navigation">    
+                    <div id="mobile-menu">
+                        <img id="hamburger-menu"  class="show" src="images/icons/hamburger-icon.svg" alt="mobile menu hamburger menu" height="50" width="50" loading="lazy">
+                        <img id="close-menu"  class="hide" src="images/icons/close-button-white.svg" alt="mobile menu close button" height="50" width="50" loading="lazy">
+                    </div>
+                    <div id="navigation-links" class="dark-accent hide">
+                        <a href="index.html">Home</a>
+                        <a href="rentals.html">Rentals</a>
+                        <a href="reservations.html" class="active">Reservations</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        
+        <main>
+            <div class="hero-container dark-color">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/hero/hero_beach_sm.webp">
+                    <source media="(max-width: 910px)" srcset="images/hero/hero_beach_md.webp">
+                    <img class="hero-img" src="images/hero/hero_beach_lg.webp" alt="Jeep on the sandy beach" width="1400" height="300">
+                </picture>
+                <div class="overlay"></div>
+                <div class="hero-heading-container">
+                    <h1 class="hero-heading"><br><br>Lets do this!</h1>
+                </div>
+            </div>
+
+            <form id="reservation-form" class="whitespace-content forms margined padded" method="get" action="thankyou.html">
+                <fieldset id="reserve-info">
+                    <legend class="legend">Reservation Information</legend>
+
+                    <label for="type" class="labels">Vehicle Type
+                        <select class="inputs inputs-select required" name="type" id="type" required>
+                            <option value="" disabled selected hidden>Select a vehicle</option>
+                            <option value="metro">Honda Metro Scooter</option>
+                            <option value="dio">Honda Dio Scooter</option>
+                            <option value="pcx150">Honda PCX150 Scooter</option>
+                            <option value="pioneer">Honda Pioneer ATV</option>
+                            <option value="jeep2">Jeep Wrangler - 2 Door</option>
+                            <option value="jeep4">Jeep Wrangler - 4 Door</option>
+                        </select>
+                    </label>
+                    <label for="insurance" class="labels">Add Damage Inurance
+                        <input type="checkbox" id="insurance" class="inputs-checkbox" name="inputs">
+                    </label>
+
+                    <label class="labels">Reservation Pickup Date
+                        <input type="date" id="reservation-start" class="inputs required" name="reservation-start" required>
+                    </label>
+                    <label class="labels">Reservation Return Date
+                        <input type="date" id="reservation-end" class="inputs required" name="reservation-end" required>
+                    </label>
+                    <label for="period" class="labels">Length of Reservation
+                        <input type="number" id="period" class="inputs inputs-number required" name="period" min="1" max="30" value="">
+                    </label>
+
+                </fieldset>
+                <fieldset id="driver-info">
+                    <legend class="legend">Driver Information</legend>
+                    <label for="fname" class="labels">First Name
+                        <input type="text" id="fname" class="inputs required" name="fname" required>
+                    </label>
+                    <label for="lname" class="labels">Last Name
+                        <input type="text" id="lname" class="inputs required" name="lname" required>
+                    </label>
+                    <label for="email" class="labels">Email Address
+                        <input class="inputs required" type="email" id="email" name="email" required pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b" title="Please enter a valid email address" placeholder="example@domain.com" autocomplete="email">
+                    </label>      
+                    <label for="mobile" class="labels">Phone
+                        <input class="inputs required" type="tel" id="mobile" name="mobile" required pattern="\d{10}" title="10 digit phone number">
+                    </label> 
+                    <label for="country" class="labels">Home Country
+                        <select class="inputs inputs-select required" id="country" name="country" required>
+                            <option value="" disabled selected hidden>Select Home Country</option>
+                            <option value="usa">United States</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="bahamas">Bahamas</option>
+                            <option value="barbados">Barbados</option>
+                            <option value="belize">Belize</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="canada">Canada</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="costa-rica">Costa Rica</option>
+                            <option value="cuba">Cuba</option>
+                            <option value="dominican-republic">Dominican Republic</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="grenada">Grenada</option>
+                            <option value="guatemala">Guatemala</option>
+                            <option value="haiti">Haiti</option>
+                            <option value="honduras">Honduras</option>
+                            <option value="jamaica">Jamaica</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="nicaragua">Nicaragua</option>
+                            <option value="panama">Panama</option>
+                            <option value="peru">Peru</option>
+                            <option value="saint-lucia">Saint Lucia</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="venezuela">Venezuela</option>
+                        </select>
+                    </label>
+                    <label for="cruise" class="labels">Cruise Line
+                        <select class="inputs inputs-select" name="cruise" id="cruise">
+                            <option value="" disabled selected hidden>Optional</option>
+                            <option value="carnival">Carnival</option>
+                            <option value="celebrity">Celebrity</option>
+                            <option value="disney">Disney</option>
+                            <option value="holland">Holland</option>
+                            <option value="norwegian">Norwegian</option>
+                            <option value="royal">Royal Caribbean</option>
+                        </select>
+                    </label>
+                    <label for="drop-off" class="labels">Request Drop-off
+                        <input type="checkbox" id="drop-off" class="inputs-checkbox" name="inputs">
+                    </label>
+                    <label for="instructions" class="labels">Special Request
+                        <textarea class="inputs" name="instructions" id="instructions" cols="30" rows="10"></textarea>
+                    </label>
+                </fieldset>
+                <div>
+                    <button class="button form-submit font-size-sm" type="submit">Reserve my ride</button>
+                </div>
+            </form>
+            <div id="agreement" class="whitespace-content padded">
+                <h2>Rental Services and Agreement</h2>
+                <ul>
+                    <li>
+                        A $50 security deposit is required to confirm reservations.
+                    </li>
+                    <li>
+                        A valid drivers license is required in hand at the time of rental.
+                    </li>
+                    <li>
+                        No one under the age of 12 years of age are allowed to ride on the scooters.
+                    </li>
+                    <li>
+                        Fuel charge is not included.
+                    </li>
+                    <li>
+                        Unlimited mileage.
+                    </li>
+                    <li>
+                        Liability insurance is included.
+                    </li>
+                    <li>
+                        Damage insurance is available for purchase.
+                    </li>
+                    <li>
+                        Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+                    </li>
+                    <li>
+                        Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.
+                    </li>
+                    <li>
+                        Rentals may be returned to either physical location.
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="dark-color padded">
+
+            <div id="phone-num" class="footer-content">
+                <img src="images/icons/phone.svg" alt="phone icon" width="15" height="15" loading="lazy">  
+                <span>+221-123-1234</span>
+            </div>
+            <div id="phone-email" class="footer-content">
+                <img src="images/icons/email.svg" alt="email icon" width="15" height="15" loading="lazy">
+                <span>info@scootsrentals.com</span>
+            </div>
+            <div id="social-media-container">
+                <img class="social-media-buttons" src="images/icons/facebook-white.svg" alt="facebook icon" height="20" width="20" loading="lazy">
+                <img class="social-media-buttons" src="images/icons/x-white.svg" alt="x icon"  height="20" width="20" loading="lazy">
+                <img class="social-media-buttons" src="images/icons/instagram-white.svg" alt="instagram icon"  height="20" width="20" loading="lazy">
+            </div>
+            <div id="attributions" class="footer-content">
+                <a href="attributions.html">
+                    <img src="images/icons/scooter-icon1.svg" alt="cartoon image of scooter" width="15" height="15" loading="lazy"> <span>Resources</span>
+                </a>
+                <a href=""></a>
+            </div>
+        </footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/reservations.js"></script>
+    </body>
+</html>

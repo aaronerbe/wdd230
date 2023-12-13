@@ -1,0 +1,32 @@
+@media screen and (min-width: 600px) {
+
+    /* CTA */
+
+    /* HIGHLIGHTS */
+    #company-highlight-locations{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    #company-highlight-locations h3{
+        grid-column: 1/-1;
+    }
+    .company-highlight-img{
+        max-width: 420px;
+    }
+
+    /* Choose Your Ride */
+   .cyr-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    .cyr-container h2{
+        grid-column: 1/-1;
+    }
+
+    /* EXPLORE */
+    .explore-img{
+        max-width: 520px;
+    }
+}

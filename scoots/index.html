@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Aaron Erbe">
+        <meta name="description" content="~Scoots~ Scooter, ATV and Jeep Rentals Website - WDD212 Assignment">
+        <title>~Scoots~ Scooter/ATV/Jeep Rentals in Cozumel</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+
+        <meta property="og:title" content="Scoots Scooter, ATV and Jeep Rentals in Cozumel">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/6/63/Arrecifes_de_Cozumel_National_Park.jpg">
+        <meta property="og:url" content="https://aaronerbe.github.io/scoots">
+    </head>
+    <body>
+        <header>
+            <div class="banner-container dark-accent">
+                <div id="weather-alert-banner" class="banner dark-accent font-size-units">
+                    <span id="current-max-temp">High Temp for Today: 90<span>&deg;</span></span>
+                    <img id="weather-alert-close-button" src="images/icons/close-button-white.svg" alt="weather alert banner close button" width="48" height="48" loading="lazy">
+                </div>
+            </div>
+            <div class="header dark-color" >
+                <a id="logo" href="index.html"><img id="logo-img" src="images/logo/logo.svg" alt="scoots logo" width="200" height="50" loading="lazy"></a>
+                <nav id="navigation">    
+                    <div id="mobile-menu">
+                        <img id="hamburger-menu" class="show" src="images/icons/hamburger-icon.svg" alt="mobile menu hamburger menu" height="50" width="50" loading="lazy">
+                        <img id="close-menu" class="hide" src="images/icons/close-button-white.svg" alt="mobile menu close button" height="50" width="50" loading="lazy">
+                    </div>
+                    <div id="navigation-links" class="dark-accent hide">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="rentals.html">Rentals</a>
+                        <a href="reservations.html">Reservations</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        
+        <main>
+            <div class="hero-container">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/hero/hero_sm.webp">
+                    <source media="(max-width: 910px)" srcset="images/hero/hero_md.webp">
+                    <img class="hero-img" src="images/hero/hero_lg.webp" alt="Couple on Scooter looking at Ocean" width="1400" height="300">
+                </picture>
+                <div class="overlay"></div>
+                <div class="hero-heading-container">
+                    <h1 class="hero-heading">Epic Starts Here</h1>
+                    <a id="cta-button" class="button font-size-sm" href="reservations.html">Rent Your Ride</a>
+                </div>
+            </div>
+
+            <div id="company-highlight-container" class="margined">
+                <div id="company-highlight-details" class="whitespace-content">
+                    <h2 id="company-highlight-heading" class="h2heading">~Scoots~</h2>
+                    <p>Scoots is here to help you make the most of your vacation in Cozumel.  Whether you want to get off the beaten path, cruise the sandy beaches or scoot around downtown, we are here to help you discover our beautiful island at your pace.  
+                    </p>
+                    <!--<p>Rent for a half-day, day, or multiple days</p>-->
+                </div>
+                <div id="company-highlight-locations" class="dark-accent">
+                    <h3>We have two locations on Cozumel</h3>
+                    <div class="location-card">
+                        <picture class="company-highlight-img-container whitespace-content">
+                            <source media="(max-width: 600px)" srcset="images/scoots/scoots6_sm.webp">
+                            <source media="(max-width: 910px)" srcset="images/scoots/scoots6_md.webp">
+                            <img class="company-highlight-img" src="images/scoots/scoots6_lg.webp" alt="" width="300" height="200" loading="lazy">
+                        </picture>
+                        <h4 class="location-heading">Playa del Carmen-Cozumel Ferry Dock</h4>
+                    </div>
+                    <div class="location-card">
+                        <picture class="company-highlight-img-container" >
+                            <source media="(max-width: 600px)" srcset="images/scoots/scoots4_sm.webp">
+                            <source media="(max-width: 910px)" srcset="images/scoots/scoots4_md.webp">
+                            <img class="company-highlight-img" src="images/scoots/scoots4_lg.webp" alt="" width="300" height="200" loading="lazy">
+                        </picture>
+                        <h4 class="location-heading">Terminal Puerta Maya</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cyr-container whitespace-content padded">
+                <h2 class="h2heading">Choose Your Ride</h2>
+                <div class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/honda-metro-scooter2_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/honda-metro-scooter2_md.webp">
+                        <img class="cyr-img" src="images/products/honda-metro-scooter2_lg.webp" alt="Honda Metro Scooter" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="cyr-heading">Honda Metro Scooter</h3>
+                    <p class="cyr-details">
+                        This single person, retro styled scooter provides all the looks.  This is a great balance of confort, style and ease.  This is our recommended scooter for beginners.  
+                    </p>
+                    <a class="cyr-button button font-size-sm" href="reservations.html">Rent Me!</a>
+                </div>
+                <div class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/honda-dio-scooter2_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/honda-dio-scooter2_md.webp">
+                        <img class="cyr-img" src="images/products/honda-dio-scooter2_lg.webp" alt="Honda Dio Scooter" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="cyr-heading">Honda Dio Scooter</h3>
+                    <p class="cyr-details">
+                        This two person, light weight scooter features an automatic transmission making it easy to maneuver and zippy while still boasting 130 mpg.  
+                    </p>
+                    <a class="cyr-button button font-size-sm" href="reservations.html">Rent Me!</a>
+                </div>
+                <div class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/honda-pcx150-scooter3_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/honda-pcx150-scooter3_md.webp">
+                        <img class="cyr-img" src="images/products/honda-pcx150-scooter3_lg.webp" alt="Honda PCX150 Scooter" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="cyr-heading">Honda PCX150 Scooter</h3>
+                    <p class="cyr-details">
+                        Another great two-seater scooter option.  This comes with more power and added safety features like anti-lock brakes.  This is our recommended scooter if you expect to be traveling longer distances.  
+                    </p>
+                    <a class="cyr-button button font-size-sm" href="reservations.html">Rent Me!</a>
+                </div>
+                <div class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/honda-pioneer-atv3_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/honda-pioneer-atv3_md.webp">
+                        <img class="cyr-img" src="images/products/honda-pioneer-atv3_lg.webp" alt="Honda Pioneer ATV" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="cyr-heading">Honda Pioneer ATV</h3>
+                    <p class="cyr-details">
+                        Ready to take it off-road?  This four-seater SXS is equipped and capable to take you off the beaten path to visit some of our breathtaking scenery away from the beaches.  Explore with confidence with this.
+                    </p>
+                    <a class="cyr-button button font-size-sm" href="reservations.html">Rent Me!</a>
+                </div>
+                <div class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/jeep-wrangler-2door1_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/jeep-wrangler-2door1_md.webp">
+                        <img class="cyr-img" src="images/products/jeep-wrangler-2door1_lg.webp" alt="Jeep Wrangler 2 Door" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="cyr-heading">Jeep Wrangler 2 Door</h3>
+                    <p class="cyr-details">
+                        Nothing says beach party like the iconic Jeep!  Take the top off and enjoy the ocean air in full comfort with our ready for adventure 4x4 Jeep.
+                    </p>
+                    <a class="cyr-button button font-size-sm" href="reservations.html">Rent Me!</a>
+                </div>
+                <div class="cyr-card">
+                    <picture class="cyr-img-container">
+                        <source media="(max-width: 600px)" srcset="images/products/jeep-wrangler-4door1_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/products/jeep-wrangler-4door1_md.webp">
+                        <img class="cyr-img" src="images/products/jeep-wrangler-4door1_lg.webp" alt="Jeep Wrangler 4 Door with AC" width="300" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="cyr-heading">Jeep Wrangler 4 Door</h3>
+                    <p class="cyr-details">
+                        Need more room?  We now offer the 4 Door Jeep with AC.  Take your adventure to the next level and explore wherever you want with confidence in this ultimate off-road ready package!
+                    </p>
+                    <a class="cyr-button button font-size-sm" href="reservations.html">Rent Me!</a>
+                </div>
+                <a class="cyr-learn-more-button button font-size-sm" href="rentals.html">Rental Details</a>
+            </div>
+
+            <div id="explore-container" class="dark-color padded">
+                <h2 class="whitespace-content h2heading">Explore Cozumel</h2>
+                <div class="explore-card whitespace-content">
+                    <div class="explore-info">
+                        <h3 class="explore-heading">Snorkeling</h3>
+                        <p class="explore-details">
+                            Cozumel is a premier destination for snorkeling and scuby diving.  Tours, equipment and classes are all avaialble at any of our excellent partners.  Expect to see sea horses, eagle rays and turtles.  For best snorkeling, we recommend the west coast beaches.  The beaches are more limestone and less sand making for higher visibility and coral growth.
+                        </p>
+                    </div>
+                    <picture class="explore-img-container">
+                        <source media="(max-width: 600px)" srcset="images/cozumel/snorkel3_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/cozumel/snorkel3_md.webp">
+                        <img class="explore-img" src="images/cozumel/snorkel3_lg.webp" alt="Man Snorkeling and Looking at Starfish" width="300" height="200" loading="lazy">
+                    </picture>
+                </div>
+                <div class="explore-card whitespace-content">
+                    <div class="explore-info">
+                        <h3 class="explore-heading">Mayan Ruins</h3>
+                        <p class="explore-details">
+                            Cozumel is rich with Mayan history.  If you have the time, we highliy recommend visiting Chichén Itzá, Mexico to see one of the 7 Wonders of the World.  If you need to stay on our beautiful island, we recommend visiting the San Gervasio site.  
+                        </p>
+                    </div>
+                    <picture class="explore-img-container">
+                        <source media="(max-width: 600px)" srcset="images/cozumel/ruins2_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/cozumel/ruins2_md.webp">
+                        <img class="explore-img" src="images/cozumel/ruins2_lg.webp" alt="Mayan Ruins Site" width="300" height="200" loading="lazy">
+                    </picture>
+                </div>
+                <div class="explore-card whitespace-content">
+                    <div class="explore-info">
+                        <h3 class="explore-heading">Beaches</h3>
+                        <p class="explore-details">
+                            What better way to explore our beaches than in one of our Jeeps.  Nothing beats a beach bonfire and sunset.  All beaches in Mexico are public.  However, some require a fee to access the facilities.   
+                        </p>
+                    </div>
+                    <picture class="explore-img-container">
+                        <source media="(max-width: 600px)" srcset="images/cozumel/jeep_adventure4_sm.webp">
+                        <source media="(max-width: 910px)" srcset="images/cozumel/jeep_adventure4_md.webp">
+                        <img class="explore-img" src="images/cozumel/jeep_adventure4_lg.webp" alt="Jeep Adventure" width="300" height="200" loading="lazy">
+                    </picture>
+                </div>
+
+
+            </div>
+
+            <div id="weather-container" class="dark-accent">
+                <div id="weather-current">
+                    <h2 class="h2heading">Current Weather</h2>
+                    <div id="current-icon-group" class="current-group weather-group">
+                        <span id="current-icon-title" class="weather-label font-size-sm">Icon Title</span>
+                        <img id="current-icon" src="images/icons/clear.svg" alt="current weather icon" width="50" height="50" loading="lazy">
+                    </div>
+                    <div id="current-temp-group" class="current-group weather-group">
+                        <div class="weather-label font-size-sm">Temp</div>
+                        <span id="current-temp">70 <span class="units font-size-units units-up">&deg;</span></span>
+                    </div>
+                    <div id="current-wind-group" class="current-group weather-group">
+                        <div class="weather-label font-size-sm">Wind</div>
+                        <span id="current-wind">05<span class="units font-size-units">mph</span></span>
+                    </div>
+                    <div id="current-humidity-group" class="current-group weather-group">
+                        <div class="weather-label font-size-sm">Humidity</div>
+                        <span id="current-humidity">50 <span class="units font-size-units">%</span></span>
+                    </div>
+                    <div id="current-desc-group" class="weather-desc-group current-group weather-group">
+                        <span id="current-desc">Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </div>
+                <hr id="forecast-divider-top" class="forecast-divider light-color">
+                <div id="weather-forecast">
+                    <h2 class="h2heading">Tomorrow's Weather</h2>
+                    <!--<div id="three-pm-forecast">-->
+                        <h3 id="forecast-3pm-title" class="forecast-title whitespace-content">3pm Forecast</h3>
+                        <div id="forecast-icon-group" class="forecast-group weather-group whitespace-content">
+                            <span id="forecast-icon-title" class="weather-label font-size-sm">Icon Title</span>
+                            <img id="forecast-icon" src="images/icons/clear.svg" alt="current weather icon" width="50" height="50" loading="lazy">
+                        </div>
+                        <div id="forecast-temp-group" class="forecast-group weather-group whitespace-content">
+                            <div class="weather-label font-size-sm">Temp</div>
+                            <span id="forecast-temp">70 <span class="units font-size-units units-up">&deg;</span></span>
+                        </div>
+                        <div id="forecast-humidity-group" class="forecast-group weather-group whitespace-content">
+                            <div class="weather-label font-size-sm">Humidity</div>
+                            <span id="forecast-humidity">80 <span class="units font-size-units">%</span></span>
+                        </div>
+                        <div id="forecast-desc-group" class="weather-desc-group forecast-group weather-group whitespace-content">
+                            <span id="forecast-desc">Forecast Description</span>
+                        </div>
+                    <!--</div>-->
+
+                    <hr id="forecast-divider-bot" class="forecast-divider">
+
+                    <!--<div id="hi-low-forecast">-->
+                        <h3 id="forecast-hi-low-title" class="forecast-title">High/Low</h3>
+                        <div id="forecast-low-group" class="forecast-group weather-group">
+                            <!--<div class="weather-label font-size-sm">Low</div>-->
+                            <div class="weather-label font-size-sm">Low</div>
+                            <span id="forecast-low">60 <span class="units font-size-units units-up">&deg;</span></span>
+                        </div>
+                        <div id="forecast-high-group" class="forecast-group weather-group">
+                            <!--<div class="weather-label font-size-sm">High</div>-->
+                            <div class="weather-label font-size-sm">High</div>
+                            <span id="forecast-high">80 <span class="units font-size-units units-up">&deg;</span></span>
+                        </div>
+                        <div id="forecast-compare-group" class="weather-desc-group forecast-group weather-group">
+                            <span id="compare-desc">Forecast Description</span>
+                        </div>
+
+                    <!--</div>-->
+                </div>
+
+
+            </div>
+        </main>
+
+        <footer class="dark-color padded">
+
+            <div id="phone-num" class="footer-content">
+                <img src="images/icons/phone.svg" alt="phone icon" width="15" height="15" loading="lazy">  
+                <span>+221-123-1234</span>
+            </div>
+            <div id="phone-email" class="footer-content">
+                <img src="images/icons/email.svg" alt="email icon" width="15" height="15" loading="lazy">
+                <span>info@scootsrentals.com</span>
+            </div>
+            <div id="social-media-container">
+                <img class="social-media-buttons" src="images/icons/facebook-white.svg" alt="facebook icon" height="20" width="20" loading="lazy">
+                <img class="social-media-buttons" src="images/icons/x-white.svg" alt="x icon"  height="20" width="20" loading="lazy">
+                <img class="social-media-buttons" src="images/icons/instagram-white.svg" alt="instagram icon"  height="20" width="20" loading="lazy">
+            </div>
+            <div id="attributions" class="footer-content">
+                <a href="attributions.html">
+                    <img src="images/icons/scooter-icon1.svg" alt="cartoon image of scooter" width="15" height="15" loading="lazy"> <span>Resources</span>
+                </a>
+                <a href=""></a>
+            </div>
+        </footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/forecast.js"></script>
+        <script src="scripts/banner.js"></script>
+    </body>
+</html>
