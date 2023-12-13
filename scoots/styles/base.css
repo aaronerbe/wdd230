@@ -164,6 +164,7 @@ a{
 /* HERO */
 .hero-container{
     position: relative;
+    background-color: var(--dark-color);
     color: var(--light-color);
 }
 .hero-img{
