@@ -83,9 +83,10 @@ function displayTable(rentals){
             row.appendChild(tdWalkHalf);
             row.appendChild(tdWalkFull);
             row.appendChild(tdDesc);
-        }else{
-            console.log(`Row with ID ${rentalCode}-row does not exist.`);
         }
+        //else{
+            //console.log(`Row with ID ${rentalCode}-row does not exist.`);
+        //}
 
     })
 }

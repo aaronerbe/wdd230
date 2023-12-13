@@ -18,7 +18,7 @@ function updateReservationDuration() {
     let endDate = new Date(endDateInput.value);
     
     // Check if dates are valid.  Required to wait until both dates are populated
-    console.log(today)
+    //console.log(today)
     if (!isNaN(startDate.getTime()) && !isNaN(endDate.getTime()) && (startDate.getTime() > today.getTime())){
         // Calculate the difference in milliseconds, then convert ms to days
         let difference = endDate - startDate;
