@@ -66,6 +66,9 @@
                             <option value="jeep4">Jeep Wrangler - 4 Door</option>
                         </select>
                     </label>
+                    <label for="amount" class="labels">Number of Vehicles
+                        <input type="number" id="amount" class="inputs inputs-number required" name="amount" min="1" max="5" value="1" required>
+                    </label>
                     <label for="insurance" class="labels">Add Damage Inurance
                         <input type="checkbox" id="insurance" class="inputs-checkbox" name="inputs">
                     </label>
@@ -77,7 +80,7 @@
                         <input type="date" id="reservation-end" class="inputs required" name="reservation-end" required>
                     </label>
                     <label for="period" class="labels">Length of Reservation
-                        <input type="number" id="period" class="inputs inputs-number required" name="period" min="1" max="30" value="">
+                        <input type="number" id="period" class="inputs inputs-number required" name="period" min="1" max="30" value="" required>
                     </label>
 
                 </fieldset>
@@ -128,7 +131,7 @@
                     </label>
                     <label for="cruise" class="labels">Cruise Line
                         <select class="inputs inputs-select" name="cruise" id="cruise">
-                            <option value="" disabled selected hidden>Optional</option>
+                            <option value="" disabled selected hidden>Select Cruise Line</option>
                             <option value="carnival">Carnival</option>
                             <option value="celebrity">Celebrity</option>
                             <option value="disney">Disney</option>
@@ -141,7 +144,7 @@
                         <input type="checkbox" id="drop-off" class="inputs-checkbox" name="inputs">
                     </label>
                     <label for="instructions" class="labels">Special Request
-                        <textarea class="inputs" name="instructions" id="instructions" cols="30" rows="10"></textarea>
+                        <textarea class="inputs" name="instructions" id="instructions" cols="30" rows="10" placeholder="Special accommodations and requests such as drop-off location"></textarea>
                     </label>
                 </fieldset>
                 <div>

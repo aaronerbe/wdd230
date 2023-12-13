@@ -74,45 +74,12 @@
                     <label for="contact-mobile" class="labels">Phone
                         <input class="inputs required" type="tel" id="contact-mobile" name="contact-mobile" required pattern="\d{10}" title="10 digit phone number">
                     </label> 
-                    <!-- Country -->
-                    <label for="country" class="labels">Home Country
-                        <select class="inputs inputs-select required" id="country" name="country" required autocomplete="off">
-                            <option value="" disabled selected hidden>Select Home Country</option>
-                            <option value="usa">United States</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="bahamas">Bahamas</option>
-                            <option value="barbados">Barbados</option>
-                            <option value="belize">Belize</option>
-                            <option value="bolivia">Bolivia</option>
-                            <option value="brazil">Brazil</option>
-                            <option value="canada">Canada</option>
-                            <option value="chile">Chile</option>
-                            <option value="colombia">Colombia</option>
-                            <option value="costa-rica">Costa Rica</option>
-                            <option value="cuba">Cuba</option>
-                            <option value="dominican-republic">Dominican Republic</option>
-                            <option value="ecuador">Ecuador</option>
-                            <option value="grenada">Grenada</option>
-                            <option value="guatemala">Guatemala</option>
-                            <option value="haiti">Haiti</option>
-                            <option value="honduras">Honduras</option>
-                            <option value="jamaica">Jamaica</option>
-                            <option value="mexico">Mexico</option>
-                            <option value="nicaragua">Nicaragua</option>
-                            <option value="panama">Panama</option>
-                            <option value="peru">Peru</option>
-                            <option value="saint-lucia">Saint Lucia</option>
-                            <option value="uruguay">Uruguay</option>
-                            <option value="venezuela">Venezuela</option>
-                        </select>
-                    </label>
-
 
                     <label for="comments" class="labels">Comments
-                        <textarea class="inputs" name="comments" id="comments" cols="30" rows="10"></textarea>
+                        <textarea class="inputs required" name="comments" id="comments" cols="30" rows="10" required></textarea>
                     </label>
                 </fieldset>
-                <div class="padded">
+                <div>
                     <button class="button form-submit font-size-sm" type="submit">Send Message</button>
                 </div>
             </form>
