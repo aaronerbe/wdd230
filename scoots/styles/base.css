@@ -46,10 +46,12 @@
     font-family: monospace;
     text-align: center;
 }
-
 a{
     text-decoration: none;
-    /*color: var(--light-color);*/
+    color: var(--light-color);
+}
+.dark-link{
+    color: var(--dark-color);
 }
 .whitespace-content{
     width: 80%;
