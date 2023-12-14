@@ -29,4 +29,10 @@
     .explore-img{
         max-width: 520px;
     }
+    footer img{
+        width: clamp(1.25rem, 4vw, 2rem);
+        height: auto;
+        /* needed to force icons to line up w/ txt */
+        transform: translateY(20%);
+    }
 }

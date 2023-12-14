@@ -384,7 +384,7 @@ footer{
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-family: monospace;
 }
-footer img{
+footer img:not(.social-media-buttons){
     width: clamp(1.25rem, 3vw, 2rem);
     height: auto;
     /* needed to force icons to line up w/ txt */
@@ -438,7 +438,6 @@ fieldset{
     border: 1px solid var(--dark-accent);
     padding: 1rem;
     max-width: 100%;
-    
 }
 .inputs{
     display: block;
@@ -447,8 +446,8 @@ fieldset{
     min-height: 44px;
     margin: 0;
     width: 100%;
-    width: 20rem;
-    /*max-width: 20rem;*/
+    /*width: 20rem;*/
+    max-width: 20rem;
 }
 .inputs-number{
     width: 3rem;
