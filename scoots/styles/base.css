@@ -467,7 +467,7 @@ fieldset{
 
 /* CONTACT */
 #maps-container{
-    width: 100%;
+    /*width: 100%;*/
     padding: 1rem 0;
     margin: 6rem 0 0 0;
 }
